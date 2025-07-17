@@ -2463,96 +2463,38 @@ body {
     }
 }
 @media (max-width: 600px) {
-    .container {
-        max-width: 100vw;
-        padding: 0 1vw;
-    }
-    .main-navbar, .top-navbar {
-        flex-direction: column;
-        height: auto;
-        padding: 0 1vw;
-    }
-    .navbar-brand img {
-        height: 28px;
-    }
-    .hero {
-        min-height: 100vh;
-        margin-top: 0;
-        padding-top: 60px; /* Adjust if navbar is a different height */
-        height: auto;
-    }
-    .hero h1 {
-        font-size: 1.1rem;
-    }
-    .about-title, .section-title {
-        font-size: 1.1rem;
-    }
-    .about-container, .contact-container {
-        flex-direction: column;
-        width: 100%;
-        padding: 4px 0;
-    }
-    .about-content, .about-features, .contact-form, .contact-info {
-        padding: 4px;
-    }
-    .tour-card, .blog-card {
-        min-width: 0;
-        max-width: 100%;
-    }
-    .tour-img, .blog-img {
-        height: 90px;
-    }
-    .footer-section {
-        padding: 0.5rem 0 0.2rem;
-    }
-    .footer-logo {
-        max-width: 36px;
-    }
+  .hiking-hero h1 {
+    font-size: 1.4rem;
+    padding: 0 10px;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+  .hiking-hero p {
+    font-size: 1rem;
+    padding: 0 10px;
+    line-height: 1.3;
+    word-break: break-word;
+  }
+  .hiking-hero .btn-explore {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
 }
-@media (max-width: 400px) {
-    .container {
-        max-width: 100vw;
-        padding: 0 0.5vw;
-    }
-    .main-navbar, .top-navbar {
-        flex-direction: column;
-        height: auto;
-        padding: 0 0.5vw;
-    }
-    .navbar-brand img {
-        height: 18px;
-    }
-    .hero {
-        min-height: 100vh;
-        margin-top: 0;
-        padding-top: 60px; /* Adjust if navbar is a different height */
-        height: auto;
-    }
-    .hero h1 {
-        font-size: 0.8rem;
-    }
-    .about-title, .section-title {
-        font-size: 0.8rem;
-    }
-    .about-container, .contact-container {
-        flex-direction: column;
-        width: 100%;
-        padding: 2px 0;
-    }
-    .about-content, .about-features, .contact-form, .contact-info {
-        padding: 2px;
-    }
-    .tour-card, .blog-card {
-        min-width: 0;
-        max-width: 100%;
-    }
-    .tour-img, .blog-img {
-        height: 50px;
-    }
-    .footer-section {
-        padding: 0.2rem 0 0.1rem;
-    }
-    .footer-logo {
-        max-width: 18px;
-    }
+@media (max-width: 600px) {
+  .tour-card .tour-img {
+    width: 100%;
+    height: 180px !important; /* Match .hike-image mobile height, override previous */
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .blog-card .blog-img {
+    width: 100%;
+    height: 180px !important; /* Match .tour-img and .hike-image mobile height */
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    display: block;
+  }
 }
