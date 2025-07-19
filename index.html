@@ -82,13 +82,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
+                        <a class="nav-link active" href="#home" data-i18n="nav_home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about-us">About</a>
+                        <a class="nav-link" href="#about-us" data-i18n="nav_about">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#tours" id="toursDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#tours" id="toursDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav_tours">
                             Tours
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="toursDropdown">
@@ -101,16 +101,30 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#hikes">Hikings</a>
+                        <a class="nav-link" href="#hikes" data-i18n="nav_hikings">Hikings</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
+                        <a class="nav-link" href="#blog" data-i18n="nav_blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact" data-i18n="nav_contact">Contact</a>
                     </li>
                     <li class="nav-item ms-lg-3">
-                        <a class="nav-link btn-book" href="#contact">Book Now</a>
+                        <a class="nav-link btn-book" href="#contact" data-i18n="nav_book_now">Book Now</a>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <select id="languageSelect" class="form-select form-select-sm" style="width:auto; display:inline-block;">
+                            <option value="en" data-i18n="lang_en">🇬🇧 English</option>
+                            <option value="es" data-i18n="lang_es">🇪🇸 Español</option>
+                            <option value="fr" data-i18n="lang_fr">🇫🇷 Français</option>
+                            <option value="zh" data-i18n="lang_zh">🇨🇳 中文</option>
+                            <option value="ar" data-i18n="lang_ar">🇸🇦 العربية</option>
+                            <option value="ru" data-i18n="lang_ru">🇷🇺 Русский</option>
+                            <option value="pt" data-i18n="lang_pt">🇵🇹 Português</option>
+                            <option value="de" data-i18n="lang_de">🇩🇪 Deutsch</option>
+                            <option value="ja" data-i18n="lang_ja">🇯🇵 日本語</option>
+                            <option value="hi" data-i18n="lang_hi">🇮🇳 हिन्दी</option>
+                        </select>
                     </li>
                 </ul>
             </div>
@@ -120,19 +134,33 @@
     <!-- Mobile Sidebar -->
     <div id="sidebar" class="sidebar">
         <a href="javascript:void(0)" class="close-btn" id="closeSidebar">&times;</a>
-        <a href="#home" class="active">Home</a>
-        <a href="#about-us">About Us</a>
-        <a href="#" class="dropdown-btn">Tours <i class="fas fa-chevron-down float-end mt-1"></i></a>
+        <a href="#home" class="active" data-i18n="nav_home">Home</a>
+        <a href="#about-us" data-i18n="sidebar_about_us">About Us</a>
+        <a href="#" class="dropdown-btn" data-i18n="sidebar_tours">Tours <i class="fas fa-chevron-down float-end mt-1"></i></a>
         <div class="dropdown-container">
-            <a href="#tours">All Tours</a>
-            <a href="#tours">Historic Route</a>
-            <a href="#tours">Danakil Depression</a>
-            <a href="#tours">Omo Valley</a>
-            <a href="#tours">Simien Mountains</a>
+            <a href="#tours" data-i18n="sidebar_all_tours">All Tours</a>
+            <a href="#tours" data-i18n="sidebar_historic_route">Historic Route</a>
+            <a href="#tours" data-i18n="sidebar_danakil">Danakil Depression</a>
+            <a href="#tours" data-i18n="sidebar_omo_valley">Omo Valley</a>
+            <a href="#tours" data-i18n="sidebar_simien_mountains">Simien Mountains</a>
         </div>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-        <a href="#contact" class="btn-book mt-3 text-center">Book Now</a>
+        <a href="#blog" data-i18n="sidebar_blog">Blog</a>
+        <a href="#contact" data-i18n="sidebar_contact">Contact</a>
+        <a href="#contact" class="btn-book mt-3 text-center" data-i18n="nav_book_now">Book Now</a>
+        <div class="mt-4 px-3">
+            <select id="sidebarLanguageSelect" class="form-select form-select-sm" style="width:100%;">
+                <option value="en" data-i18n="lang_en">🇬🇧 English</option>
+                <option value="es" data-i18n="lang_es">🇪🇸 Español</option>
+                <option value="fr" data-i18n="lang_fr">🇫🇷 Français</option>
+                <option value="zh" data-i18n="lang_zh">🇨🇳 中文</option>
+                <option value="ar" data-i18n="lang_ar">🇸🇦 العربية</option>
+                <option value="ru" data-i18n="lang_ru">🇷🇺 Русский</option>
+                <option value="pt" data-i18n="lang_pt">🇵🇹 Português</option>
+                <option value="de" data-i18n="lang_de">🇩🇪 Deutsch</option>
+                <option value="ja" data-i18n="lang_ja">🇯🇵 日本語</option>
+                <option value="hi" data-i18n="lang_hi">🇮🇳 हिन्दी</option>
+            </select>
+        </div>
     </div>
 
  
@@ -226,11 +254,10 @@
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <!-- Remove the overlay div - we'll handle this with CSS -->
     <div class="container text-center">
-        <h1>Discover Ethiopia with Us</h1>
-        <p>Your adventure starts here. Explore amazing destinations!</p>
-        <a href="#tours" class="btn btn-light btn-lg">View Tours</a>
+        <h1 data-i18n="hero_title">Discover Ethiopia with Us</h1>
+        <p data-i18n="hero_subtitle">Your adventure starts here. Explore amazing destinations!</p>
+        <a href="#tours" class="btn btn-light btn-lg" data-i18n="hero_view_tours">View Tours</a>
     </div>
 
     <!-- Navigation Arrows -->
@@ -313,48 +340,44 @@
     <div class="about-container">
         <!-- Left Side: Tour Agency Description -->
         <div class="about-content">
-            <h2 class="about-title">Yetnbi Ethiopia Tour</h2>
-            <p class="about-text">
-                <em>"Yetnbi"</em> means <strong>"Welcome"</strong> in Gurage, and that's exactly how we greet every traveler to our beautiful country. 
-                We specialize in authentic Ethiopian experiences that connect you with our ancient history, vibrant cultures, and breathtaking landscapes.
-            </p>
-            <p class="about-text">
-                Founded in Addis Ababa, we're proud to be 100% Ethiopian-owned, offering insider access to hidden gems beyond the usual tourist trails. 
-                From the rock-hewn churches of Lalibela to the tribes of the Omo Valley, we bring Ethiopia's wonders to life.
-            </p>
-            <a href="#tours" class="about-btn">Discover Ethiopia</a>
+            <h2 class="about-title" data-i18n="about_title">Yetnbi Ethiopia Tour</h2>
+            <p class="about-text" data-i18n="about_text1">"Yetnbi" means "Welcome" in Gurage, and that's exactly how we greet every traveler to our beautiful country. 
+                We specialize in authentic Ethiopian experiences that connect you with our ancient history, vibrant cultures, and breathtaking landscapes.</p>
+            <p class="about-text" data-i18n="about_text2">Founded in Addis Ababa, we're proud to be 100% Ethiopian-owned, offering insider access to hidden gems beyond the usual tourist trails. 
+                From the rock-hewn churches of Lalibela to the tribes of the Omo Valley, we bring Ethiopia's wonders to life.</p>
+            <a href="#tours" class="about-btn" data-i18n="about_btn">Discover Ethiopia</a>
         </div>
 
         <!-- Right Side: Ethiopian Travel Features -->
         <div class="about-features">
             <div class="features-card">
-                <h3 class="features-title">Why Tour With Us?</h3>
+                <h3 class="features-title" data-i18n="features_title">Why Tour With Us?</h3>
                 
                 <div class="ethiopian-feature">
                     <img src="images/tea-cup.png" alt="Coffee Ceremony" class="feature-icon">
                     <div>
-                        <h4>Authentic Experiences</h4>
-                        <p>Participate in traditional coffee ceremonies and share meals with local families</p>
+                        <h4 data-i18n="features_authentic">Authentic Experiences</h4>
+                        <p data-i18n="features_authentic_desc">Participate in traditional coffee ceremonies and share meals with local families</p>
                     </div>
                 </div>
                 
                 <div class="ethiopian-feature">
                     <img src="images/travel-guide.png" alt="Local Guides" class="feature-icon">
                     <div>
-                        <h4>Local Experts</h4>
-                        <p>Our guides speak Amharic and local languages for deeper connections</p>
+                        <h4 data-i18n="features_local">Local Experts</h4>
+                        <p data-i18n="features_local_desc">Our guides speak Amharic and local languages for deeper connections</p>
                     </div>
                 </div>
                 
                 <div class="ethiopian-feature">
                     <img src="images/handcraft.png" alt="Handicraft Preservation" class="feature-icon">
                     <div>
-                        <h4>Cultural Preservation</h4>
-                        <p>We support local artisans by promoting traditional Ethiopian crafts like Shemma weaving and pottery</p>
+                        <h4 data-i18n="features_cultural">Cultural Preservation</h4>
+                        <p data-i18n="features_cultural_desc">We support local artisans by promoting traditional Ethiopian crafts like Shemma weaving and pottery</p>
                     </div>
                 </div>
                 
-                <p class="cultural-note">
+                <p class="cultural-note" data-i18n="features_note">
                     <i class="fas fa-hand-holding-heart"></i> We follow <strong>አንድነት</strong> (unity) principles - ensuring tourism benefits all Ethiopians
                 </p>
             </div>
@@ -365,8 +388,8 @@
 <!-- Interactive Map Section -->
 <section id="map-section" class="py-5">
     <div class="container text-center">
-        <h2 class="title">Explore Addis Ababa</h2>
-        <p class="subtitle">Click on the markers to explore top attractions.</p>
+        <h2 class="title" data-i18n="map_title">Explore Addis Ababa</h2>
+        <p class="subtitle" data-i18n="map_subtitle">Click on the markers to explore top attractions.</p>
         <div class="map-container">
             <div id="map"></div>
         </div>
@@ -498,21 +521,17 @@
 
 <!-- Tours Section -->
 <section id="tours" class="container my-5">
-    <h2 class="text-center section-title">Journey Through Addis Ababa & Beyond</h2>
-    <p class="text-center section-subtitle">Discover Ethiopia's vibrant culture and history with our curated tours</p>
+    <h2 class="text-center section-title" data-i18n="tours_title">Journey Through Addis Ababa & Beyond</h2>
+    <p class="text-center section-subtitle" data-i18n="tours_subtitle">Discover Ethiopia's vibrant culture and history with our curated tours</p>
     <div class="row">
         <!-- Tour 1: National Museum -->
         <div class="col-md-4 tour-card-wrapper initial">
             <div class="tour-card">
                 <img src="images/nation.jpg" class="tour-img" alt="National Museum">
                 <div class="tour-content">
-                    <h5 class="tour-title">National Museum</h5>
-                    <p class="tour-text">Step back in time with the <strong>Lucy fossil</strong>, a 3.2-million-year-old marvel, amid treasures whispering Ethiopia's ancient tales. <br><em>Duration: 3 hours</em></p>
-                    <button class="tour-btn book-now-btn" 
-                            data-tour="National Museum" 
-                            data-category="City Tour">
-                        Book Now
-                    </button>
+                    <h5 class="tour-title" data-i18n="tour_national_museum_title">National Museum</h5>
+                    <p class="tour-text" data-i18n="tour_national_museum_desc">Step back in time with the Lucy fossil, a 3.2-million-year-old marvel, amid treasures whispering Ethiopia's ancient tales. <br><em>Duration: 3 hours</em></p>
+                    <button class="tour-btn book-now-btn" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
         </div>
@@ -522,13 +541,9 @@
             <div class="tour-card">
                 <img src="images/entoto.jpg" class="tour-img" alt="Entoto Park">
                 <div class="tour-content">
-                    <h5 class="tour-title">Entoto Park</h5>
-                    <p class="tour-text">Bask in the <strong>panoramic views</strong> atop Addis Ababa's crown, where lush trails and cultural gems await. <br><em>Duration: 4 hours</em></p>
-                    <button class="tour-btn book-now-btn" 
-                            data-tour="Entoto Park" 
-                            data-category="City Tour">
-                        Book Now
-                    </button>
+                    <h5 class="tour-title" data-i18n="tour_entoto_park_title">Entoto Park</h5>
+                    <p class="tour-text" data-i18n="tour_entoto_park_desc">Bask in the <strong>panoramic views</strong> atop Addis Ababa's crown, where lush trails and cultural gems await. <br><em>Duration: 4 hours</em></p>
+                    <button class="tour-btn book-now-btn" data-tour="Entoto Park" data-category="City Tour" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
         </div>
@@ -538,13 +553,9 @@
             <div class="tour-card">
                 <img src="images/merkato.jpg" class="tour-img" alt="Merkato Market">
                 <div class="tour-content">
-                    <h5 class="tour-title">Merkato Market</h5>
-                    <p class="tour-text">Dive into the <strong>largest open-air market</strong> in Africa, a kaleidoscope of colors and commerce in Addis Ababa's heart. <br><em>Duration: 3 hours</em></p>
-                    <button class="tour-btn book-now-btn" 
-                            data-tour="Merkato Market" 
-                            data-category="City Tour">
-                        Book Now
-                    </button>
+                    <h5 class="tour-title" data-i18n="tour_merkato_title">Merkato Market</h5>
+                    <p class="tour-text" data-i18n="tour_merkato_desc">Dive into the <strong>largest open-air market</strong> in Africa, a kaleidoscope of colors and commerce in Addis Ababa's heart. <br><em>Duration: 3 hours</em></p>
+                    <button class="tour-btn book-now-btn" data-tour="Merkato Market" data-category="City Tour" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
         </div>
@@ -554,13 +565,9 @@
             <div class="tour-card">
                 <img src="images/unity-park.jpg" class="tour-img" alt="Unity Park">
                 <div class="tour-content">
-                    <h5 class="tour-title">Unity Park</h5>
-                    <p class="tour-text">Experience Ethiopia's heritage at <strong>Unity Park</strong>, a historical and recreational park featuring royal palaces, gardens, and cultural exhibits. <br><em>Duration: 3 hours</em></p>
-                    <button class="tour-btn book-now-btn" 
-                            data-tour="Unity Park" 
-                            data-category="City Tour">
-                        Book Now
-                    </button>
+                    <h5 class="tour-title" data-i18n="tour_unity_park_title">Unity Park</h5>
+                    <p class="tour-text" data-i18n="tour_unity_park_desc">Experience Ethiopia's heritage at <strong>Unity Park</strong>, a historical and recreational park featuring royal palaces, gardens, and cultural exhibits. <br><em>Duration: 3 hours</em></p>
+                    <button class="tour-btn book-now-btn" data-tour="Unity Park" data-category="City Tour" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
         </div>
@@ -570,13 +577,9 @@
             <div class="tour-card">
                 <img src="images/image10.jpg" class="tour-img" alt="Addis Ababa Night Tour">
                 <div class="tour-content">
-                    <h5 class="tour-title">Addis Ababa Night Tour</h5>
-                    <p class="tour-text">Savor the <strong>nightlife scene</strong>, where Addis Ababa glows with music, flavors, and starlit landmarks. <br><em>Duration: 4 hours</em></p>
-                    <button class="tour-btn book-now-btn" 
-                            data-tour="Addis Ababa Night Tour" 
-                            data-category="City Tour">
-                        Book Now
-                    </button>
+                    <h5 class="tour-title" data-i18n="tour_night_title">Addis Ababa Night Tour</h5>
+                    <p class="tour-text" data-i18n="tour_night_desc">Savor the <strong>nightlife scene</strong>, where Addis Ababa glows with music, flavors, and starlit landmarks. <br><em>Duration: 4 hours</em></p>
+                    <button class="tour-btn book-now-btn" data-tour="Addis Ababa Night Tour" data-category="City Tour" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
         </div>
@@ -586,13 +589,9 @@
             <div class="tour-card">
                 <img src="images/image13.jpg" class="tour-img" alt="Omo Valley">
                 <div class="tour-content">
-                    <h5 class="tour-title">Omo Valley</h5>
-                    <p class="tour-text">Meet the <strong>tribal communities</strong> of the south, their vibrant traditions painting Ethiopia's cultural tapestry. <br><em>Duration: 3 days</em></p>
-                    <button class="tour-btn book-now-btn" 
-                            data-tour="Omo Valley" 
-                            data-category="Hiking">
-                        Book Now
-                    </button>
+                    <h5 class="tour-title" data-i18n="tour_omo_valley_title">Omo Valley</h5>
+                    <p class="tour-text" data-i18n="tour_omo_valley_desc">Meet the <strong>tribal communities</strong> of the south, their vibrant traditions painting Ethiopia's cultural tapestry. <br><em>Duration: 3 days</em></p>
+                    <button class="tour-btn book-now-btn" data-tour="Omo Valley" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
         </div>
@@ -602,13 +601,9 @@
             <div class="tour-card">
                 <img src="images/image15.jpg" class="tour-img" alt="Danakil Depression">
                 <div class="tour-content">
-                    <h5 class="tour-title">Danakil Depression</h5>
-                    <p class="tour-text">Marvel at the <strong>volcanic landscapes</strong>, an alien world of fiery hues in Ethiopia's wild frontier. <br><em>Duration: 2 days</em></p>
-                    <button class="tour-btn book-now-btn" 
-                            data-tour="Danakil Depression" 
-                            data-category="Hiking">
-                        Book Now
-                    </button>
+                    <h5 class="tour-title" data-i18n="tour_danakil_title">Danakil Depression</h5>
+                    <p class="tour-text" data-i18n="tour_danakil_desc">Marvel at the <strong>volcanic landscapes</strong>, an alien world of fiery hues in Ethiopia's wild frontier. <br><em>Duration: 2 days</em></p>
+                    <button class="tour-btn book-now-btn" data-tour="Danakil Depression" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
         </div>
@@ -618,13 +613,9 @@
             <div class="tour-card">
                 <img src="images/image16.jpg" class="tour-img" alt="Ethiopian Coffee Tour">
                 <div class="tour-content">
-                    <h5 class="tour-title">Ethiopian Coffee Tour</h5>
-                    <p class="tour-text">Delight in the <strong>coffee ceremony</strong>, a ritual of aroma and warmth, born in Kaffa's rich soil. <br><em>Duration: 3 hours</em></p>
-                    <button class="tour-btn book-now-btn" 
-                            data-tour="Ethiopian Coffee Tour" 
-                            data-category="City Tour">
-                        Book Now
-                    </button>
+                    <h5 class="tour-title" data-i18n="tour_coffee_title">Ethiopian Coffee Tour</h5>
+                    <p class="tour-text" data-i18n="tour_coffee_desc">Delight in the <strong>coffee ceremony</strong>, a ritual of aroma and warmth, born in Kaffa's rich soil. <br><em>Duration: 3 hours</em></p>
+                    <button class="tour-btn book-now-btn" data-tour="Ethiopian Coffee Tour" data-category="City Tour" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
         </div>
@@ -634,52 +625,44 @@
             <div class="tour-card">
                 <img src="images/image17.jpg" class="tour-img" alt="Bale Mountains">
                 <div class="tour-content">
-                    <h5 class="tour-title">Bale Mountains</h5>
-                    <p class="tour-text">Trek through the <strong>alpine wonders</strong>, where rare wildlife and misty peaks crown Ethiopia's highlands. <br><em>Duration: 2 days</em></p>
-                    <button class="tour-btn book-now-btn" 
-                            data-tour="Bale Mountains" 
-                            data-category="Hiking">
-                        Book Now
-                    </button>
+                    <h5 class="tour-title" data-i18n="tour_bale_mountains_title">Bale Mountains</h5>
+                    <p class="tour-text" data-i18n="tour_bale_mountains_desc">Trek through the <strong>alpine wonders</strong>, where rare wildlife and misty peaks crown Ethiopia's highlands. <br><em>Duration: 2 days</em></p>
+                    <button class="tour-btn book-now-btn" data-tour="Bale Mountains" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="text-center mt-4">
-        <button id="view-toggle" class="hero-btn">View More</button>
+        <button id="view-toggle" class="hero-btn" data-i18n="nav_view_more">View More</button>
     </div>
-</section>
-
-<style>
-    /* Hide cards with the .hidden class */
-    .tour-card-wrapper.hidden {
-        display: none;
-    }
-    
-    /* Hero Section-inspired button style */
-    .hero-btn {
-        padding: 12px 30px;
-        font-size: 18px;
-        font-weight: bold;
-        background-color: #e76f51; /* Vibrant orange for Hero Section */
-        color: white;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-    
-    .hero-btn:hover {
-        background-color: #c95f43; /* Darker orange on hover */
-        transform: scale(1.05);
-    }
-    
-    .hero-btn:active {
-        transform: scale(0.95);
-    }
+    <style>
+        /* Hide cards with the .hidden class */
+        .tour-card-wrapper.hidden {
+            display: none;
+        }
+        /* Hero Section-inspired button style */
+        .hero-btn {
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #e76f51; /* Vibrant orange for Hero Section */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .hero-btn:hover {
+            background-color: #c95f43; /* Darker orange on hover */
+            transform: scale(1.05);
+        }
+        .hero-btn:active {
+            transform: scale(0.95);
+        }
     </style>
+</section>
 
 <script>
 // View More/Show Less Toggle Functionality
@@ -710,24 +693,24 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- Hiking Hero Banner -->
 <section class="hiking-hero">
     <div class="hero-overlay">
-        <h1>Discover Ethiopia's Wild Beauty</h1>
-        <p>From the Simien Mountains to hidden cultural trails</p>
-        <a href="#hikes" class="btn-explore">Explore Hikes <i class="fas fa-arrow-down"></i></a>
+        <h1 data-i18n="hiking_hero_title">Discover Ethiopia's Wild Beauty</h1>
+        <p data-i18n="hiking_hero_subtitle">From the Simien Mountains to hidden cultural trails</p>
+        <a href="#hikes" class="btn-explore" data-i18n="hiking_hero_btn">Explore Hikes <i class="fas fa-arrow-down"></i></a>
     </div>
 </section>
 
 <!-- Hiking Destinations -->
 <section id="hikes" class="hiking-section">
     <div class="container">
-        <h2 class="section-title">Featured Hiking Destinations</h2>
-        <p class="section-subtitle">Ethiopia offers some of Africa's most diverse trekking experiences.</p>
+        <h2 class="section-title" data-i18n="hiking_section_title">Featured Hiking Destinations</h2>
+        <p class="section-subtitle" data-i18n="hiking_section_subtitle">Ethiopia offers some of Africa's most diverse trekking experiences.</p>
 
         <!-- Filter Buttons -->
         <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All Trails</button>
-            <button class="filter-btn" data-filter="multi-day">Multi-Day</button>
-            <button class="filter-btn" data-filter="day-hike">Day Hikes</button>
-            <button class="filter-btn" data-filter="cultural">Cultural</button>
+            <button class="filter-btn active" data-filter="all" data-i18n="hiking_filter_all">All Trails</button>
+            <button class="filter-btn" data-filter="multi-day" data-i18n="hiking_filter_multi">Multi-Day</button>
+            <button class="filter-btn" data-filter="day-hike" data-i18n="hiking_filter_day">Day Hikes</button>
+            <button class="filter-btn" data-filter="cultural" data-i18n="hiking_filter_cultural">Cultural</button>
         </div>
 
         <!-- Hikes Grid -->
@@ -735,238 +718,206 @@ document.addEventListener('DOMContentLoaded', function() {
             <!-- Simien Mountains -->
             <div class="hike-card initial" data-category="multi-day">
                 <div class="hike-image" style="background-image: url('images/imag3.jpg');">
-                    <span class="difficulty intermediate">Challenging</span>
+                    <span class="difficulty intermediate" data-i18n="hiking_simien_difficulty">Challenging</span>
                     <div class="hover-details">
-                        <h3>Simien Mountains Trek</h3>
-                        <p><i class="fas fa-star"></i> UNESCO World Heritage Site</p>
+                        <h3 data-i18n="hiking_simien_title">Simien Mountains Trek</h3>
+                        <p data-i18n="hiking_simien_highlight">UNESCO World Heritage Site</p>
                     </div>
                 </div>
                 <div class="hike-details">
                     <div class="hike-meta">
-                        <span><i class="fas fa-map-marker-alt"></i> Northern Ethiopia</span>
-                        <span><i class="fas fa-clock"></i> 3-12 days</span>
-                        <span><i class="fas fa-mountain"></i> 4,533m peak</span>
+                        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hiking_simien_location">Northern Ethiopia</span></span>
+                        <span><i class="fas fa-clock"></i> <span data-i18n="hiking_simien_duration">3-12 days</span></span>
+                        <span><i class="fas fa-mountain"></i> <span data-i18n="hiking_simien_peak">4,533m peak</span></span>
                     </div>
-                    <h3>Simien Mountains Trek</h3>
-                    <p>Dramatic cliffs, endemic wildlife (Gelada baboons, Walia ibex), and Ethiopia's highest peaks.</p>
+                    <h3 data-i18n="hiking_simien_title">Simien Mountains Trek</h3>
+                    <p data-i18n="hiking_simien_desc">Dramatic cliffs, endemic wildlife (Gelada baboons, Walia ibex), and Ethiopia's highest peaks.</p>
                     <div class="hike-highlights">
-                        <span><i class="fas fa-eye"></i> Jaw-dropping views</span>
-                        <span><i class="fas fa-campground"></i> Camping</span>
+                        <span data-i18n="hiking_simien_highlight_view"><i class="fas fa-eye"></i> Jaw-dropping views</span>
+                        <span data-i18n="hiking_simien_highlight_camp"><i class="fas fa-campground"></i> Camping</span>
                     </div>
-                    <button class="btn book-now-btn" 
-                            data-tour="Simien Mountains Trek" 
-                            data-category="Hiking">
-                        Book Now
-                    </button>
+                    <button class="btn book-now-btn" data-tour="Simien Mountains Trek" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
 
             <!-- Bale Mountains -->
             <div class="hike-card initial" data-category="multi-day">
                 <div class="hike-image" style="background-image: url('images/imag4.jpg');">
-                    <span class="difficulty moderate">Moderate</span>
+                    <span class="difficulty moderate" data-i18n="hiking_bale_difficulty">Moderate</span>
                     <div class="hover-details">
-                        <h3>Bale Mountains Trek</h3>
-                        <p><i class="fas fa-star"></i> Ethiopian Wolf Habitat</p>
+                        <h3 data-i18n="hiking_bale_title">Bale Mountains Trek</h3>
+                        <p data-i18n="hiking_bale_highlight">Ethiopian Wolf Habitat</p>
                     </div>
                 </div>
                 <div class="hike-details">
                     <div class="hike-meta">
-                        <span><i class="fas fa-map-marker-alt"></i> Oromia Region</span>
-                        <span><i class="fas fa-clock"></i> 2-6 days</span>
-                        <span><i class="fas fa-mountain"></i> 4,377m peak</span>
+                        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hiking_bale_location">Oromia Region</span></span>
+                        <span><i class="fas fa-clock"></i> <span data-i18n="hiking_bale_duration">2-6 days</span></span>
+                        <span><i class="fas fa-mountain"></i> <span data-i18n="hiking_bale_peak">4,377m peak</span></span>
                     </div>
-                    <h3>Bale Mountains Trek</h3>
-                    <p>Afro-alpine meadows, Harenna Forest, and the world's rarest canid: the Ethiopian wolf.</p>
+                    <h3 data-i18n="hiking_bale_title">Bale Mountains Trek</h3>
+                    <p data-i18n="hiking_bale_desc">Afro-alpine meadows, Harenna Forest, and the world's rarest canid: the Ethiopian wolf.</p>
                     <div class="hike-highlights">
-                        <span><i class="fas fa-paw"></i> Wildlife spotting</span>
-                        <span><i class="fas fa-tree"></i> Ancient forests</span>
+                        <span data-i18n="hiking_bale_highlight_wildlife"><i class="fas fa-paw"></i> Wildlife spotting</span>
+                        <span data-i18n="hiking_bale_highlight_forest"><i class="fas fa-tree"></i> Ancient forests</span>
                     </div>
-                    <button class="btn book-now-btn" 
-                            data-tour="Bale Mountains Trek" 
-                            data-category="Hiking">
-                        Book Now
-                    </button>
+                    <button class="btn book-now-btn" data-tour="Bale Mountains Trek" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
 
             <!-- Wenchi Crater Lake -->
             <div class="hike-card initial" data-category="day-hike">
                 <div class="hike-image" style="background-image: url('images/imag5.jpg');">
-                    <span class="difficulty easy">Easy</span>
+                    <span class="difficulty easy" data-i18n="hiking_wenchi_difficulty">Easy</span>
                     <div class="hover-details">
-                        <h3>Wenchi Crater Lake Hike</h3>
-                        <p><i class="fas fa-star"></i> Volcanic Wonder</p>
+                        <h3 data-i18n="hiking_wenchi_title">Wenchi Crater Lake Hike</h3>
+                        <p data-i18n="hiking_wenchi_highlight">Volcanic Wonder</p>
                     </div>
                 </div>
                 <div class="hike-details">
                     <div class="hike-meta">
-                        <span><i class="fas fa-map-marker-alt"></i> Oromia Region</span>
-                        <span><i class="fas fa-clock"></i> 1 day</span>
-                        <span><i class="fas fa-water"></i> Crater lake</span>
+                        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hiking_wenchi_location">Oromia Region</span></span>
+                        <span><i class="fas fa-clock"></i> <span data-i18n="hiking_wenchi_duration">1 day</span></span>
+                        <span><i class="fas fa-water"></i> <span data-i18n="hiking_wenchi_feature">Crater lake</span></span>
                     </div>
-                    <h3>Wenchi Crater Lake Hike</h3>
-                    <p>Explore a stunning volcanic crater lake surrounded by lush greenery and waterfalls.</p>
+                    <h3 data-i18n="hiking_wenchi_title">Wenchi Crater Lake Hike</h3>
+                    <p data-i18n="hiking_wenchi_desc">Explore a stunning volcanic crater lake surrounded by lush greenery and waterfalls.</p>
                     <div class="hike-highlights">
-                        <span><i class="fas fa-water"></i> Scenic lake views</span>
-                        <span><i class="fas fa-horse"></i> Optional horseback</span>
+                        <span data-i18n="hiking_wenchi_highlight_lake"><i class="fas fa-water"></i> Scenic lake views</span>
+                        <span data-i18n="hiking_wenchi_highlight_horse"><i class="fas fa-horse"></i> Optional horseback</span>
                     </div>
-                    <button class="btn book-now-btn" 
-                            data-tour="Wenchi Crater Lake Hike" 
-                            data-category="Hiking">
-                        Book Now
-                    </button>
+                    <button class="btn book-now-btn" data-tour="Wenchi Crater Lake Hike" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
 
             <!-- Danakil Adventure -->
             <div class="hike-card initial" data-category="multi-day">
                 <div class="hike-image" style="background-image: url('images/imag8.jpg');">
-                    <span class="difficulty hard">Hard</span>
+                    <span class="difficulty hard" data-i18n="hiking_danakil_difficulty">Hard</span>
                     <div class="hover-details">
-                        <h3>Danakil Adventure</h3>
-                        <p><i class="fas fa-star"></i> Hottest Place on Earth</p>
+                        <h3 data-i18n="hiking_danakil_title">Danakil Adventure</h3>
+                        <p data-i18n="hiking_danakil_highlight">Hottest Place on Earth</p>
                     </div>
                 </div>
                 <div class="hike-details">
                     <div class="hike-meta">
-                        <span><i class="fas fa-map-marker-alt"></i> Afar Region</span>
-                        <span><i class="fas fa-clock"></i> 3-5 days</span>
-                        <span><i class="fas fa-temperature-high"></i> Extreme heat</span>
+                        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hiking_danakil_location">Afar Region</span></span>
+                        <span><i class="fas fa-clock"></i> <span data-i18n="hiking_danakil_duration">3-5 days</span></span>
+                        <span><i class="fas fa-temperature-high"></i> <span data-i18n="hiking_danakil_feature">Extreme heat</span></span>
                     </div>
-                    <h3>Danakil Adventure</h3>
-                    <p>Otherworldly landscapes: salt flats, active volcanoes, and hydrothermal fields.</p>
+                    <h3 data-i18n="hiking_danakil_title">Danakil Adventure</h3>
+                    <p data-i18n="hiking_danakil_desc">Otherworldly landscapes: salt flats, active volcanoes, and hydrothermal fields.</p>
                     <div class="hike-highlights">
-                        <span><i class="fas fa-fire"></i> Erta Ale volcano</span>
-                        <span><i class="fas fa-water"></i> Salt lakes</span>
+                        <span data-i18n="hiking_danakil_highlight_volcano"><i class="fas fa-fire"></i> Erta Ale volcano</span>
+                        <span data-i18n="hiking_danakil_highlight_salt"><i class="fas fa-water"></i> Salt lakes</span>
                     </div>
-                    <button class="btn book-now-btn" 
-                            data-tour="Danakil Adventure" 
-                            data-category="Hiking">
-                        Book Now
-                    </button>
+                    <button class="btn book-now-btn" data-tour="Danakil Adventure" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
 
             <!-- Menagesha Suba Forest -->
             <div class="hike-card" data-category="day-hike">
                 <div class="hike-image" style="background-image: url('images/imag6.jpg');">
-                    <span class="difficulty easy">Easy</span>
+                    <span class="difficulty easy" data-i18n="hiking_menagesha_difficulty">Easy</span>
                     <div class="hover-details">
-                        <h3>Menagesha Suba Forest</h3>
-                        <p><i class="fas fa-star"></i> Near Addis Ababa</p>
+                        <h3 data-i18n="hiking_menagesha_title">Menagesha Suba Forest</h3>
+                        <p data-i18n="hiking_menagesha_highlight">Near Addis Ababa</p>
                     </div>
                 </div>
                 <div class="hike-details">
                     <div class="hike-meta">
-                        <span><i class="fas fa-map-marker-alt"></i> Oromia Region</span>
-                        <span><i class="fas fa-clock"></i> 1 day</span>
-                        <span><i class="fas fa-tree"></i> Ancient forest</span>
+                        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hiking_menagesha_location">Oromia Region</span></span>
+                        <span><i class="fas fa-clock"></i> <span data-i18n="hiking_menagesha_duration">1 day</span></span>
+                        <span><i class="fas fa-tree"></i> <span data-i18n="hiking_menagesha_feature">Ancient forest</span></span>
                     </div>
-                    <h3>Menagesha Suba Forest</h3>
-                    <p>Ethiopia's oldest protected area with juniper trees, colobus monkeys, and scenic trails.</p>
+                    <h3 data-i18n="hiking_menagesha_title">Menagesha Suba Forest</h3>
+                    <p data-i18n="hiking_menagesha_desc">Ethiopia's oldest protected area with juniper trees, colobus monkeys, and scenic trails.</p>
                     <div class="hike-highlights">
-                        <span><i class="fas fa-hiking"></i> Family-friendly</span>
-                        <span><i class="fas fa-binoculars"></i> Birdwatching</span>
+                        <span data-i18n="hiking_menagesha_highlight_family"><i class="fas fa-hiking"></i> Family-friendly</span>
+                        <span data-i18n="hiking_menagesha_highlight_bird"><i class="fas fa-binoculars"></i> Birdwatching</span>
                     </div>
-                    <button class="btn book-now-btn" 
-                            data-tour="Menagesha Suba Forest" 
-                            data-category="Hiking">
-                        Book Now
-                    </button>
+                    <button class="btn book-now-btn" data-tour="Menagesha Suba Forest" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
 
             <!-- Arba Minch -->
             <div class="hike-card" data-category="multi-day">
                 <div class="hike-image" style="background-image: url('images/imag9.jpg');">
-                    <span class="difficulty moderate">Moderate</span>
+                    <span class="difficulty moderate" data-i18n="hiking_arba_difficulty">Moderate</span>
                     <div class="hover-details">
-                        <h3>Arba Minch Rift Valley Trek</h3>
-                        <p><i class="fas fa-star"></i> Rift Valley Lakes</p>
+                        <h3 data-i18n="hiking_arba_title">Arba Minch Rift Valley Trek</h3>
+                        <p data-i18n="hiking_arba_highlight">Rift Valley Lakes</p>
                     </div>
                 </div>
                 <div class="hike-details">
                     <div class="hike-meta">
-                        <span><i class="fas fa-map-marker-alt"></i> SNNPR Region</span>
-                        <span><i class="fas fa-clock"></i> 2-4 days</span>
-                        <span><i class="fas fa-mountain"></i> Nechisar Park</span>
+                        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hiking_arba_location">SNNPR Region</span></span>
+                        <span><i class="fas fa-clock"></i> <span data-i18n="hiking_arba_duration">2-4 days</span></span>
+                        <span><i class="fas fa-mountain"></i> <span data-i18n="hiking_arba_feature">Nechisar Park</span></span>
                     </div>
-                    <h3>Arba Minch Rift Valley Trek</h3>
-                    <p>Hike through Nechisar National Park with views of Lakes Abaya and Chamo, plus crocodile spotting.</p>
+                    <h3 data-i18n="hiking_arba_title">Arba Minch Rift Valley Trek</h3>
+                    <p data-i18n="hiking_arba_desc">Hike through Nechisar National Park with views of Lakes Abaya and Chamo, plus crocodile spotting.</p>
                     <div class="hike-highlights">
-                        <span><i class="fas fa-water"></i> Lake vistas</span>
-                        <span><i class="fas fa-binoculars"></i> Wildlife</span>
+                        <span data-i18n="hiking_arba_highlight_lake"><i class="fas fa-water"></i> Lake vistas</span>
+                        <span data-i18n="hiking_arba_highlight_wildlife"><i class="fas fa-binoculars"></i> Wildlife</span>
                     </div>
-                    <button class="btn book-now-btn" 
-                            data-tour="Arba Minch Rift Valley Trek" 
-                            data-category="Hiking">
-                        Book Now
-                    </button>
+                    <button class="btn book-now-btn" data-tour="Arba Minch Rift Valley Trek" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
 
             <!-- Gondar Cultural Trek -->
             <div class="hike-card" data-category="cultural day-hike">
                 <div class="hike-image" style="background-image: url('images/imag7.jpg');">
-                    <span class="difficulty moderate">Moderate</span>
+                    <span class="difficulty moderate" data-i18n="hiking_gondar_difficulty">Moderate</span>
                     <div class="hover-details">
-                        <h3>Gondar Cultural Trek</h3>
-                        <p><i class="fas fa-star"></i> Royal Castles</p>
+                        <h3 data-i18n="hiking_gondar_title">Gondar Cultural Trek</h3>
+                        <p data-i18n="hiking_gondar_highlight">Royal Castles</p>
                     </div>
                 </div>
                 <div class="hike-details">
                     <div class="hike-meta">
-                        <span><i class="fas fa-map-marker-alt"></i> Amhara Region</span>
-                        <span><i class="fas fa-clock"></i> 1-2 days</span>
-                        <span><i class="fas fa-landmark"></i> Historical sites</span>
+                        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hiking_gondar_location">Amhara Region</span></span>
+                        <span><i class="fas fa-clock"></i> <span data-i18n="hiking_gondar_duration">1-2 days</span></span>
+                        <span><i class="fas fa-landmark"></i> <span data-i18n="hiking_gondar_feature">Historical sites</span></span>
                     </div>
-                    <h3>Gondar Cultural Trek</h3>
-                    <p>Explore the medieval castles of Fasil Ghebbi and hike to nearby monasteries with stunning views.</p>
+                    <h3 data-i18n="hiking_gondar_title">Gondar Cultural Trek</h3>
+                    <p data-i18n="hiking_gondar_desc">Explore the medieval castles of Fasil Ghebbi and hike to nearby monasteries with stunning views.</p>
                     <div class="hike-highlights">
-                        <span><i class="fas fa-castle"></i> Royal history</span>
-                        <span><i class="fas fa-pray"></i> Debre Berhan Selassie</span>
+                        <span data-i18n="hiking_gondar_highlight_royal"><i class="fas fa-castle"></i> Royal history</span>
+                        <span data-i18n="hiking_gondar_highlight_church"><i class="fas fa-pray"></i> Debre Berhan Selassie</span>
                     </div>
-                    <button class="btn book-now-btn" 
-                            data-tour="Gondar Cultural Trek" 
-                            data-category="Hiking">
-                        Book Now
-                    </button>
+                    <button class="btn book-now-btn" data-tour="Gondar Cultural Trek" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
 
             <!-- Harar Walled City Hike -->
             <div class="hike-card" data-category="cultural day-hike">
                 <div class="hike-image" style="background-image: url('images/2.jpg');">
-                    <span class="difficulty easy">Easy</span>
+                    <span class="difficulty easy" data-i18n="hiking_harar_difficulty">Easy</span>
                     <div class="hover-details">
-                        <h3>Harar Walled City Hike</h3>
-                        <p><i class="fas fa-star"></i> UNESCO Old Town</p>
+                        <h3 data-i18n="hiking_harar_title">Harar Walled City Hike</h3>
+                        <p data-i18n="hiking_harar_highlight">UNESCO Old Town</p>
                     </div>
                 </div>
                 <div class="hike-details">
                     <div class="hike-meta">
-                        <span><i class="fas fa-map-marker-alt"></i> Harari Region</span>
-                        <span><i class="fas fa-clock"></i> 1 day</span>
-                        <span><i class="fas fa-city"></i> Walled city</span>
+                        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hiking_harar_location">Harari Region</span></span>
+                        <span><i class="fas fa-clock"></i> <span data-i18n="hiking_harar_duration">1 day</span></span>
+                        <span><i class="fas fa-city"></i> <span data-i18n="hiking_harar_feature">Walled city</span></span>
                     </div>
-                    <h3>Harar Walled City Hike</h3>
-                    <p>Walk through the ancient Jugol walls, markets, and witness the unique hyena feeding tradition.</p>
+                    <h3 data-i18n="hiking_harar_title">Harar Walled City Hike</h3>
+                    <p data-i18n="hiking_harar_desc">Walk through the ancient Jugol walls, markets, and witness the unique hyena feeding tradition.</p>
                     <div class="hike-highlights">
-                        <span><i class="fas fa-history"></i> Islamic heritage</span>
-                        <span><i class="fas fa-paw"></i> Hyena encounter</span>
+                        <span data-i18n="hiking_harar_highlight_islamic"><i class="fas fa-history"></i> Islamic heritage</span>
+                        <span data-i18n="hiking_harar_highlight_hyena"><i class="fas fa-paw"></i> Hyena encounter</span>
                     </div>
-                    <button class="btn book-now-btn" 
-                            data-tour="Harar Walled City Hike" 
-                            data-category="Hiking">
-                        Book Now
-                    </button>
+                    <button class="btn book-now-btn" data-tour="Harar Walled City Hike" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
                 </div>
             </div>
         </div>
 
         <!-- View More/Show Less Button -->
-        <button class="view-toggle-btn" id="view-toggle">View More</button>
+        <button class="view-toggle-btn" id="view-toggle" data-i18n="nav_view_more">View More</button>
     </div>
 </section>
 
@@ -1015,25 +966,25 @@ document.addEventListener('DOMContentLoaded', function() {
         <button class="close-modal" id="closeModal">×</button>
         
         <div class="booking-header">
-            <h1 class="booking-title" id="booking-title">Book Your Adventure</h1>
-            <p class="booking-subtitle">Complete your reservation in just a few steps</p>
+            <h1 class="booking-title" id="booking-title" data-i18n="booking_title">Book Your Adventure</h1>
+            <p class="booking-subtitle" data-i18n="booking_subtitle">Complete your reservation in just a few steps</p>
         </div>
         
         <form class="booking-form" id="bookingForm">
             <input type="hidden" id="category" name="category" value="Hiking">
             
             <div class="form-group">
-                <label for="fullName">Full Name*</label>
-                <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+                <label for="fullName" data-i18n="booking_full_name">Full Name*</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your full name" required data-i18n="booking_full_name">
             </div>
             
             <div class="form-group">
-                <label for="email">Email*</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                <label for="email" data-i18n="booking_email">Email*</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required data-i18n="booking_email">
             </div>
             
             <div class="form-group">
-                <label for="phone">Phone Number*</label>
+                <label for="phone" data-i18n="booking_phone">Phone Number*</label>
                 <div style="display: flex; gap: 8px; align-items: center;">
                     <select id="countryCode" name="countryCode" style="width: 110px; padding: 12px 8px; border: 2px solid #a8dadc; border-radius: 8px; font-size: 15px;">
                         <option value="+251" selected>🇪🇹 +251</option>
@@ -1115,17 +1066,17 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             
             <div class="form-group">
-                <label for="specialRequests">Special Requests</label>
-                <textarea id="specialRequests" name="specialRequests" placeholder="Dietary restrictions, accessibility needs, etc."></textarea>
+                <label for="specialRequests" data-i18n="booking_special_requests">Special Requests</label>
+                <textarea id="specialRequests" name="specialRequests" placeholder="Dietary restrictions, accessibility needs, etc." data-i18n="booking_special_requests"></textarea>
             </div>
             
             <div class="form-group checkbox-group">
                 <input type="checkbox" id="termsAgree" name="termsAgree" required>
-                <label for="termsAgree">I agree to the <a href="/terms" class="terms-link">terms and conditions</a></label>
+                <label for="termsAgree" data-i18n="booking_terms">I agree to the <a href="/terms" class="terms-link">terms and conditions</a></label>
             </div>
             
             <button type="submit" class="submit-btn" id="submitBtn">
-                <span class="btn-text">Complete Booking</span>
+                <span class="btn-text" data-i18n="booking_submit">Complete Booking</span>
                 <span class="spinner" id="spinner"></span>
             </button>
         </form>
@@ -1136,17 +1087,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                 </svg>
             </div>
-            <h2>Booking Confirmed!</h2>
-            <p>Thank you for choosing Yetenbi Ethiopia Tours</p>
+            <h2 data-i18n="booking_confirmed">Booking Confirmed!</h2>
+            <p data-i18n="booking_thank_you">Thank you for choosing Yetenbi Ethiopia Tours</p>
             <div class="confirmation-details" id="confirmationDetails">
                 <!-- Booking details will be inserted here -->
             </div>
-            <button class="back-to-form" id="backToForm">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
-                </svg>
-                Book Another Tour
-            </button>
+            <button class="back-to-form" id="backToForm" data-i18n="booking_book_another">Book Another Tour</button>
         </div>
     </div>
 </div>
@@ -1406,8 +1352,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <section id="blog">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Discover Addis Ababa</h2>
-            <p class="section-subtitle">Stories & Experiences from Ethiopia's Capital</p>
+            <h2 class="section-title" data-i18n="blog_title">Discover Addis Ababa</h2>
+            <p class="section-subtitle" data-i18n="blog_subtitle">Stories & Experiences from Ethiopia's Capital</p>
             <div class="header-divider"></div>
         </div>
 
@@ -1596,18 +1542,18 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="contact-container">
         <!-- Left Side: Contact Form -->
         <form class="contact-form" id="contact-form">
-            <h2>Send Us A Message</h2>
+            <h2 data-i18n="contact_title">Send Us A Message</h2>
             
-            <label for="name">Name</label>
-            <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+            <label for="name" data-i18n="contact_name">Name</label>
+            <input type="text" id="name" name="Name" placeholder="Enter your name" required data-i18n="contact_name">
             
-            <label for="email">Email</label>
-            <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+            <label for="email" data-i18n="contact_email">Email</label>
+            <input type="email" id="email" name="Email" placeholder="Enter your email" required data-i18n="contact_email">
             
-            <label for="message">Message</label>
-            <textarea id="message" name="Message" placeholder="Enter your message" required></textarea>
+            <label for="message" data-i18n="contact_message">Message</label>
+            <textarea id="message" name="Message" placeholder="Enter your message" required data-i18n="contact_message"></textarea>
             
-            <button type="submit" class="btn-hero">Send Message</button>
+            <button type="submit" class="btn-hero" data-i18n="contact_send">Send Message</button>
             
             <div id="form-message"></div>
         </form>
@@ -1615,8 +1561,8 @@ document.addEventListener('DOMContentLoaded', function() {
         <!-- Right Side: Contact Information -->
         <div class="contact-info">
             <h2>Get In Touch</h2>
-            <p><strong>Address</strong> addisAbaba, Ethiopia</p>
-            <p><strong>Email</strong><br> alifabdurahman@gmail.com</p>
+            <p><strong>Address</strong> AddisAbaba, Ethiopia</p>
+            <p><strong>Email</strong><br> yetenbiethiopiatours@gmail.com</p>
             <p><strong>Phone</strong> +251 913271706</p>
             <p><strong>WhatsApp</strong> 
                 <a href="https://wa.me/251913271706?text=Hello%20from%20your%20website%2C%20I%20have%20a%20question%20about..." 
@@ -1630,7 +1576,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p><strong>Follow Us</strong></p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://twitter.com/yourhandle" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://twitter.com/yourhandle" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                     <a href="https://www.instagram.com/youraccount" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://t.me/yourchannel" target="_blank"><i class="fa-brands fa-telegram"></i></a>
                 </div>
@@ -1840,13 +1786,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 <!-- Popular Tours -->
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-tours">
-                        <h5 class="text-uppercase fw-bold mb-4">Popular Tours</h5>
+                        <h5 class="text-uppercase fw-bold mb-4" data-i18n="footer_popular_tours">Popular Tours</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="#tours" class="text-decoration-none d-block py-1">Historic Route</a></li>
-                            <li class="mb-2"><a href="#tours" class="text-decoration-none d-block py-1">Danakil Depression</a></li>
-                            <li class="mb-2"><a href="#tours" class="text-decoration-none d-block py-1">Omo Valley Tribes</a></li>
-                            <li class="mb-2"><a href="#tours" class="text-decoration-none d-block py-1">Simien Mountains</a></li>
-                            <li class="mb-2"><a href="#tours" class="text-decoration-none d-block py-1">Addis Ababa City Tour</a></li>
+                            <li class="mb-2"><a href="#tours" class="text-decoration-none d-block py-1" data-i18n="footer_historic_route">Historic Route</a></li>
+                            <li class="mb-2"><a href="#tours" class="text-decoration-none d-block py-1" data-i18n="footer_danakil">Danakil Depression</a></li>
+                            <li class="mb-2"><a href="#tours" class="text-decoration-none d-block py-1" data-i18n="footer_omo_valley">Omo Valley Tribes</a></li>
+                            <li class="mb-2"><a href="#tours" class="text-decoration-none d-block py-1" data-i18n="footer_simien_mountains">Simien Mountains</a></li>
+                            <li class="mb-2"><a href="#tours" class="text-decoration-none d-block py-1" data-i18n="footer_addis_ababa_city_tour">Addis Ababa City Tour</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1883,9 +1829,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="footer-copyright">
                         <p class="mb-0">&copy; <span id="current-year">2025</span> Yetenbi Ethiopia Tours. All Rights Reserved.</p>
                         <div class="footer-legal mt-2">
-                            <a href="#" class="text-decoration-none me-3">Privacy Policy</a>
-                            <a href="#" class="text-decoration-none me-3">Terms of Service</a>
-                            <a href="#" class="text-decoration-none">FAQ</a>
+                            <a href="#" class="text-decoration-none me-3" data-i18n="footer_privacy_policy">Privacy Policy</a>
+                            <a href="#" class="text-decoration-none me-3" data-i18n="footer_terms_of_service">Terms of Service</a>
+                            <a href="#" class="text-decoration-none" data-i18n="footer_faq">FAQ</a>
                         </div>
                     </div>
                 </div>
