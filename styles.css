@@ -185,6 +185,7 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh; /* Fill the viewport */
+    height: 100vh;
     margin-top: 0;     /* Remove extra top margin */
     display: flex;
     justify-content: center;
@@ -195,7 +196,22 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     transition: background-image 0.8s ease-in-out;
-    height: auto;
+}
+
+/* Mobile viewport height fix */
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        min-height: -webkit-fill-available;
+        height: -webkit-fill-available;
+    }
+}
+
+/* Modern viewport units for mobile */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 100dvh;
+        height: 100dvh;
+    }
 }
 .hero::before {
     content: '';
@@ -413,7 +429,11 @@ body {
     
     .hero {
         margin-top: 90px;
-        height: calc(100vh - 90px);
+        min-height: calc(100vh - 90px);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .sidebar {
@@ -442,7 +462,11 @@ body {
     
     .hero {
         margin-top: 80px;
-        height: calc(100vh - 80px);
+        min-height: calc(100vh - 80px);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .sidebar {
@@ -2436,19 +2460,18 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 60vh;
-        max-height: 100vh;
-        margin-top: 100px;
-        height: auto;
-        padding: 24px 0 32px 0;
+        min-height: 100vh;
+        height: 100vh;
+        margin-top: 80px;
+        padding: 0;
         box-sizing: border-box;
         overflow: hidden;
         position: relative;
     }
     .hero .container {
         width: 100%;
-        max-width: 100vw;
-        padding: 0 5vw;
+        max-width: 90vw;
+        padding: 0 4vw;
         z-index: 2;
         display: flex;
         flex-direction: column;
@@ -2460,20 +2483,24 @@ body {
         line-height: 1.2;
         margin-bottom: 0.7rem;
         word-break: break-word;
-        padding: 0 2vw;
+        padding: 0 1vw;
+        max-width: 85vw;
     }
     .hero p {
         font-size: 1.05rem;
         line-height: 1.4;
         margin-bottom: 1.3rem;
         word-break: break-word;
-        padding: 0 2vw;
+        padding: 0 1vw;
+        max-width: 85vw;
     }
     .btn-hero, .btn.btn-light.btn-lg {
-        padding: 10px 22px;
-        font-size: 1rem;
+        padding: 10px 20px;
+        font-size: 0.95rem;
         border-radius: 24px;
         margin-bottom: 10px;
+        max-width: 200px;
+        width: auto;
     }
     .slider-nav {
         width: 38px;
@@ -2490,8 +2517,8 @@ body {
         right: 10px;
     }
     .slider-dots {
-        bottom: 18px;
-        z-index: 10;
+        bottom: 32px;
+        z-index: 30;
     }
     .dot {
         width: 10px;
@@ -2522,25 +2549,34 @@ body {
 }
 @media (max-width: 600px) {
   .hero {
-    min-height: 50vh;
-    margin-top: 100px;
-    padding: 15px 0;
+    height: 100dvh !important;
+    min-height: 100dvh !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+  .hero .container {
+    height: 100%;
+    padding: 0 !important;
   }
   .hero h1 {
     font-size: 1.5rem;
     line-height: 1.1;
     margin-bottom: 0.6rem;
-    padding: 0 10px;
+    padding: 0 8px;
+    max-width: 90vw;
   }
   .hero p {
     font-size: 0.9rem;
     line-height: 1.3;
     margin-bottom: 1.2rem;
-    padding: 0 10px;
+    padding: 0 8px;
+    max-width: 90vw;
   }
   .btn-hero {
     padding: 8px 16px;
     font-size: 0.85rem;
+    max-width: 180px;
+    width: auto;
   }
   .slider-nav {
     width: 35px;
@@ -2554,7 +2590,8 @@ body {
     right: 10px;
   }
   .slider-dots {
-    bottom: 15px;
+    bottom: 24px;
+    z-index: 30;
   }
   .dot {
     width: 8px;
@@ -2599,25 +2636,32 @@ body {
 
 @media (max-width: 480px) {
   .hero {
-    min-height: 44vh;
-    padding: 10px 0 20px 0;
+    height: 100dvh !important;
+    min-height: 100dvh !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
   }
   .hero .container {
-    padding: 0 2vw;
+    height: 100%;
+    padding: 0 !important;
   }
   .hero h1 {
     font-size: 1.15rem;
     margin-bottom: 0.5rem;
-    padding: 0 2vw;
+    padding: 0 1vw;
+    max-width: 95vw;
   }
   .hero p {
     font-size: 0.85rem;
     margin-bottom: 1rem;
-    padding: 0 2vw;
+    padding: 0 1vw;
+    max-width: 95vw;
   }
   .btn-hero {
     padding: 8px 14px;
     font-size: 0.85rem;
+    max-width: 160px;
+    width: auto;
   }
   .slider-nav {
     width: 30px;
@@ -2626,11 +2670,60 @@ body {
     bottom: 60px;
   }
   .slider-dots {
-    bottom: 10px;
+    bottom: 16px;
+    z-index: 30;
   }
   .dot {
     width: 7px;
     height: 7px;
     margin: 0 2px;
+  }
+}
+@media (max-width: 768px) {
+  .slider-nav {
+    top: 50% !important;
+    bottom: auto !important;
+    transform: translateY(-50%) !important;
+    z-index: 40;
+  }
+  .prev {
+    left: 10px !important;
+    right: auto !important;
+  }
+  .next {
+    right: 10px !important;
+    left: auto !important;
+  }
+}
+@media (max-width: 600px) {
+  .slider-nav {
+    top: 50% !important;
+    bottom: auto !important;
+    transform: translateY(-50%) !important;
+    z-index: 40;
+  }
+  .prev {
+    left: 6px !important;
+    right: auto !important;
+  }
+  .next {
+    right: 6px !important;
+    left: auto !important;
+  }
+}
+@media (max-width: 480px) {
+  .slider-nav {
+    top: 50% !important;
+    bottom: auto !important;
+    transform: translateY(-50%) !important;
+    z-index: 40;
+  }
+  .prev {
+    left: 2px !important;
+    right: auto !important;
+  }
+  .next {
+    right: 2px !important;
+    left: auto !important;
   }
 }

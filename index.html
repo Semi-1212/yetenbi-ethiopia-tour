@@ -52,7 +52,7 @@
                 <div class="col-md-6">
                     <div class="top-nav-contact">
                         <a href="tel:+251913271706"><i class="fas fa-phone-alt"></i> +251 913 271706</a>
-                        <a href="mailto:info@yetenbitours.com"><i class="fas fa-envelope"></i> info@yetenbitours.com</a>
+                        <a href="mailto:yetenbiethiopiatours@gmail.com"><i class="fas fa-envelope"></i> yetenbiethiopiatours@gmail.com</a>
                     </div>
                 </div>
                 <div class="col-md-6 text-md-end">
@@ -1700,13 +1700,22 @@ document.addEventListener('DOMContentLoaded', function() {
                         <p class="mb-3">Your trusted travel partner for discovering the rich culture and breathtaking landscapes of Ethiopia.</p>
                         <div class="footer-newsletter">
                             <h6 class="mb-2">Subscribe to our newsletter</h6>
-                            <form class="d-flex" id="newsletterForm">
+                            <form class="d-flex" id="newsletterForm" action="https://script.google.com/macros/s/AKfycbyHBM8uIiG4ec19ITxFmM5wvDgjPH2qzqr0wUw1IcaAxsiSarrRTbGc_Y2vjth5eIk7/exec" method="POST" target="_blank">
                                 <input type="email" name="email" class="form-control rounded-0" placeholder="Your email" required>
                                 <button type="submit" class="btn btn-primary rounded-0">
                                     <i class="fas fa-paper-plane"></i>
                                 </button>
                             </form>
                             <div id="formMessage" class="mt-2" style="display:none;"></div>
+                        </div>
+                        <!-- TripAdvisor Link Below Newsletter -->
+                        <div class="footer-tripadvisor mt-4 mb-2" style="display: flex; flex-direction: column; align-items: center;">
+                            <a href="https://www.tripadvisor.com/Profile/yetenbiethiopiat" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                                <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="Tripadvisor" style="height:40px; width:auto; display:block;">
+                            </a>
+                            <a href="https://www.tripadvisor.com/Profile/yetenbiethiopiat" target="_blank" rel="noopener noreferrer" style="color: #fff; font-size: 1.1rem; font-weight: 500; margin-top: 6px; text-decoration: underline;">
+                                Review us on TripAdvisor!
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1716,30 +1725,37 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('newsletterForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const form = e.target;
-            const formData = { email: form.email.value };
             const messageDiv = document.getElementById('formMessage');
-            
-            // Replace with your deployed Google Apps Script URL
-            const scriptUrl = 'https://script.google.com/macros/s/AKfycbz2yrCIue7MZGPeKA8wZH9MOWm5CB9nbAiFD-EjmfX1pGbbW2lU0LBTuafHHfQul2vX/exec';
-            
+            const scriptUrl = 'https://script.google.com/macros/s/AKfycbyHBM8uIiG4ec19ITxFmM5wvDgjPH2qzqr0wUw1IcaAxsiSarrRTbGc_Y2vjth5eIk7/exec';
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<span class="btn-spinner"></span> Sending...';
+            submitBtn.disabled = true;
+            messageDiv.style.display = 'none';
+
             fetch(scriptUrl, {
                 method: 'POST',
-                body: JSON.stringify(formData),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
+                body: new FormData(form)
             })
-            .then(response => response.json())
-            .then(data => {
+            .then(response => response.text())
+            .then(text => {
                 messageDiv.style.display = 'block';
-                messageDiv.textContent = data.message || 'Thank you for subscribing!';
+                messageDiv.textContent = text.includes('Thank you') ? 'Thank you for subscribing!' : text;
                 messageDiv.className = 'mt-2 text-success';
                 form.reset();
             })
             .catch(error => {
                 messageDiv.style.display = 'block';
-                messageDiv.textContent = 'Error submitting form. Please try again.';
-                messageDiv.className = 'mt-2 text-danger';
+                messageDiv.textContent = 'Thank you for subscribing!';
+                messageDiv.className = 'mt-2 text-success';
+                form.reset();
+            })
+            .finally(() => {
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+                setTimeout(() => {
+                    messageDiv.style.display = 'none';
+                }, 5000);
             });
         });
         </script>
@@ -1752,7 +1768,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <li class="mb-2"><a href="#tours" class="text-decoration-none d-block py-1">Tours</a></li>
                             <li class="mb-2"><a href="#map" class="text-decoration-none d-block py-1">Destinations</a></li>
                             <li class="mb-2"><a href="#about-us" class="text-decoration-none d-block py-1">About Us</a></li>
-                            <li class="mb-2"><a href="blog" class="text-decoration-none d-block py-1">Travel Blog</a></li>
+                            <li class="mb-2"><a href="#blog" class="text-decoration-none d-block py-1">Travel Blog</a></li>
                             <li class="mb-2"><a href="#contact" class="text-decoration-none d-block py-1">Contact</a></li>
                         </ul>
                     </div>
@@ -1773,7 +1789,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             </li>
                             <li class="mb-3 d-flex">
                                 <i class="fas fa-envelope me-3 mt-1"></i>
-                                <a href="mailto:info@yetenbitours.com" class="text-decoration-none">info@yetenbitours.com</a>
+                            <a href="mailto:info@yetenbitours.com" class="text-decoration-none">yetenbiethiopiatours@gmail.com</a>
                             </li>
                             <li class="mb-3 d-flex">
                                 <i class="fas fa-clock me-3 mt-1"></i>
@@ -2421,7 +2437,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/251913271706" class="whatsapp-float" target="_blank">
+<a href="https://wa.me/251913271706?text=Hello%21%20Welcome%20to%20Yetenbi%20Ethiopia%20Tours.%20We%20offer%20city%20tours%2C%20cultural%20experiences%2C%20hiking%20adventures%2C%20and%20more%20across%20Ethiopia.%20How%20can%20we%20help%20you%20plan%20your%20trip%20today%3F" class="whatsapp-float" target="_blank">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
 
