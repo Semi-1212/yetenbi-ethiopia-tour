@@ -1571,6 +1571,56 @@ body {
 .card-body {
     padding: 25px;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .read-more-btn {
+    align-self: flex-start;
+    margin-top: 15px;
+}
+
+/* Post Stats - Social Engagement */
+.post-stats {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #666;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.stat-item:hover {
+    color: var(--primary-color);
+}
+
+.stat-item i {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.stat-item:hover i {
+    color: var(--primary-color);
+}
+
+.stat-count {
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.stat-count.updating {
+    color: var(--primary-color);
+    transform: scale(1.1);
 }
 
 .post-title {
@@ -1646,22 +1696,25 @@ body {
 
 /* Read More Button */
 .read-more-btn {
-    background: transparent;
-    border: 2px solid #e74c3c;
-    color: #e74c3c;
+    background-color: var(--primary-color);
+    color: var(--dark-color);
     font-weight: 600;
-    padding: 8px 15px;
-    border-radius: 30px;
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+    transition: var(--transition);
+    border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    text-decoration: none;
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .read-more-btn:hover {
-    background: #e74c3c;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    transform: translateY(-2px);
 }
 
 .read-more-btn .btn-text::after {
@@ -1678,8 +1731,8 @@ body {
 }
 
 .blog-card.expanded .read-more-btn {
-    background: #e74c3c;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--white);
 }
 
 .blog-card.expanded .read-more-btn .arrow-icon {
@@ -1706,25 +1759,24 @@ body {
 /* View All Button */
 .view-all-btn {
     display: inline-block;
-    background: #e74c3c;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 30px;
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
     text-decoration: none;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+    transition: var(--transition);
     border: none;
     cursor: pointer;
     font-size: 1rem;
+    width: auto;
+    text-align: center;
 }
 
 .view-all-btn:hover {
-    background: #c0392b;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
+    background-color: var(--secondary-color);
+    color: var(--white);
+    transform: translateY(-2px);
 }
 
 /* Hidden Posts */
@@ -1958,9 +2010,24 @@ body {
         text-align: center !important;
     }
     
-    .footer-legal {
-        justify-content: center !important;
+    .footer-copyright p,
+    .footer-copyright .footer-legal {
+        text-align: center !important;
     }
+    
+    .footer-legal {
+    justify-content: center !important;
+}
+
+/* Center copyright on all screen sizes */
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-copyright p,
+.footer-copyright .footer-legal {
+    text-align: center;
+}
 }
 
 @media (max-width: 767.98px) {
@@ -2026,6 +2093,67 @@ body {
         right: 20px;
         font-size: 25px;
     }
+}
+
+/* WhatsApp Notification Badge */
+.wa-badge {
+    position: absolute;
+    top: -18px;
+    right: -10px;
+    background: #ffffff;
+    color: #25D366;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 1001;
+    white-space: nowrap;
+    animation: badge-blink 1s infinite;
+    border: 2px solid #25D366;
+    pointer-events: none;
+}
+
+/* WhatsApp Notification Dot */
+.wa-notification-dot {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #e63946;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 1002;
+    animation: dot-pulse 2s infinite;
+    border: 2px solid #fff;
+    pointer-events: none;
+}
+
+@keyframes dot-pulse {
+    0%, 100% { 
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% { 
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+@keyframes badge-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.whatsapp-float .fa-whatsapp {
+    z-index: 2;
 }
 
 :root {
