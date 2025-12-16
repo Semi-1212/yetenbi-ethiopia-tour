@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Character encoding -->
+        <meta charset="UTF-8">
+        <!-- Responsive viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- SEO Meta Tags -->
+        <title>Concierge Service - Yetenbi Ethiopia Tours | Premium Travel Assistance</title>
+        <meta name="description" content="Experience personalized travel assistance with Yetenbi Ethiopia Tours concierge service. Hotel bookings, airport transfers, restaurant reservations, custom itineraries, and 24/7 support.">
+        <meta name="keywords" content="Ethiopia concierge service, travel concierge, hotel booking Ethiopia, airport transfer Addis Ababa, travel assistance Ethiopia, personalized travel service">
+        <meta name="author" content="Yetenbi Ethiopia Tours">
+        <meta name="robots" content="index, follow">
+    
+        <!-- Open Graph Tags -->
+        <meta property="og:title" content="Concierge Service - Yetenbi Ethiopia Tours">
+        <meta property="og:description" content="Premium concierge service for seamless travel in Ethiopia. Hotel bookings, transfers, reservations, and personalized assistance.">
+        <meta property="og:image" content="https://yetenbiethiopiatours.com/images/image1.jpg">
+        <meta property="og:url" content="https://yetenbiethiopiatours.com/concierge-service.html">
+        <meta property="og:type" content="website">
+    
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="images/logo1.png">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Font Awesome CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css">
+    
+        <style>
+            /* Premium Hero Section */
+            .concierge-hero {
+                background: url('images/con2.jpg') center/cover no-repeat;
+                padding: 180px 0 120px;
+                text-align: center;
+                color: white;
+                margin-top: 100px;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .concierge-hero::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.3);
+                z-index: 1;
+            }
+            
+            .concierge-hero .container {
+                position: relative;
+                z-index: 2;
+            }
+            
+            .concierge-hero h1 {
+                font-size: 4rem;
+                font-weight: 700;
+                margin-bottom: 25px;
+                text-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+                animation: fadeInUp 1s ease-out;
+            }
+            
+            .concierge-hero h1 i {
+                color: #f8c107;
+                margin-right: 15px;
+                animation: ring 2s ease-in-out infinite;
+            }
+            
+            @keyframes ring {
+                0%, 100% { transform: rotate(0deg); }
+                25% { transform: rotate(-10deg); }
+                75% { transform: rotate(10deg); }
+            }
+            
+            .concierge-hero p {
+                font-size: 1.4rem;
+                margin-bottom: 40px;
+                opacity: 0.95;
+                font-weight: 300;
+                letter-spacing: 0.5px;
+                animation: fadeInUp 1s ease-out 0.2s both;
+            }
+            
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            /* Premium Service Cards */
+            .service-details {
+                padding: 100px 0;
+                background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+            }
+            
+            .intro-section {
+                text-align: center;
+                margin-bottom: 60px;
+            }
+            
+            .intro-section h2 {
+                font-size: 3rem;
+                font-weight: 700;
+                color: #1a3c5e;
+                margin-bottom: 20px;
+                position: relative;
+                display: inline-block;
+            }
+            
+            .intro-section h2::after {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80px;
+                height: 4px;
+                background: linear-gradient(90deg, #f8c107, #e6b306);
+                border-radius: 2px;
+            }
+            
+            .intro-section p {
+                font-size: 1.2rem;
+                color: #666;
+                max-width: 800px;
+                margin: 30px auto 0;
+                line-height: 1.8;
+            }
+            
+            .service-card {
+                background: white;
+                border-radius: 20px;
+                padding: 45px;
+                box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+                margin-bottom: 30px;
+                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                height: 100%;
+                position: relative;
+                overflow: hidden;
+                border: 1px solid rgba(248, 193, 7, 0.1);
+            }
+            
+            .service-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 5px;
+                background: linear-gradient(90deg, #f8c107, #e6b306);
+                transform: scaleX(0);
+                transition: transform 0.4s ease;
+            }
+            
+            .service-card:hover::before {
+                transform: scaleX(1);
+            }
+            
+            .service-card:hover {
+                transform: translateY(-10px) scale(1.02);
+                box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+                border-color: rgba(248, 193, 7, 0.3);
+            }
+            
+            .service-card h3 {
+                color: #1a3c5e;
+                font-size: 1.9rem;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                font-weight: 700;
+            }
+            
+            .service-card h3 i {
+                color: #f8c107;
+                font-size: 2.5rem;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(135deg, rgba(248, 193, 7, 0.1), rgba(230, 179, 6, 0.1));
+                border-radius: 15px;
+                transition: all 0.3s ease;
+            }
+            
+            .service-card:hover h3 i {
+                transform: scale(1.1) rotate(5deg);
+                background: linear-gradient(135deg, rgba(248, 193, 7, 0.2), rgba(230, 179, 6, 0.2));
+            }
+            
+            .service-card > p {
+                font-size: 1.05rem;
+                line-height: 1.8;
+                color: #555;
+                margin-bottom: 25px;
+            }
+            
+            .benefits-list {
+                list-style: none;
+                padding: 0;
+                margin-top: 20px;
+            }
+            
+            .benefits-list li {
+                padding: 15px 0;
+                border-bottom: 1px solid #f0f0f0;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                transition: all 0.3s ease;
+            }
+            
+            .benefits-list li:hover {
+                padding-left: 10px;
+                background: rgba(248, 193, 7, 0.05);
+                border-radius: 8px;
+                margin: 0 -10px;
+                padding-right: 10px;
+            }
+            
+            .benefits-list li:last-child {
+                border-bottom: none;
+            }
+            
+            .benefits-list li i {
+                color: #f8c107;
+                font-size: 1.3rem;
+                width: 24px;
+                text-align: center;
+            }
+            
+            .benefits-list li span {
+                color: #333;
+                font-weight: 500;
+            }
+            
+            /* Car Rental Section */
+            .car-rental-section {
+                margin-top: 80px;
+                padding: 60px 0;
+            }
+            
+            .car-image-card {
+                position: relative;
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                height: 100%;
+                min-height: 300px;
+            }
+            
+            .car-image-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            }
+            
+            .car-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+                min-height: 300px;
+            }
+            
+            .car-image-card:hover .car-image {
+                transform: scale(1.1);
+            }
+            
+            .car-image-overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: linear-gradient(to top, rgba(26, 60, 94, 0.9) 0%, transparent 100%);
+                padding: 30px;
+                transform: translateY(100%);
+                transition: transform 0.4s ease;
+            }
+            
+            .car-image-card:hover .car-image-overlay {
+                transform: translateY(0);
+            }
+            
+            .car-image-content h4 {
+                color: white;
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+            
+            .car-image-content p {
+                color: #f8c107;
+                font-size: 1rem;
+                margin: 0;
+                font-weight: 500;
+            }
+            
+            .car-rental-info {
+                margin-top: 60px;
+            }
+            
+            .rental-feature {
+                text-align: center;
+                padding: 40px 30px;
+                background: white;
+                border-radius: 20px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+                transition: all 0.3s ease;
+                height: 100%;
+            }
+            
+            .rental-feature:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 15px 40px rgba(248, 193, 7, 0.2);
+            }
+            
+            .rental-feature i {
+                font-size: 3rem;
+                color: #f8c107;
+                margin-bottom: 20px;
+                display: inline-block;
+                transition: transform 0.3s ease;
+            }
+            
+            .rental-feature:hover i {
+                transform: scale(1.2) rotate(5deg);
+            }
+            
+            .rental-feature h4 {
+                color: #1a3c5e;
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+            
+            .rental-feature p {
+                color: #666;
+                font-size: 1.05rem;
+                line-height: 1.6;
+                margin: 0;
+            }
+            
+            /* Premium CTA Section */
+            .cta-box {
+                background: linear-gradient(135deg, #1a3c5e 0%, #2c5f7d 100%);
+                color: white;
+                padding: 70px 50px;
+                border-radius: 25px;
+                text-align: center;
+                margin-top: 60px;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 20px 60px rgba(26, 60, 94, 0.3);
+            }
+            
+            .cta-box::before {
+                content: '';
+                position: absolute;
+                top: -50%;
+                right: -50%;
+                width: 200%;
+                height: 200%;
+                background: radial-gradient(circle, rgba(248, 193, 7, 0.1) 0%, transparent 70%);
+                animation: rotate 20s linear infinite;
+            }
+            
+            @keyframes rotate {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
+            
+            .cta-box .container-inner {
+                position: relative;
+                z-index: 2;
+            }
+            
+            .cta-box h2 {
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+                color: white;
+            }
+            
+            .cta-box p {
+                font-size: 1.3rem;
+                margin-bottom: 40px;
+                opacity: 0.95;
+            }
+            
+            .cta-buttons {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            .btn-premium {
+                padding: 16px 40px;
+                border-radius: 50px;
+                font-weight: 600;
+                font-size: 1.1rem;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                border: 2px solid transparent;
+            }
+            
+            .btn-premium-primary {
+                background: linear-gradient(135deg, #f8c107, #e6b306);
+                color: #1a3c5e;
+                box-shadow: 0 10px 30px rgba(248, 193, 7, 0.3);
+            }
+            
+            .btn-premium-primary:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 15px 40px rgba(248, 193, 7, 0.4);
+                color: #1a3c5e;
+            }
+            
+            .btn-premium-secondary {
+                background: transparent;
+                color: white;
+                border: 2px solid white;
+            }
+            
+            .btn-premium-secondary:hover {
+                background: white;
+                color: #1a3c5e;
+                transform: translateY(-3px);
+            }
+            
+            /* Trust Indicators */
+            .trust-section {
+                background: white;
+                padding: 60px 0;
+                border-top: 1px solid #e0e0e0;
+                border-bottom: 1px solid #e0e0e0;
+            }
+            
+            .trust-item {
+                text-align: center;
+                padding: 20px;
+            }
+            
+            .trust-item i {
+                font-size: 3rem;
+                color: #f8c107;
+                margin-bottom: 15px;
+            }
+            
+            .trust-item h4 {
+                color: #1a3c5e;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            
+            .trust-item p {
+                color: #666;
+                font-size: 0.95rem;
+            }
+            
+            @media (max-width: 768px) {
+                .concierge-hero h1 {
+                    font-size: 2.5rem;
+                }
+                
+                .concierge-hero {
+                    padding: 140px 0 80px;
+                    margin-top: 80px;
+                }
+                
+                .intro-section h2 {
+                    font-size: 2rem;
+                }
+                
+                .service-card {
+                    padding: 30px;
+                }
+                
+                .cta-box {
+                    padding: 50px 30px;
+                }
+                
+                .cta-box h2 {
+                    font-size: 2rem;
+                }
+                
+                .car-rental-section {
+                    margin-top: 50px;
+                    padding: 40px 0;
+                }
+                
+                .car-image-card {
+                    margin-bottom: 30px;
+                    min-height: 250px;
+                }
+                
+                .car-image {
+                    min-height: 250px;
+                }
+                
+                .car-image-overlay {
+                    transform: translateY(0);
+                    background: linear-gradient(to top, rgba(26, 60, 94, 0.8) 0%, transparent 100%);
+                }
+                
+                .car-image-content h4 {
+                    font-size: 1.3rem;
+                }
+                
+                .car-rental-info {
+                    margin-top: 40px;
+                }
+                
+                .rental-feature {
+                    padding: 30px 20px;
+                    margin-bottom: 20px;
+                }
+                
+                .rental-feature i {
+                    font-size: 2.5rem;
+                }
+                
+                .rental-feature h4 {
+                    font-size: 1.2rem;
+                }
+                
+                .rental-feature p {
+                    font-size: 0.95rem;
+                }
+            }
+        </style>
+    </head>
+<body>
+    <!-- Top Navbar -->
+    <div class="top-navbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="top-nav-contact">
+                        <a href="tel:+251913271706"><i class="fas fa-phone-alt"></i> +251 913 271706</a>
+                        <a href="mailto:yetenbiethiopiatours@gmail.com"><i class="fas fa-envelope"></i> yetenbiethiopiatours@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="top-nav-social">
+                        <a href="https://web.facebook.com/profile.php?id=61578615547963" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/Yetenbitour" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/yetenbiethiopiatours/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@yetenbiethiopiatours" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo1.png" alt="Yetenbi Ethiopia Tours">
+                Yetenbi
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ethiopiaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ethiopia
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ethiopiaDropdown">
+                            <li><a class="dropdown-item" href="index.html#about-us">The Country</a></li>
+                            <li><a class="dropdown-item" href="index.html#about-us">Getting There</a></li>
+                            <li><a class="dropdown-item" href="index.html#about-us">Visa and Immigration</a></li>
+                            <li><a class="dropdown-item" href="index.html#about-us">Best Time to Travel</a></li>
+                            <li><a class="dropdown-item" href="index.html#about-us">Health and Safety</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="toursDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tour Packages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="toursDropdown">
+                            <li><a class="dropdown-item" href="addis-ababa-city-tour.html">Addis Ababa City Tours</a></li>
+                            <li><a class="dropdown-item" href="index.html#tours">Day Trips & Excursions</a></li>
+                            <li><a class="dropdown-item" href="index.html#tours">Group Tour</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="index.html#tours">Northern Ethiopia</a></li>
+                            <li><a class="dropdown-item" href="index.html#tours">Southern Ethiopia</a></li>
+                            <li><a class="dropdown-item" href="index.html#tours">Eastern Ethiopia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="activitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Activities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="activitiesDropdown">
+                            <li><a class="dropdown-item" href="index.html#tours">Experiences</a></li>
+                            <li><a class="dropdown-item" href="index.html#hikes">Trekking and Hiking</a></li>
+                            <li><a class="dropdown-item" href="index.html#tours">Adventure and Safari</a></li>
+                            <li><a class="dropdown-item" href="index.html#tours">Coffee Tours</a></li>
+                            <li><a class="dropdown-item" href="index.html#tours">Birding Tours</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="true">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesDropdown" style="min-width: 200px;">
+                            <li><a class="dropdown-item active" href="concierge-service.html"><i class="fas fa-concierge-bell me-2"></i>Concierge Service</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="nav-link btn-book" href="index.html#contact">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Concierge Hero Section -->
+    <section class="concierge-hero">
+        <div class="container">
+            <h1><i class="fas fa-concierge-bell"></i>Concierge Service</h1>
+            <p>Premium travel assistance for a seamless Ethiopian journey</p>
+            <a href="https://wa.me/251913271706" target="_blank" class="btn btn-light btn-lg" style="padding: 15px 35px; border-radius: 50px; font-weight: 600; font-size: 1.1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: all 0.3s ease;">
+                <i class="fab fa-whatsapp"></i> Contact on WhatsApp <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Trust Indicators -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="trust-item">
+                        <i class="fas fa-award"></i>
+                        <h4>Premium Service</h4>
+                        <p>Excellence in every detail</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="trust-item">
+                        <i class="fas fa-clock"></i>
+                        <h4>24/7 Available</h4>
+                        <p>Always here to help</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="trust-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Trusted & Secure</h4>
+                        <p>Your safety is our priority</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="trust-item">
+                        <i class="fas fa-star"></i>
+                        <h4>5-Star Rated</h4>
+                        <p>Loved by travelers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details Section -->
+    <section class="service-details">
+        <div class="container">
+            <div class="intro-section">
+                <h2>About Our Concierge Service</h2>
+                <p>
+                   Experience personalized travel assistance with Yetenbi Ethiopia Tours’ premium concierge service, proudly recognized as one of the first tour operators in Ethiopia to offer a well-organized, dedicated concierge service. We understand that planning a trip to Ethiopia can be overwhelming, which is why our expert team handles every detail for you—so you can focus on enjoying your journey. From hotel bookings and airport transfers to restaurant reservations and custom travel itineraries, we ensure a seamless, stress-free, and high-quality travel experience across Ethiopia. 
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="service-card">
+                        <h3><i class="fas fa-hotel"></i> Hotel Booking</h3>
+                        <p>We help you find and book the perfect accommodation that matches your preferences and budget. Whether you're looking for luxury hotels, boutique properties, or budget-friendly options, we have partnerships with the best hotels across Ethiopia.</p>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check-circle"></i><span>Best rates guaranteed</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Wide selection of properties</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Personalized recommendations</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Easy booking process</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="service-card">
+                        <h3><i class="fas fa-plane"></i> Airport Transfers</h3>
+                        <p>Reliable and comfortable airport pickup and drop-off services with professional drivers. We ensure you arrive safely and on time, whether you're arriving at Bole International Airport or departing for your next destination.</p>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check-circle"></i><span>Meet and greet service</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Flight monitoring</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Comfortable vehicles</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Professional drivers</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="service-card">
+                        <h3><i class="fas fa-utensils"></i> Restaurant Reservations</h3>
+                        <p>Book tables at the best restaurants in Addis Ababa and throughout Ethiopia. Experience authentic Ethiopian cuisine, international dining, and hidden culinary gems recommended by our local experts.</p>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check-circle"></i><span>Top-rated restaurants</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Authentic Ethiopian cuisine</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Dietary requirements accommodated</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Special occasion arrangements</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="service-card">
+                        <h3><i class="fas fa-calendar-check"></i> Custom Itineraries</h3>
+                        <p>Personalized travel plans tailored to your interests, schedule, and budget. Our travel experts work with you to create the perfect itinerary that includes all the experiences you want while maximizing your time in Ethiopia.</p>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check-circle"></i><span>Tailored to your interests</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Flexible scheduling</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Budget optimization</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Expert recommendations</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="service-card">
+                        <h3><i class="fas fa-language"></i> Translation Services</h3>
+                        <p>Professional interpreters available for meetings, tours, business needs, and cultural experiences. Our multilingual team speaks Amharic, English, and other local languages to ensure clear communication.</p>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check-circle"></i><span>Professional interpreters</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Multiple languages</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Business and cultural contexts</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Real-time translation</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="service-card">
+                        <h3><i class="fas fa-headset"></i> 24/7 Support</h3>
+                        <p>Round-the-clock assistance for any questions, emergencies, or last-minute changes during your trip. Our dedicated support team is always available to help ensure your journey is smooth and worry-free.</p>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check-circle"></i><span>24/7 availability</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Emergency assistance</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Quick response time</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Multi-channel support</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Transportation & Chauffeur Services -->
+                <div class="col-lg-4">
+                    <div class="service-card">
+                        <h3><i class="fas fa-car"></i> Transportation & Chauffeur Services</h3>
+                        <p>Premium transportation solutions for all your travel needs in Ethiopia. From city tours to long-distance journeys, we provide comfortable and reliable chauffeur services.</p>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check-circle"></i><span>Private car with driver</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>City & long-distance transport</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Executive vehicles</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Event & Special Occasion Planning -->
+                <div class="col-lg-4">
+                    <div class="service-card">
+                        <h3><i class="fas fa-calendar-heart"></i> Event & Special Occasion Planning</h3>
+                        <p>Make your special moments unforgettable with our personalized event planning services. We handle every detail to ensure your celebration is perfect and memorable.</p>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check-circle"></i><span>Honeymoons</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Anniversaries</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Birthday & surprise arrangements</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Shopping & Souvenir Assistance -->
+                <div class="col-lg-4">
+                    <div class="service-card">
+                        <h3><i class="fas fa-shopping-bag"></i> Shopping & Souvenir Assistance</h3>
+                        <p>Discover authentic Ethiopian crafts and souvenirs with our expert shopping guidance. We help you find the best local markets and assist with export services.</p>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check-circle"></i><span>Handicrafts & local markets</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Ethical shopping guidance</span></li>
+                            <li><i class="fas fa-check-circle"></i><span>Export assistance for art & coffee</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car Rental Service Section -->
+            <div class="car-rental-section">
+                <div class="intro-section">
+                    <h2>Car Rental Service</h2>
+                    <p>Explore Ethiopia at your own pace with our reliable and comfortable car rental service. Choose from our fleet of well-maintained vehicles for your journey across this beautiful country.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="car-image-card">
+                            <img src="images/group1.jpg" alt="Car Rental Fleet 1" class="car-image">
+                            <div class="car-image-overlay">
+                                <div class="car-image-content">
+                                    <h4>Premium Vehicles</h4>
+                                    <p>Comfortable and reliable</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="car-image-card">
+                            <img src="images/group2.jpg" alt="Car Rental Fleet 2" class="car-image">
+                            <div class="car-image-overlay">
+                                <div class="car-image-content">
+                                    <h4>Executive Fleet</h4>
+                                    <p>Luxury transportation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="car-image-card">
+                            <img src="images/group3.jpg" alt="Car Rental Fleet 3" class="car-image">
+                            <div class="car-image-overlay">
+                                <div class="car-image-content">
+                                    <h4>SUV & 4WD</h4>
+                                    <p>Perfect for adventures</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-rental-info">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="rental-feature">
+                                <i class="fas fa-car-side"></i>
+                                <h4>Wide Selection</h4>
+                                <p>Choose from sedans, SUVs, and executive vehicles</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="rental-feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <h4>Fully Insured</h4>
+                                <p>All vehicles come with comprehensive insurance</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="rental-feature">
+                                <i class="fas fa-tools"></i>
+                                <h4>Well Maintained</h4>
+                                <p>Regularly serviced and inspected vehicles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <div class="container-inner">
+                    <h2>Ready to Experience Premium Service?</h2>
+                    <p>Let us handle all the details of your Ethiopian adventure</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/251913271706" target="_blank" class="btn-premium btn-premium-primary">
+                            <i class="fab fa-whatsapp"></i> Contact on WhatsApp <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="tel:+251913271706" class="btn-premium btn-premium-secondary">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-overlay"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="images/logo1.png" alt="Yetenbi Ethiopia Tours" class="footer-logo me-3">
+                            <h3 class="text-uppercase fw-bold mb-0">Yetenbi Ethiopia Tours</h3>
+                        </div>
+                        <p>Your trusted travel partner for discovering the rich culture and breathtaking landscapes of Ethiopia.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0">&copy; 2025 Yetenbi Ethiopia Tours. All Rights Reserved.</p>
+                        <a href="index.html" class="text-decoration-none mt-2 d-inline-block">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navbarNav = document.getElementById('navbarNav');
+            
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    navbarNav.classList.toggle('show');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

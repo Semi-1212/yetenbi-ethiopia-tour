@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Coffee Tours Ethiopia | Authentic Coffee Farm Tours & Traditional Ceremony | Yetenbi Tours</title>
+        <meta name="description" content="Discover the birthplace of coffee with our authentic Ethiopian coffee tours. Experience traditional coffee ceremonies, visit coffee plantations, learn coffee processing, and explore Yirgacheffe, Sidamo, and Harrar regions. Book your coffee tour in Ethiopia today.">
+        <meta name="keywords" content="Ethiopia coffee tour, Ethiopian coffee ceremony, coffee farm tour Ethiopia, Yirgacheffe coffee tour, Sidamo coffee tour, Harrar coffee tour, coffee plantation Ethiopia, traditional coffee ceremony, coffee origin tour, Ethiopia coffee experience, coffee processing tour, coffee tasting Ethiopia">
+        <meta property="og:title" content="Coffee Tours Ethiopia | Authentic Coffee Farm Tours & Traditional Ceremony">
+        <meta property="og:description" content="Experience authentic Ethiopian coffee culture with guided tours to coffee farms, traditional ceremonies, and coffee processing demonstrations in the birthplace of coffee.">
+        <meta property="og:type" content="website">
+        <meta name="author" content="Yetenbi Ethiopia Tours">
+        <link rel="icon" type="image/png" href="../images/logo1.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        <style>
+            .activity-hero {
+                padding: 180px 0 120px;
+                text-align: center;
+                color: white;
+                margin-top: 100px;
+                position: relative;
+                overflow: hidden;
+                min-height: 600px;
+                display: flex;
+                align-items: center;
+            }
+            
+            .hero-video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                transform: translate(-50%, -50%);
+                z-index: 0;
+                object-fit: cover;
+            }
+            
+            .activity-hero::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 1;
+            }
+            
+            .activity-hero .container {
+                position: relative;
+                z-index: 2;
+            }
+            
+            .activity-hero h1 {
+                font-size: 3.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+                text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+                animation: fadeInUp 1s ease-out;
+            }
+            
+            .activity-hero p {
+                text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+                animation: fadeInUp 1s ease-out 0.2s both;
+            }
+            
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            .activity-content {
+                padding: 80px 0;
+                background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            }
+            
+            .activity-card {
+                background: white;
+                border-radius: 20px;
+                padding: 50px;
+                box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+                margin-bottom: 30px;
+                transition: all 0.3s ease;
+                border: 1px solid rgba(0,0,0,0.05);
+            }
+            
+            .activity-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            }
+            
+            .activity-card h2 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: #1a3c5e;
+                margin-bottom: 25px;
+                position: relative;
+                padding-bottom: 15px;
+            }
+            
+            .activity-card h2::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 80px;
+                height: 4px;
+                background: linear-gradient(90deg, #f8c107, #00af87);
+                border-radius: 2px;
+            }
+            
+            .activity-card p {
+                font-size: 1.1rem;
+                line-height: 1.8;
+                color: #555;
+                margin-bottom: 20px;
+            }
+            
+            .content-features {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 25px;
+                margin-top: 40px;
+            }
+            
+            .feature-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 15px;
+                padding: 20px;
+                background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+                border-radius: 12px;
+                transition: all 0.3s ease;
+                border-left: 4px solid #f8c107;
+            }
+            
+            .feature-item:hover {
+                transform: translateX(5px);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            }
+            
+            .feature-icon {
+                width: 50px;
+                height: 50px;
+                background: linear-gradient(135deg, #f8c107, #ffd700);
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+            
+            .feature-icon i {
+                color: white;
+                font-size: 1.5rem;
+            }
+            
+            .feature-content h3 {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #1a3c5e;
+                margin-bottom: 8px;
+            }
+            
+            .feature-content p {
+                font-size: 0.95rem;
+                color: #666;
+                line-height: 1.6;
+                margin: 0;
+            }
+            
+            .seo-highlight {
+                background: linear-gradient(135deg, #fff9e6 0%, #fff5d6 100%);
+                padding: 30px;
+                border-radius: 15px;
+                margin-top: 30px;
+                border-left: 5px solid #f8c107;
+            }
+            
+            .seo-highlight h3 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: #1a3c5e;
+                margin-bottom: 15px;
+            }
+            
+            .seo-highlight ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .seo-highlight ul li {
+                padding: 10px 0;
+                padding-left: 30px;
+                position: relative;
+                color: #555;
+                font-size: 1rem;
+                line-height: 1.7;
+            }
+            
+            .seo-highlight ul li::before {
+                content: '\f00c';
+                font-family: 'Font Awesome 6 Free';
+                font-weight: 900;
+                position: absolute;
+                left: 0;
+                color: #00af87;
+                font-size: 1rem;
+            }
+            
+            @media (max-width: 768px) {
+                .activity-card {
+                    padding: 30px 20px;
+                }
+                
+                .activity-card h2 {
+                    font-size: 2rem;
+                }
+                
+                .content-features {
+                    grid-template-columns: 1fr;
+                }
+                
+                .seo-highlight {
+                    padding: 20px;
+                }
+            }
+            
+            /* Tour Cards Section */
+            .tours-section {
+                padding: 60px 0;
+                background: #f8f9fa;
+            }
+            
+            .tours-section h2 {
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 700;
+                color: #1a3c5e;
+                margin-bottom: 40px;
+            }
+            
+            .tour-card {
+                background: white;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+                transition: all 0.3s ease;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+            
+            .tour-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            }
+            
+            .tour-card-image {
+                position: relative;
+                width: 100%;
+                height: 180px;
+                overflow: hidden;
+            }
+            
+            .tour-image-slider {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                overflow: hidden;
+            }
+            
+            .tour-image-slide {
+                min-width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: opacity 0.5s ease;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            
+            .tour-image-slide.active {
+                opacity: 1;
+                position: relative;
+            }
+            
+            .tour-image-slide img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+            .tour-image-nav {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(255, 255, 255, 0.9);
+                border: none;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                z-index: 3;
+                transition: all 0.3s ease;
+                opacity: 0.7;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            }
+            
+            .tour-card:hover .tour-image-nav {
+                opacity: 1;
+            }
+            
+            .tour-image-nav:active {
+                transform: translateY(-50%) scale(0.95);
+            }
+            
+            @media (max-width: 768px) {
+                .tour-image-nav {
+                    opacity: 0.8;
+                    width: 30px;
+                    height: 30px;
+                }
+                
+                .tour-image-nav i {
+                    font-size: 0.8rem;
+                }
+            }
+            
+            .tour-image-nav:hover {
+                background: rgba(255, 255, 255, 1);
+                transform: translateY(-50%) scale(1.1);
+            }
+            
+            .tour-image-nav.prev {
+                left: 10px;
+            }
+            
+            .tour-image-nav.next {
+                right: 10px;
+            }
+            
+            .tour-image-nav i {
+                color: #1a3c5e;
+                font-size: 0.9rem;
+            }
+            
+            .tour-image-nav:active {
+                transform: translateY(-50%) scale(0.95);
+            }
+            
+            .tour-badge {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                background: #00af87;
+                color: white;
+                padding: 4px 10px;
+                border-radius: 15px;
+                font-size: 0.65rem;
+                font-weight: 700;
+                z-index: 2;
+            }
+            
+            .tour-card-content {
+                padding: 15px;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .tour-category {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                color: #666;
+                font-size: 0.75rem;
+                margin-bottom: 8px;
+            }
+            
+            .tour-category i {
+                color: #f8c107;
+                font-size: 0.8rem;
+            }
+            
+            .tour-title {
+                font-size: 1rem;
+                font-weight: 700;
+                color: #1a3c5e;
+                margin-bottom: 10px;
+                line-height: 1.3;
+            }
+            
+            .tour-price-info {
+                margin-top: auto;
+                padding-top: 10px;
+                border-top: 1px solid #e0e0e0;
+            }
+            
+            .tour-price {
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: #1a3c5e;
+                margin-bottom: 5px;
+            }
+            
+            .tour-price-label {
+                font-size: 0.7rem;
+                color: #999;
+                margin-bottom: 8px;
+            }
+            
+            .tour-duration {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                color: #666;
+                font-size: 0.8rem;
+                margin-bottom: 10px;
+            }
+            
+            .tour-duration i {
+                color: #f8c107;
+                font-size: 0.85rem;
+            }
+            
+            .btn-inquire {
+                background: linear-gradient(135deg, #25D366, #128C7E);
+                color: white;
+                padding: 8px 20px;
+                border-radius: 20px;
+                font-weight: 600;
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+                width: 100%;
+                border: none;
+                font-size: 0.85rem;
+            }
+            
+            .btn-inquire:hover {
+                background: linear-gradient(135deg, #128C7E, #25D366);
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+                color: white;
+            }
+            
+            @media (max-width: 768px) {
+                .activity-hero {
+                    padding: 140px 0 80px;
+                    min-height: 500px;
+                    margin-top: 80px;
+                }
+                
+                .activity-hero h1 {
+                    font-size: 2.5rem;
+                }
+                
+                .hero-video {
+                    min-height: 100%;
+                }
+                
+                .tours-section {
+                    padding: 40px 0;
+                }
+                
+                .tours-section h2 {
+                    font-size: 1.75rem;
+                    margin-bottom: 30px;
+                }
+                
+                .tour-card-image {
+                    height: 150px;
+                }
+                
+                .tour-card-content {
+                    padding: 12px;
+                }
+                
+                .tour-title {
+                    font-size: 0.95rem;
+                }
+                
+                .tour-price {
+                    font-size: 1rem;
+                }
+                
+                .btn-inquire {
+                    padding: 7px 15px;
+                    font-size: 0.8rem;
+                }
+            }
+            
+            @media (max-width: 576px) {
+                .activity-hero {
+                    min-height: 400px;
+                }
+                
+                .activity-hero h1 {
+                    font-size: 2rem;
+                }
+            }
+        </style>
+    </head>
+<body>
+    <!-- Top Navbar -->
+    <div class="top-navbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="top-nav-contact">
+                        <a href="tel:+251913271706"><i class="fas fa-phone-alt"></i> +251 913 271706</a>
+                        <a href="mailto:yetenbiethiopiatours@gmail.com"><i class="fas fa-envelope"></i> yetenbiethiopiatours@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="top-nav-social">
+                        <a href="https://web.facebook.com/profile.php?id=61578615547963" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/Yetenbitour" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/yetenbiethiopiatours/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@yetenbiethiopiatours" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo1.png" alt="Yetenbi Ethiopia Tours">
+                Yetenbi
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="activitiesDropdown" role="button" data-bs-toggle="dropdown">
+                            Activities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="activitiesDropdown">
+                            <li><a class="dropdown-item" href="experiences.html">Experiences</a></li>
+                            <li><a class="dropdown-item" href="trekking-and-hiking.html">Trekking and Hiking</a></li>
+                            <li><a class="dropdown-item" href="adventure-and-safari.html">Adventure and Safari</a></li>
+                            <li><a class="dropdown-item active" href="coffee-tour.html">Coffee Tours</a></li>
+                            <li><a class="dropdown-item" href="birding-tour.html">Birding Tours</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link btn-book" href="../index.html#contact">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="activity-hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="../images/coffee vid.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container">
+            <h1><i class="fas fa-coffee"></i> Coffee Tours</h1>
+            <p>Discover the birthplace of coffee and experience authentic Ethiopian coffee culture</p>
+            <a href="https://wa.me/251913271706" target="_blank" class="btn btn-light btn-lg mt-3" style="animation: fadeInUp 1s ease-out 0.4s both;">
+                <i class=""></i> Book Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="activity-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="activity-card">
+                        <h2>Discover the Birthplace of Coffee: Authentic Ethiopian Coffee Tours</h2>
+                        <p>Ethiopia is the legendary birthplace of coffee, where the world's most beloved beverage was first discovered over a thousand years ago. Our immersive coffee tours take you deep into the heart of Ethiopia's coffee culture, offering authentic experiences that connect you with the rich traditions, passionate farmers, and exceptional coffee that make Ethiopia a coffee lover's paradise.</p>
+                        
+                        <p>From the highlands of Yirgacheffe to the ancient forests of Harrar, our carefully curated coffee tours showcase the diverse regions that produce some of the world's finest specialty coffees. Experience the complete journey from bean to cup, participate in traditional Ethiopian coffee ceremonies, and discover why Ethiopian coffee is celebrated globally for its unique flavors and cultural significance.</p>
+                        
+                        <div class="content-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-mountain"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Visit Coffee Plantations</h3>
+                                    <p>Explore working coffee farms in Yirgacheffe, Sidamo, and Harrar regions, where you'll see coffee trees growing in their natural habitat and learn about organic farming practices.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-fire"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Traditional Coffee Ceremony</h3>
+                                    <p>Participate in the authentic Ethiopian coffee ceremony, a centuries-old ritual involving roasting, grinding, and brewing coffee in traditional clay pots (jebena) over charcoal.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Coffee Processing</h3>
+                                    <p>Witness the complete coffee processing journey from harvesting ripe coffee cherries to washing, drying, and roasting, learning traditional methods passed down through generations.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-wine-glass"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Coffee Tasting Sessions</h3>
+                                    <p>Enjoy guided coffee cupping sessions where you'll taste and compare different Ethiopian coffee varieties, learning to identify unique flavor profiles and characteristics.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="seo-highlight">
+                            <h3>Why Choose Our Ethiopian Coffee Tours?</h3>
+                            <ul>
+                                <li><strong>Authentic Experiences:</strong> Connect with local coffee farmers and communities, experiencing genuine Ethiopian hospitality and coffee culture firsthand.</li>
+                                <li><strong>Expert Guides:</strong> Learn from knowledgeable local guides who share deep insights into coffee cultivation, processing, and the cultural significance of coffee in Ethiopia.</li>
+                                <li><strong>Premium Coffee Regions:</strong> Visit world-renowned coffee-growing regions including Yirgacheffe (known for floral and citrus notes), Sidamo (famous for balanced flavors), and Harrar (celebrated for wine-like characteristics).</li>
+                                <li><strong>Cultural Immersion:</strong> Experience traditional coffee ceremonies, local customs, and the social importance of coffee in Ethiopian daily life and community gatherings.</li>
+                                <li><strong>Sustainable Tourism:</strong> Support local coffee farming communities and learn about sustainable, organic coffee production methods that preserve Ethiopia's coffee heritage.</li>
+                                <li><strong>Flexible Itineraries:</strong> Choose from half-day coffee ceremony experiences to multi-day tours exploring multiple coffee regions, all customizable to your interests and schedule.</li>
+                            </ul>
+                        </div>
+                        
+                        <p style="margin-top: 30px; font-size: 1.05rem; color: #1a3c5e; font-weight: 600;">Whether you're a coffee enthusiast, cultural traveler, or simply curious about the origins of your morning brew, our Ethiopian coffee tours offer an unforgettable journey into the heart of coffee culture. Book your coffee tour today and discover why Ethiopia remains the spiritual home of coffee.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee Tours Cards Section -->
+    <section class="tours-section">
+        <div class="container">
+            <h2>Our Coffee Tour Packages</h2>
+            <div class="row g-4">
+                <!-- Tour 1: 5 Days Ethiopia Coffee Tours -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tour-card">
+                        <div class="tour-card-image">
+                            <div class="tour-image-slider" data-slider="tour1">
+                                <div class="tour-image-slide active">
+                                    <img src="../images/coffee2.jpg" alt="5 Days Ethiopia Coffee Tours">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee1.jpg" alt="5 Days Ethiopia Coffee Tours">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee11.jpg" alt="5 Days Ethiopia Coffee Tours">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee4.jpg" alt="5 Days Ethiopia Coffee Tours">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee5.jpg" alt="5 Days Ethiopia Coffee Tours">
+                                </div>
+                            </div>
+                            <button class="tour-image-nav prev" onclick="changeImage('tour1', -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="tour-image-nav next" onclick="changeImage('tour1', 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="tour-card-content">
+                            <div class="tour-category">
+                                <i class="fas fa-globe"></i>
+                                <span>Coffee Tours</span>
+                            </div>
+                            <h3 class="tour-title">5 Days Ethiopia Coffee Tours</h3>
+                            <div class="tour-price-info">
+                                <div class="tour-price">Request for Price</div>
+                                <div class="tour-duration">
+                                    <i class="fas fa-clock"></i>
+                                    <span>5 Days</span>
+                                </div>
+                                <a href="https://wa.me/251913271706" target="_blank" class="btn-inquire">
+                                    Inquire Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 2: 5 Days Ethiopian Combined Tours -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tour-card">
+                        <div class="tour-card-image">
+                            <div class="tour-image-slider" data-slider="tour2">
+                                <div class="tour-image-slide active">
+                                    <img src="../images/coffee3.jpg" alt="5 Days Ethiopian Combined Tours">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee13.jpg" alt="5 Days Ethiopian Combined Tours">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee5.jpg" alt="5 Days Ethiopian Combined Tours">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee6.jpg" alt="5 Days Ethiopian Combined Tours">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee7.jpg" alt="5 Days Ethiopian Combined Tours">
+                                </div>
+                            </div>
+                            <button class="tour-image-nav prev" onclick="changeImage('tour2', -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="tour-image-nav next" onclick="changeImage('tour2', 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="tour-card-content">
+                            <div class="tour-category">
+                                <i class="fas fa-globe"></i>
+                                <span>Customized</span>
+                            </div>
+                            <h3 class="tour-title">5 Days Ethiopian Combined Tours To Coffee Plantation & Rituals</h3>
+                            <div class="tour-price-info">
+                                <div class="tour-price">Request for Price</div>
+                                <div class="tour-duration">
+                                    <i class="fas fa-clock"></i>
+                                    <span>5 Days 4 Night</span>
+                                </div>
+                                <a href="https://wa.me/251913271706" target="_blank" class="btn-inquire">
+                                    Inquire Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 3: 8 Days Ethiopia Coffee Tours -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tour-card" style="cursor: pointer;" onclick="window.location.href='8-days-coffee-tour.html'">
+                        <div class="tour-card-image">
+                            <div class="tour-image-slider" data-slider="tour3">
+                                <div class="tour-image-slide active">
+                                    <img src="../images/coffee1.jpg" alt="8 Days Ethiopia Coffee Tours">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee10.jpg" alt="8 Days Ethiopia Coffee Tours">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee7.jpg" alt="8 Days Ethiopia Coffee Tours">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee8.jpg" alt="8 Days Ethiopia Coffee Tours">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee11.jpg" alt="8 Days Ethiopia Coffee Tours">
+                                </div>
+                            </div>
+                            <button class="tour-image-nav prev" onclick="event.stopPropagation(); changeImage('tour3', -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="tour-image-nav next" onclick="event.stopPropagation(); changeImage('tour3', 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="tour-card-content">
+                            <div class="tour-category">
+                                <i class="fas fa-globe"></i>
+                                <span>Coffee Tours</span>
+                            </div>
+                            <h3 class="tour-title">8 Days Ethiopia Coffee Tours</h3>
+                            <div class="tour-price-info">
+                                <div class="tour-price">Request for Price</div>
+                                <div class="tour-duration">
+                                    <i class="fas fa-clock"></i>
+                                    <span>8 Days</span>
+                                </div>
+                                <a href="8-days-coffee-tour.html" class="btn-inquire" onclick="event.stopPropagation();">
+                                    View Full Itinerary
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 4: Traditional Coffee Ceremony -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="tour-card">
+                        <div class="tour-card-image">
+                            <div class="tour-image-slider" data-slider="tour4">
+                                <div class="tour-image-slide active">
+                                    <img src="../images/coffee9.jpg" alt="Traditional Coffee Ceremony">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee8.jpg" alt="Traditional Coffee Ceremony">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee4.jpg" alt="Traditional Coffee Ceremony">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee10.jpg" alt="Traditional Coffee Ceremony">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee11.jpg" alt="Traditional Coffee Ceremony">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee12.jpg" alt="Traditional Coffee Ceremony">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee13.jpg" alt="Traditional Coffee Ceremony">
+                                </div>
+                                <div class="tour-image-slide">
+                                    <img src="../images/coffee14.jpg" alt="Traditional Coffee Ceremony">
+                                </div>
+                            </div>
+                            <button class="tour-image-nav prev" onclick="changeImage('tour4', -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="tour-image-nav next" onclick="changeImage('tour4', 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="tour-card-content">
+                            <div class="tour-category">
+                                <i class="fas fa-globe"></i>
+                                <span>Coffee Tours</span>
+                            </div>
+                            <h3 class="tour-title">Traditional Coffee Ceremony</h3>
+                            <div class="tour-price-info">
+                                <div class="tour-price">Request for Price</div>
+                                <div class="tour-duration">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Half Day</span>
+                                </div>
+                                <a href="https://wa.me/251913271706" target="_blank" class="btn-inquire">
+                                    Inquire Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-overlay"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="../images/logo1.png" alt="Yetenbi Ethiopia Tours" class="footer-logo me-3">
+                            <h3 class="text-uppercase fw-bold mb-0">Yetenbi Ethiopia Tours</h3>
+                        </div>
+                        <p>Your trusted travel partner for discovering the rich culture and breathtaking landscapes of Ethiopia.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0">&copy; 2025 Yetenbi Ethiopia Tours. All Rights Reserved.</p>
+                        <a href="../index.html" class="text-decoration-none mt-2 d-inline-block">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navbarNav = document.getElementById('navbarNav');
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    navbarNav.classList.toggle('show');
+                });
+            }
+        });
+
+        // Image carousel navigation function
+        function changeImage(sliderId, direction) {
+            const slider = document.querySelector(`[data-slider="${sliderId}"]`);
+            if (!slider) return;
+
+            const slides = slider.querySelectorAll('.tour-image-slide');
+            let currentIndex = -1;
+
+            // Find current active slide
+            slides.forEach((slide, index) => {
+                if (slide.classList.contains('active')) {
+                    currentIndex = index;
+                }
+            });
+
+            if (currentIndex === -1) return;
+
+            // Remove active class from current slide
+            slides[currentIndex].classList.remove('active');
+
+            // Calculate new index
+            let newIndex = currentIndex + direction;
+            if (newIndex < 0) {
+                newIndex = slides.length - 1;
+            } else if (newIndex >= slides.length) {
+                newIndex = 0;
+            }
+
+            // Add active class to new slide
+            slides[newIndex].classList.add('active');
+        }
+
+        // Add touch/swipe support for mobile devices
+        document.addEventListener('DOMContentLoaded', function() {
+            const sliders = document.querySelectorAll('.tour-image-slider');
+            
+            sliders.forEach(slider => {
+                let touchStartX = 0;
+                let touchEndX = 0;
+                
+                slider.addEventListener('touchstart', function(e) {
+                    touchStartX = e.changedTouches[0].screenX;
+                }, { passive: true });
+                
+                slider.addEventListener('touchend', function(e) {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe();
+                }, { passive: true });
+                
+                function handleSwipe() {
+                    const sliderId = slider.getAttribute('data-slider');
+                    if (touchEndX < touchStartX - 50) {
+                        // Swipe left - next image
+                        changeImage(sliderId, 1);
+                    }
+                    if (touchEndX > touchStartX + 50) {
+                        // Swipe right - previous image
+                        changeImage(sliderId, -1);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

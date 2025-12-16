@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>8 Days Ethiopia Coffee Tours - Full Itinerary | Yetenbi Ethiopia Tours</title>
+        <meta name="description" content="Experience an 8-day immersive coffee tour in Ethiopia. Visit Bonga (birthplace of coffee), explore Bebeka Coffee Plantation, discover Mankira, and participate in traditional coffee ceremonies. Complete itinerary included.">
+        <meta name="keywords" content="8 days coffee tour Ethiopia, Bonga coffee tour, Bebeka coffee plantation, Mankira coffee discovery, Jimma coffee tour, Ethiopia coffee itinerary, coffee origin tour Ethiopia">
+        <meta name="author" content="Yetenbi Ethiopia Tours">
+        <link rel="icon" type="image/png" href="../images/logo1.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        <style>
+            .tour-hero {
+                background: linear-gradient(135deg, rgba(26, 60, 94, 0.9), rgba(0, 175, 135, 0.8)), url('../images/coffee1.jpg') center/cover no-repeat;
+                padding: 180px 0 120px;
+                text-align: center;
+                color: white;
+                margin-top: 100px;
+                position: relative;
+            }
+            
+            .tour-hero h1 {
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+                text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            }
+            
+            .tour-hero .tour-meta {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                margin-top: 30px;
+                flex-wrap: wrap;
+            }
+            
+            .tour-meta-item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                background: rgba(255,255,255,0.2);
+                padding: 10px 20px;
+                border-radius: 25px;
+                backdrop-filter: blur(10px);
+            }
+            
+            .tour-meta-item i {
+                font-size: 1.2rem;
+            }
+            
+            .itinerary-section {
+                padding: 80px 0;
+                background: #f8f9fa;
+            }
+            
+            .itinerary-card {
+                background: white;
+                border-radius: 15px;
+                padding: 30px;
+                margin-bottom: 25px;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+                transition: all 0.3s ease;
+                border-left: 5px solid #f8c107;
+            }
+            
+            .itinerary-card:hover {
+                transform: translateX(5px);
+                box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            }
+            
+            .itinerary-card .day-number {
+                display: inline-block;
+                background: linear-gradient(135deg, #f8c107, #ffd700);
+                color: white;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 50px;
+                font-weight: 700;
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+            }
+            
+            .itinerary-card h3 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: #1a3c5e;
+                margin-bottom: 15px;
+            }
+            
+            .itinerary-card p {
+                color: #555;
+                line-height: 1.8;
+                font-size: 1rem;
+                margin: 0;
+            }
+            
+            .info-section {
+                padding: 80px 0;
+                background: white;
+            }
+            
+            .info-card {
+                background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+                border-radius: 15px;
+                padding: 30px;
+                margin-bottom: 30px;
+                border: 1px solid #e0e0e0;
+            }
+            
+            .info-card h3 {
+                font-size: 1.8rem;
+                font-weight: 700;
+                color: #1a3c5e;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .info-card h3 i {
+                color: #f8c107;
+            }
+            
+            .info-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .info-list li {
+                padding: 12px 0;
+                padding-left: 30px;
+                position: relative;
+                color: #555;
+                font-size: 1rem;
+                line-height: 1.7;
+                border-bottom: 1px solid #f0f0f0;
+            }
+            
+            .info-list li:last-child {
+                border-bottom: none;
+            }
+            
+            .info-list li::before {
+                content: '\f00c';
+                font-family: 'Font Awesome 6 Free';
+                font-weight: 900;
+                position: absolute;
+                left: 0;
+                color: #00af87;
+                font-size: 1rem;
+            }
+            
+            .info-list.excluded li::before {
+                content: '\f00d';
+                color: #dc3545;
+            }
+            
+            .cta-section {
+                padding: 60px 0;
+                background: linear-gradient(135deg, #1a3c5e, #00af87);
+                color: white;
+                text-align: center;
+            }
+            
+            .cta-section h2 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            
+            .cta-section p {
+                font-size: 1.2rem;
+                margin-bottom: 30px;
+                opacity: 0.9;
+            }
+            
+            .btn-cta {
+                background: white;
+                color: #1a3c5e;
+                padding: 15px 40px;
+                border-radius: 50px;
+                font-weight: 600;
+                font-size: 1.1rem;
+                text-decoration: none;
+                display: inline-block;
+                transition: all 0.3s ease;
+                border: 2px solid white;
+            }
+            
+            .btn-cta:hover {
+                background: transparent;
+                color: white;
+                transform: translateY(-3px);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            }
+            
+            .intro-section {
+                padding: 80px 0;
+                background: white;
+            }
+            
+            .intro-content {
+                background: linear-gradient(135deg, #fff9e6 0%, #fff5d6 100%);
+                padding: 40px;
+                border-radius: 15px;
+                border-left: 5px solid #f8c107;
+            }
+            
+            .intro-content h2 {
+                font-size: 2rem;
+                font-weight: 700;
+                color: #1a3c5e;
+                margin-bottom: 20px;
+            }
+            
+            .intro-content p {
+                color: #555;
+                line-height: 1.8;
+                font-size: 1.05rem;
+            }
+            
+            @media (max-width: 768px) {
+                .tour-hero {
+                    padding: 140px 0 80px;
+                    margin-top: 80px;
+                }
+                
+                .tour-hero h1 {
+                    font-size: 2rem;
+                }
+                
+                .tour-hero .tour-meta {
+                    gap: 15px;
+                }
+                
+                .tour-meta-item {
+                    padding: 8px 15px;
+                    font-size: 0.9rem;
+                }
+                
+                .itinerary-section, .info-section, .intro-section {
+                    padding: 50px 0;
+                }
+                
+                .intro-content {
+                    padding: 25px;
+                }
+            }
+        </style>
+    </head>
+<body>
+    <!-- Top Navbar -->
+    <div class="top-navbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="top-nav-contact">
+                        <a href="tel:+251913271706"><i class="fas fa-phone-alt"></i> +251 913 271706</a>
+                        <a href="mailto:yetenbiethiopiatours@gmail.com"><i class="fas fa-envelope"></i> yetenbiethiopiatours@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="top-nav-social">
+                        <a href="https://web.facebook.com/profile.php?id=61578615547963" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/Yetenbitour" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/yetenbiethiopiatours/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@yetenbiethiopiatours" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo1.png" alt="Yetenbi Ethiopia Tours">
+                Yetenbi
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="activitiesDropdown" role="button" data-bs-toggle="dropdown">
+                            Activities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="activitiesDropdown">
+                            <li><a class="dropdown-item" href="experiences.html">Experiences</a></li>
+                            <li><a class="dropdown-item" href="trekking-and-hiking.html">Trekking and Hiking</a></li>
+                            <li><a class="dropdown-item" href="adventure-and-safari.html">Adventure and Safari</a></li>
+                            <li><a class="dropdown-item active" href="coffee-tour.html">Coffee Tours</a></li>
+                            <li><a class="dropdown-item" href="birding-tour.html">Birding Tours</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link btn-book" href="../index.html#contact">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="tour-hero">
+        <div class="container">
+            <h1><i class="fas fa-coffee"></i> 8 Days Ethiopia Coffee Tours</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 0;">Journey to the Birthplace of Coffee</p>
+            <div class="tour-meta">
+                <div class="tour-meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>8 Days</span>
+                </div>
+                <div class="tour-meta-item">
+                    <i class="fas fa-car"></i>
+                    <span>4WD Vehicle</span>
+                </div>
+                <div class="tour-meta-item">
+                    <i class="fas fa-users"></i>
+                    <span>Private Tour</span>
+                </div>
+                <div class="tour-meta-item">
+                    <i class="fas fa-user-friends"></i>
+                    <span>2-12 People</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Ethiopian Coffee: The Origin Story</h2>
+                <p>The origin and history of coffee dates back to the 10th century, and possibly earlier with a number of reports and legends surrounding its first use. The native (undomesticated) origin of coffee is thought to have been Ethiopia. Ethiopia is the original home of the coffee (Arabica) plant. Kaffa, the province in the south-western highlands where they first blossomed, gave its name to coffee.</p>
+                <p style="margin-top: 15px;">The formal cultivation and use of coffee as a beverage began early in the 9th century. Prior to that, coffee trees grew wild in the forests of Kaffa, and many in the region were familiar with the berries and the drink. According to Ethiopia's ancient history, an Abyssinian goatherd, Kaldi, who lived around AD 850, discovered coffee. He observed his goats prancing excitedly and bleating loudly after chewing the bright red berries that grew on some green bushes nearby. Kaldi tried a few berries himself, and soon felt a sense of elation. He filled his pockets with the berries and ran home to announce his discovery. At his wife's suggestion, he took the berries to the Monks in the monastery near Lake Tana, the source of the Blue Nile River.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Itinerary Section -->
+    <section class="itinerary-section">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 700; color: #1a3c5e;">Detailed Itinerary</h2>
+            
+            <div class="itinerary-card">
+                <div class="day-number">1</div>
+                <h3>Day 1: Addis Ababa</h3>
+                <p>You will be met upon arrival and transferred to your hotel. Refresh and begin your sightseeing of Addis with a drive up to mount Entoto for a panoramic view of Addis. Descend down and drive to National museum where you will have a chance to spot the oldest hominids of 'Lucy' fossil. Visit and proceed to the Holy Trinity built during the WWII. Then proceed to Ethnographic museum, which use to be the palace of Emperor Hailesellase. To wrap up you drive to merkato, the biggest market in East Africa. Overnight in Addis.</p>
+            </div>
+
+            <div class="itinerary-card">
+                <div class="day-number">2</div>
+                <h3>Day 2: Addis Ababa - Jimma</h3>
+                <p>Early in the morning after breakfast, you will drive to Jimma (345 Km from Addis). On the way you will pass through beautiful landscapes as you drive through the Gibe River Valley. Later, you can visit Jimma Museum and King Abba Jiffar Place. You will have dinner and spend the night at the hotel. Overnight stay in Honey land hotel.</p>
+            </div>
+
+            <div class="itinerary-card">
+                <div class="day-number">3</div>
+                <h3>Day 3: Jimma - Bonga</h3>
+                <p>After an early morning breakfast you will drive to Bonga (125 Kms from Jimma) the birth place of coffee. And upon arrival at Bonga, you will visit to a traditional Kaffa house and learn about the culture of the Kaffa people. You will have lunch at Bonga. After having lunch drive to Ellelo, Adiyo falls, the Dadiben and Gora Hot spring. You will have dinner and spend the night at the hotel. Overnight stay in Kaffa Guest house.</p>
+            </div>
+
+            <div class="itinerary-card">
+                <div class="day-number">4</div>
+                <h3>Day 4: Mankira</h3>
+                <p>An early morning trek after breakfast will take you to Mankira, the place where coffee Arabica was discovered. En route visit the ancient Adaracha Medhane Alem church and the Gurguto natural Bridge. You will have dinner and spend the night at the hotel. Overnight stay in Kaffa Guest house.</p>
+            </div>
+
+            <div class="itinerary-card">
+                <div class="day-number">5</div>
+                <h3>Day 5: Bebeka</h3>
+                <p>You will be driven to Bebeka (30 km from Mizan Tefari) right after breakfast. There you will check into a hotel and after a brief break, you will have lunch. Later you will visit the largest Coffee Plantation in Ethiopia (covers some 6,000 hectares and is the largest and oldest Coffee Plantation in Ethiopia). In the evening, you will have dinner and spend the night at the hotel. Overnight stay in Bebeka Guest house, or Camping.</p>
+            </div>
+
+            <div class="itinerary-card">
+                <div class="day-number">6</div>
+                <h3>Day 6: Bebeka Coffee Plantation</h3>
+                <p>In the morning after having breakfast explores the coffee plantation from seedling to Coffee Bean. Taste the Ethiopian Coffee Arabica at Bebeka. Stay the day in Bebeka. Overnight stay in Bebeka Guest house, or Camping.</p>
+            </div>
+
+            <div class="itinerary-card">
+                <div class="day-number">7</div>
+                <h3>Day 7: Bebeka - Jimma</h3>
+                <p>In the morning after breakfast you drive back to Jimma. Depending on arrival you can continue a visit to the Jimma attractions. Visit the historical palace of Sultan Abba Jifar (1853 – 1925) that is standing at Jiren. Still stands with its colorful architectural beauty. And continue your visit to Jimma museum that displays most of the historical materials of King Abba Jifar, his kingdom and cultural objects of the local Oromo people and that of the other ethnic groups around Kaffa. Overnight stay in Honey land hotel, Jimma.</p>
+            </div>
+
+            <div class="itinerary-card">
+                <div class="day-number">8</div>
+                <h3>Day 8: Jimma - Addis Ababa - Departure</h3>
+                <p>In the morning, you will have breakfast and drive back to Addis Ababa. You will have lunch at Woliso. You will arrive in Addis Ababa late afternoon and you will do some shopping for souvenirs. In the evening attend a folkloric dinner where you will have a chance to taste several national dishes and watch dances of the various ethnic groups of Ethiopia. The traditional Ethiopian coffee ceremony will also be served. Later you will be transferred to the airport for your departure.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="info-card">
+                        <h3><i class="fas fa-check-circle"></i> Package Includes</h3>
+                        <ul class="info-list">
+                            <li>All entrance fees</li>
+                            <li>Bottled Water</li>
+                            <li>4WD vehicle with Driver and Fuel</li>
+                            <li>Professional Guide Service</li>
+                            <li>Accommodation as per itinerary</li>
+                            <li>Meals as specified in the itinerary</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="info-card">
+                        <h3><i class="fas fa-times-circle"></i> Package Excludes</h3>
+                        <ul class="info-list excluded">
+                            <li>Personal expenses (e.g., souvenirs, snacks)</li>
+                            <li>Tips and gratuities</li>
+                            <li>Optional activities or excursions</li>
+                            <li>Alcoholic Drinks</li>
+                            <li>Video and Camera Charges</li>
+                            <li>International flights</li>
+                            <li>Travel insurance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Experience the Birthplace of Coffee?</h2>
+            <p>Book your 8 Days Ethiopia Coffee Tour today and discover the authentic origins of coffee</p>
+            <a href="https://wa.me/251913271706" target="_blank" class="btn-cta">
+                <i class="fab fa-whatsapp"></i> Contact on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-overlay"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="../images/logo1.png" alt="Yetenbi Ethiopia Tours" class="footer-logo me-3">
+                            <h3 class="text-uppercase fw-bold mb-0">Yetenbi Ethiopia Tours</h3>
+                        </div>
+                        <p>Your trusted travel partner for discovering the rich culture and breathtaking landscapes of Ethiopia.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0">&copy; 2025 Yetenbi Ethiopia Tours. All Rights Reserved.</p>
+                        <a href="coffee-tour.html" class="text-decoration-none mt-2 d-inline-block me-3">Back to Coffee Tours</a>
+                        <a href="../index.html" class="text-decoration-none mt-2 d-inline-block">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navbarNav = document.getElementById('navbarNav');
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    navbarNav.classList.toggle('show');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

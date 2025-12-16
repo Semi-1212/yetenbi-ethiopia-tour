@@ -1,0 +1,87 @@
+{
+  "overallRating": 5,
+  "totalReviews": 100,
+  "ratingText": "EXCELLENT",
+  "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g293791-d33341522-Yetenbi_Ethiopia_Tours-Addis_Ababa.html",
+  "reviews": [
+    {
+      "id": 1,
+      "author": "yakob s",
+      "authorInitials": "YS",
+      "authorAvatar": "",
+      "contributions": 1,
+      "rating": 5,
+      "title": "14-Day Omo Valley, Danakil Depression, Lalibela & Gondar Tour - Exceptional Experience with Yetenbi Ethiopia Tours",
+      "text": "I just completed a 14-day Omo Valley, Danakil Depression, Lalibela, and Gondar tour with Yetenbi Ethiopia Tours, and the entire trip was exceptional. The guides were knowledgeable, the itinerary was well-planned, and the experiences were unforgettable.",
+      "date": "2024-12-15",
+      "verified": true,
+      "avatarColor": "#00af87"
+    },
+    {
+      "id": 2,
+      "author": "AMINATA F",
+      "authorInitials": "AF",
+      "authorAvatar": "",
+      "contributions": 1,
+      "rating": 5,
+      "title": "An unforgettable stopover in Addis Ababa: impeccable pick-up at the airport and return to the hotel.",
+      "text": "Program: visit to the National Museum, Unity Park and coffee ceremony. If you are calling in Addis Ababa, I highly recommend this tour operator, which provided excellent service and made our layover memorable.",
+      "date": "2024-12-10",
+      "verified": true,
+      "avatarColor": "#e74c3c"
+    },
+    {
+      "id": 3,
+      "author": "Seid B",
+      "authorInitials": "SB",
+      "authorAvatar": "",
+      "contributions": 2,
+      "rating": 5,
+      "title": "Incredible journey exploring Lalibela, Omo Valley, and Harar",
+      "text": "I had an incredible journey exploring Lalibela, the Omo Valley, and Harar with Yetenbi Ethiopia Tours. From start to finish, everything was perfectly organized - comfortable transport, great accommodation, and knowledgeable local guides who made the experience truly special.",
+      "date": "2024-12-05",
+      "verified": true,
+      "avatarColor": "#005792"
+    },
+    {
+      "id": 4,
+      "author": "Diana K",
+      "authorInitials": "DK",
+      "authorAvatar": "",
+      "contributions": 3,
+      "rating": 5,
+      "title": "Excellent tour to the Monastery and Portuguese Bridge",
+      "text": "Excellent chance to see the countryside and also important sites. Dagi and George gave us an excellent tour to the Monastery and the Portuguese Bridge. Dagi answered all our many questions and George drove patiently and well in the challenging traffic.",
+      "date": "2024-11-28",
+      "verified": true,
+      "avatarColor": "#f8c107"
+    },
+    {
+      "id": 5,
+      "author": "Michael C",
+      "authorInitials": "MC",
+      "authorAvatar": "",
+      "contributions": 1,
+      "rating": 5,
+      "title": "Great Layover Tour of Addis",
+      "text": "Great Layover Tour of Addis. Joseph was a wonderful guide. He was enthusiastic and friendly, as well as informative and insightful. We were in Addis Ababa for a long layover and decided to spend the time seeing a little of the city.",
+      "date": "2024-11-20",
+      "verified": true,
+      "avatarColor": "#e74c3c"
+    },
+    {
+      "id": 6,
+      "author": "Williams Family",
+      "authorInitials": "WF",
+      "authorAvatar": "",
+      "contributions": 1,
+      "rating": 5,
+      "title": "First trip to Addis exceeded expectations",
+      "text": "Abe was a great tour guide. Very knowledgeable and kind. George was our driver. He was patient and a very good driver. I think our experience exceeded my expectations. This was our first trip to Addis and I was nervous but it was fun and I learned a lot.",
+      "date": "2024-11-15",
+      "verified": true,
+      "avatarColor": "#005792"
+    }
+  ]
+}
+

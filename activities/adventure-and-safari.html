@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Adventure and Safari - Yetenbi Ethiopia Tours | Wildlife & Adventure Tours</title>
+        <meta name="description" content="Embark on thrilling adventure and safari tours in Ethiopia. Wildlife viewing, game drives, and exciting outdoor adventures.">
+        <meta name="keywords" content="Ethiopia safari, adventure tours Ethiopia, wildlife Ethiopia, game drives, outdoor adventures Ethiopia">
+        <meta name="author" content="Yetenbi Ethiopia Tours">
+        <link rel="icon" type="image/png" href="../images/logo1.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        <style>
+            :root {
+                --safari-gold: #f8c107;
+                --safari-dark: #1a1f24;
+                --safari-green: #3a6b4f;
+            }
+            .safari-hero {
+                margin-top: 90px;
+                min-height: 80vh;
+                background: url('../images/image15.jpg') center/cover no-repeat;
+                position: relative;
+                color: #fff;
+                display: flex;
+                align-items: center;
+            }
+            .safari-hero::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(120deg, rgba(10,16,24,0.85), rgba(33,48,66,0.6));
+            }
+            .safari-hero .container {
+                position: relative;
+                z-index: 1;
+                max-width: 900px;
+            }
+            .hero-pill {
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                padding: 8px 18px;
+                border-radius: 999px;
+                background: rgba(255,255,255,0.1);
+                border: 1px solid rgba(255,255,255,0.2);
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+                font-size: 0.85rem;
+            }
+            .safari-hero h1 {
+                font-size: clamp(2.8rem, 6vw, 4.5rem);
+                margin: 20px 0 15px;
+                text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            }
+            .hero-subtitle {
+                font-size: 1.2rem;
+                max-width: 650px;
+                margin-bottom: 30px;
+                color: #f5f5f5;
+            }
+            .hero-badges {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-bottom: 35px;
+            }
+            .hero-badge {
+                background: rgba(0,0,0,0.45);
+                border: 1px solid rgba(255,255,255,0.2);
+                border-radius: 10px;
+                padding: 10px 14px;
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                font-weight: 500;
+            }
+            .hero-cta {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            .hero-cta .btn-cta {
+                background: var(--safari-gold);
+                color: var(--safari-dark);
+                border: none;
+                font-weight: 700;
+                padding: 14px 30px;
+                border-radius: 999px;
+                text-transform: uppercase;
+                letter-spacing: 0.05rem;
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+            }
+            .hero-cta .btn-outline {
+                border: 2px solid rgba(255,255,255,0.7);
+                color: #fff;
+                background: transparent;
+                border-radius: 999px;
+                padding: 12px 26px;
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+            }
+            .safari-section {
+                padding: 80px 0;
+            }
+            .section-heading {
+                text-align: center;
+                margin-bottom: 45px;
+            }
+            .section-heading span {
+                text-transform: uppercase;
+                letter-spacing: 0.3rem;
+                color: var(--safari-green);
+                font-weight: 600;
+                font-size: 0.85rem;
+            }
+            .section-heading h2 {
+                font-size: 2.5rem;
+                color: #102027;
+                margin-top: 10px;
+            }
+            .safari-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 25px;
+            }
+            .tour-card {
+                border-radius: 18px;
+                overflow: hidden;
+                box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+                background: #fff;
+                display: flex;
+                flex-direction: column;
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+            .tour-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 30px 70px rgba(0,0,0,0.12);
+            }
+            .tour-media {
+                height: 190px;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+            }
+            .tour-tag {
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                padding: 6px 14px;
+                border-radius: 999px;
+                background: rgba(0,0,0,0.65);
+                color: #fff;
+                font-size: 0.85rem;
+            }
+            .tour-body {
+                padding: 22px;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+            .tour-body h3 {
+                font-size: 1.25rem;
+                color: #13202b;
+                margin-bottom: 10px;
+            }
+            .tour-meta {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+                font-size: 0.9rem;
+                color: #5c6670;
+                margin-bottom: 12px;
+            }
+            .tour-meta span {
+                display: inline-flex;
+                align-items: center;
+                gap: 5px;
+            }
+            .tour-body p {
+                flex: 1;
+                color: #4b5563;
+                margin-bottom: 18px;
+            }
+            .tour-footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .price-badge {
+                font-weight: 700;
+                color: var(--safari-green);
+                font-size: 1.1rem;
+            }
+            .tour-footer .btn {
+                border-radius: 999px;
+                padding: 8px 20px;
+                font-weight: 600;
+            }
+            .insights-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                gap: 20px;
+            }
+            .insight-card {
+                background: #0f1c24;
+                color: #fff;
+                border-radius: 16px;
+                padding: 25px;
+                min-height: 200px;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            }
+            .insight-card h4 {
+                margin-bottom: 10px;
+                color: var(--safari-gold);
+            }
+            .cta-safari {
+                background: linear-gradient(135deg, #12202c, #1f4231);
+                padding: 60px;
+                border-radius: 24px;
+                color: #fff;
+                text-align: center;
+                box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+            }
+            .cta-safari h3 {
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
+            @media (max-width: 768px) {
+                .hero-cta {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                .cta-safari {
+                    padding: 35px 25px;
+                }
+            }
+        </style>
+    </head>
+<body>
+    <!-- Top Navbar -->
+    <div class="top-navbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="top-nav-contact">
+                        <a href="tel:+251913271706"><i class="fas fa-phone-alt"></i> +251 913 271706</a>
+                        <a href="mailto:yetenbiethiopiatours@gmail.com"><i class="fas fa-envelope"></i> yetenbiethiopiatours@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="top-nav-social">
+                        <a href="https://web.facebook.com/profile.php?id=61578615547963" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/Yetenbitour" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/yetenbiethiopiatours/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@yetenbiethiopiatours" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo1.png" alt="Yetenbi Ethiopia Tours">
+                Yetenbi
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="activitiesDropdown" role="button" data-bs-toggle="dropdown">
+                            Activities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="activitiesDropdown">
+                            <li><a class="dropdown-item" href="experiences.html">Experiences</a></li>
+                            <li><a class="dropdown-item" href="trekking-and-hiking.html">Trekking and Hiking</a></li>
+                            <li><a class="dropdown-item active" href="adventure-and-safari.html">Adventure and Safari</a></li>
+                            <li><a class="dropdown-item" href="coffee-tour.html">Coffee Tours</a></li>
+                            <li><a class="dropdown-item" href="birding-tour.html">Birding Tours</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link btn-book" href="../index.html#contact">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="safari-hero">
+        <div class="container">
+            <span class="hero-pill"><i class="fas fa-bolt"></i> Off-Grid Adventures</span>
+            <h1>Adventure & Safari Journeys Across Ethiopia</h1>
+            <p class="hero-subtitle">Chase lava flows in the Danakil Depression, scout wildlife in Gambela, and follow nomadic routes across Rift Valley lakes with seasoned expedition leaders.</p>
+            <div class="hero-badges">
+                <div class="hero-badge"><i class="fas fa-mountain"></i> Multi-day expeditions</div>
+                <div class="hero-badge"><i class="fas fa-jeep"></i> 4x4 & air-conditioned fleet</div>
+                <div class="hero-badge"><i class="fas fa-user-shield"></i> Safety-first operations</div>
+                <div class="hero-badge"><i class="fas fa-handshake"></i> Community partnerships</div>
+            </div>
+            <div class="hero-cta">
+                <a href="#signature-adventures" class="btn-cta">Browse Signature Tours <i class="fas fa-arrow-down"></i></a>
+                <button class="btn-outline book-now-btn" data-tour="Adventure & Safari Custom" data-category="Hiking">
+                    <i class="fas fa-whatsapp"></i> Plan via WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Adventures -->
+    <section id="signature-adventures" class="safari-section">
+        <div class="container">
+            <div class="section-heading">
+                <span>Inspired by Ethiopia's wild corridors</span>
+                <h2>Signature Adventure & Safari Tours</h2>
+                <p class="text-muted">Curated itineraries referencing the most requested expeditions across Danakil, Chebera Churchura, Gambela, Awash, and Rift Valley lakes.</p>
+            </div>
+            <div class="safari-grid">
+                <article class="tour-card">
+                    <div class="tour-media" style="background-image:url('../images/image15.jpg');">
+                        <span class="tour-tag">2 Days · Group</span>
+                    </div>
+                    <div class="tour-body">
+                        <h3>Danakil Depression Express</h3>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Afar Region</span>
+                            <span><i class="fas fa-fire"></i> Lava flows</span>
+                        </div>
+                        <p>Sunset over Lake Assale, sunrise at Erta Ale crater, and salt miners in one compact expedition. Inspired by 2-day Danakil runs popular with yetenbi Ethiopia Tours.</p>
+                        <div class="tour-footer">
+                            <span class="price-badge">From $350</span>
+                            <button class="btn btn-outline-dark book-now-btn" data-tour="Danakil Depression Express" data-category="Hiking">Details</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="tour-card">
+                    <div class="tour-media" style="background-image:url('../images/imag8.jpg');">
+                        <span class="tour-tag">3 Days · Small Group</span>
+                    </div>
+                    <div class="tour-body">
+                        <h3>Chebera Churchura Big Five Loop</h3>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Kaffa & Dawro</span>
+                            <span><i class="fas fa-paw"></i> Safari</span>
+                        </div>
+                        <p>Track forest elephants, hippos, and lions with resident scouts. Based on the 3-day Chebera program highlighted on yetenbi Ethiopia's adventure catalog.</p>
+                        <div class="tour-footer">
+                            <span class="price-badge">Request quote</span>
+                            <button class="btn btn-outline-dark book-now-btn" data-tour="Chebera Churchura Big Five Loop" data-category="Hiking">Details</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="tour-card">
+                    <div class="tour-media" style="background-image:url('../images/image13.jpg');">
+                        <span class="tour-tag">3 Days · Expedition</span>
+                    </div>
+                    <div class="tour-body">
+                        <h3>Gambela Nile Safari</h3>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Western Ethiopia</span>
+                            <span><i class="fas fa-water"></i> Boat + 4x4</span>
+                        </div>
+                        <p>Combine river cruises and savanna drives to spot Nile crocodiles, sitatunga antelope, and migratory birds. Mirrors the Gambela safaris promoted by yetenbi Ethiopia Tours.</p>
+                        <div class="tour-footer">
+                            <span class="price-badge">From $520</span>
+                            <button class="btn btn-outline-dark book-now-btn" data-tour="Gambela Nile Safari" data-category="Hiking">Details</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="tour-card">
+                    <div class="tour-media" style="background-image:url('../images/image10.jpg');">
+                        <span class="tour-tag">4 Days · Private</span>
+                    </div>
+                    <div class="tour-body">
+                        <h3>Awash & Rift Valley Adventure</h3>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Awash · Ziway</span>
+                            <span><i class="fas fa-binoculars"></i> Birding</span>
+                        </div>
+                        <p>Game drives in Awash National Park, visit the Awash Falls, then downshift to Rift Valley lakes for boat trips and hot springs. Inspired by the 5-day Awash listings online.</p>
+                        <div class="tour-footer">
+                            <span class="price-badge">From $700</span>
+                            <button class="btn btn-outline-dark book-now-btn" data-tour="Awash & Rift Valley Adventure" data-category="Hiking">Details</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="tour-card">
+                    <div class="tour-media" style="background-image:url('../images/image12.jpg');">
+                        <span class="tour-tag">5 Days · Custom</span>
+                    </div>
+                    <div class="tour-body">
+                        <h3>Danakil & Coffee Highlands Combo</h3>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Afar · Kaffa</span>
+                            <span><i class="fas fa-seedling"></i> Culture</span>
+                        </div>
+                        <p>Pair the otherworldly Danakil landscapes with the misty coffee forests of Keffa, echoing the 5-day combo itineraries from the reference catalog.</p>
+                        <div class="tour-footer">
+                            <span class="price-badge">From $890</span>
+                            <button class="btn btn-outline-dark book-now-btn" data-tour="Danakil & Coffee Highlands Combo" data-category="Hiking">Details</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="tour-card">
+                    <div class="tour-media" style="background-image:url('../images/image11.jpg');">
+                        <span class="tour-tag">6 Days · Signature</span>
+                    </div>
+                    <div class="tour-body">
+                        <h3>Chebera & Gambela Twin Park Safari</h3>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Southwest</span>
+                            <span><i class="fas fa-leaf"></i> Wilderness</span>
+                        </div>
+                        <p>Follow Aman Ethiopia Tours’ combined package concept—two remote parks, one seamless logistics plan, full-board camps, and med-evac coverage.</p>
+                        <div class="tour-footer">
+                            <span class="price-badge">From $1,050</span>
+                            <button class="btn btn-outline-dark book-now-btn" data-tour="Chebera & Gambela Twin Park Safari" data-category="Hiking">Details</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="tour-card">
+                    <div class="tour-media" style="background-image:url('../images/imag3.jpg');">
+                        <span class="tour-tag">8 Days · Group</span>
+                    </div>
+                    <div class="tour-body">
+                        <h3>Danakil, Gheralta & Lalibela Circuit</h3>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Afar · Tigray</span>
+                            <span><i class="fas fa-church"></i> Heritage</span>
+                        </div>
+                        <p>Blend adventure with history: climb Gheralta spires, witness Lalibela’s rock churches, and trek across salt flats. Inspired by yetenbi Ethiopia’s 8-day adventure tour.</p>
+                        <div class="tour-footer">
+                            <span class="price-badge">From $1,800</span>
+                            <a class="btn btn-outline-dark" href="danakil-gheralta-lalibela.html">Details</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="tour-card">
+                    <div class="tour-media" style="background-image:url('../images/image17.jpg');">
+                        <span class="tour-tag">9 Days · Grand</span>
+                    </div>
+                    <div class="tour-body">
+                        <h3>Northern Peaks & Danakil Odyssey</h3>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> North Ethiopia</span>
+                            <span><i class="fas fa-compass"></i> Expedition</span>
+                        </div>
+                        <p>Traverse Simien Mountains, Tigray cliff churches, and the Danakil Depression in one sweeping route—mirroring 
+                             Yetenbi Ethiopia Tours' 9-day highlight.</p>
+                        <div class="tour-footer">
+                            <span class="price-badge">From $2,100</span>
+                            <button class="btn btn-outline-dark book-now-btn" data-tour="Northern Peaks & Danakil Odyssey" data-category="Hiking">Details</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expedition Insights -->
+    <section class="safari-section" style="background:#f8f9fa;">
+        <div class="container">
+            <div class="section-heading">
+                <span>What to Expect</span>
+                <h2>Expedition Logistics & Support</h2>
+            </div>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <h4>End-to-End Equipment</h4>
+                    <p>Satellite comms, medical kits, ice-filled coolers, and rooftop tents mirror the readiness guests see on Aman Ethiopia's itineraries.</p>
+                </div>
+                <div class="insight-card">
+                    <h4>Local Expertise</h4>
+                    <p>Afar camel caravans, Nuer and Anuak elders, and park rangers collaborate on every route—ensuring cultural respect and insider access.</p>
+                </div>
+                <div class="insight-card">
+                    <h4>Flexible Departures</h4>
+                    <p>Fixed departures for Danakil & Simien, plus fully customized private safaris for photographers, researchers, and families.</p>
+                </div>
+                <div class="insight-card">
+                    <h4>Safety First</h4>
+                    <p>Daily check-ins with Addis ops room, SPOT tracking, and contingency vehicles match the professional standards highlighted by top Ethiopian operators.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="safari-section">
+        <div class="container">
+            <div class="cta-safari">
+                <h3>Ready to craft your adventure?</h3>
+                <p>Share your travel window, comfort level, and dream wildlife sightings. We’ll align routes, permits, and expert guides within 24 hours.</p>
+                <div class="hero-cta" style="justify-content:center; margin-top:20px;">
+                    <button class="btn-cta book-now-btn" data-tour="Adventure & Safari Request" data-category="Hiking">
+                        Start Planning <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <a href="https://wa.me/251913271706" target="_blank" class="btn-outline" style="border-color:#fff;color:#fff;">
+                        <i class="fab fa-whatsapp"></i> Message us instantly
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-overlay"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="../images/logo1.png" alt="Yetenbi Ethiopia Tours" class="footer-logo me-3">
+                            <h3 class="text-uppercase fw-bold mb-0">Yetenbi Ethiopia Tours</h3>
+                        </div>
+                        <p>Your trusted travel partner for discovering the rich culture and breathtaking landscapes of Ethiopia.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0">&copy; 2025 Yetenbi Ethiopia Tours. All Rights Reserved.</p>
+                        <a href="../index.html" class="text-decoration-none mt-2 d-inline-block">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navbarNav = document.getElementById('navbarNav');
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    navbarNav.classList.toggle('show');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

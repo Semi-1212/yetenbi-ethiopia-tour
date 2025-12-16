@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Trekking and Hiking - Yetenbi Ethiopia Tours | Mountain Adventures</title>
+        <meta name="description" content="Explore Ethiopia's stunning mountain ranges with our trekking and hiking tours. Simien Mountains, Bale Mountains, and more adventure trails.">
+        <meta name="keywords" content="Ethiopia trekking, hiking Ethiopia, Simien Mountains, Bale Mountains, mountain trekking Ethiopia">
+        <meta name="author" content="Yetenbi Ethiopia Tours">
+        <link rel="icon" type="image/png" href="../images/logo1.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        <style>
+            .activity-hero {
+                background: url('../images/image1.jpg') center/cover no-repeat;
+                padding: 180px 0 120px;
+                text-align: center;
+                color: white;
+                margin-top: 100px;
+                position: relative;
+            }
+            .activity-hero::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.4);
+                z-index: 1;
+            }
+            .activity-hero .container {
+                position: relative;
+                z-index: 2;
+            }
+            .activity-hero h1 {
+                font-size: 3.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            .activity-content {
+                padding: 80px 0;
+            }
+            .activity-card {
+                background: white;
+                border-radius: 15px;
+                padding: 40px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                margin-bottom: 30px;
+                transition: all 0.3s ease;
+            }
+            .activity-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            }
+            @media (max-width: 768px) {
+                .activity-hero h1 {
+                    font-size: 2.5rem;
+                }
+            }
+        </style>
+    </head>
+<body>
+    <!-- Top Navbar -->
+    <div class="top-navbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="top-nav-contact">
+                        <a href="tel:+251913271706"><i class="fas fa-phone-alt"></i> +251 913 271706</a>
+                        <a href="mailto:yetenbiethiopiatours@gmail.com"><i class="fas fa-envelope"></i> yetenbiethiopiatours@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="top-nav-social">
+                        <a href="https://web.facebook.com/profile.php?id=61578615547963" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/Yetenbitour" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/yetenbiethiopiatours/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@yetenbiethiopiatours" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo1.png" alt="Yetenbi Ethiopia Tours">
+                Yetenbi
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="activitiesDropdown" role="button" data-bs-toggle="dropdown">
+                            Activities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="activitiesDropdown">
+                            <li><a class="dropdown-item" href="experiences.html">Experiences</a></li>
+                            <li><a class="dropdown-item active" href="trekking-and-hiking.html">Trekking and Hiking</a></li>
+                            <li><a class="dropdown-item" href="adventure-and-safari.html">Adventure and Safari</a></li>
+                            <li><a class="dropdown-item" href="coffee-tour.html">Coffee Tours</a></li>
+                            <li><a class="dropdown-item" href="birding-tour.html">Birding Tours</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link btn-book" href="../index.html#contact">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hiking Hero Banner -->
+    <section class="hiking-hero">
+        <div class="hero-overlay">
+            <div class="hero-content container">
+                <p class="hero-kicker">
+                    <i class="fas fa-location-arrow me-2"></i>
+                    Ethiopia · Highlands · Rift Valley
+                </p>
+                <h1 data-i18n="hiking_hero_title">Discover Ethiopia's Wild Beauty</h1>
+                <p class="hero-subtitle" data-i18n="hiking_hero_subtitle">
+                    From the Simien Mountains to hidden cultural trails, trek with expert local guides, curated camps, and authentic encounters.
+                </p>
+
+                <div class="hero-tags">
+                    <span class="hero-tag"><i class="fas fa-campground"></i> Scenic overnight camps</span>
+                    <span class="hero-tag"><i class="fas fa-mountain"></i> UNESCO-listed peaks</span>
+                    <span class="hero-tag"><i class="fas fa-hand-holding-heart"></i> Community-led travel</span>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#hikes" class="btn-explore" data-i18n="hiking_hero_btn">
+                        Explore Hikes <i class="fas fa-arrow-down ms-2"></i>
+                    </a>
+                    <button class="btn-hero-outline book-now-btn"
+                        data-tour="Custom Trek Planning"
+                        data-category="Hiking">
+                        <i class="fas fa-compass me-2"></i>Plan My Trek
+                    </button>
+                </div>
+            </div>
+            <a href="#hikes" class="scroll-indicator" aria-label="Scroll to hiking section">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Hiking Destinations -->
+    <section id="hikes" class="hiking-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="hiking_section_title">Featured Hiking Destinations</h2>
+            <p class="section-subtitle" data-i18n="hiking_section_subtitle">Ethiopia offers some of Africa's most diverse trekking experiences.</p>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" data-i18n="hiking_filter_all">All Trails</button>
+                <button class="filter-btn" data-filter="multi-day" data-i18n="hiking_filter_multi">Multi-Day</button>
+                <button class="filter-btn" data-filter="day-hike" data-i18n="hiking_filter_day">Day Hikes</button>
+                <button class="filter-btn" data-filter="cultural" data-i18n="hiking_filter_cultural">Cultural</button>
+            </div>
+
+            <!-- Hikes Grid -->
+            <div class="hikes-grid">
+                <!-- Simien Mountains -->
+                <div class="hike-card initial" data-category="multi-day">
+                    <div class="hike-image" style="background-image: url('../images/imag3.jpg');">
+                        <span class="difficulty intermediate" data-i18n="hiking_simien_difficulty">Challenging</span>
+                        <div class="hover-details">
+                            <h3 data-i18n="hiking_simien_title">Simien Mountains Trek</h3>
+                            <p data-i18n="hiking_simien_highlight">UNESCO World Heritage Site</p>
+                        </div>
+                    </div>
+                    <div class="hike-details">
+                        <div class="hike-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hiking_simien_location">Northern Ethiopia</span></span>
+                            <span><i class="fas fa-clock"></i> <span data-i18n="hiking_simien_duration">3-12 days</span></span>
+                            <span><i class="fas fa-mountain"></i> <span data-i18n="hiking_simien_peak">4,533m peak</span></span>
+                        </div>
+                        <h3 data-i18n="hiking_simien_title">Simien Mountains Trek</h3>
+                        <p data-i18n="hiking_simien_desc">Dramatic cliffs, endemic wildlife (Gelada baboons, Walia ibex), and Ethiopia's highest peaks.</p>
+                        <div class="hike-highlights">
+                            <span data-i18n="hiking_simien_highlight_view"><i class="fas fa-eye"></i> Jaw-dropping views</span>
+                            <span data-i18n="hiking_simien_highlight_camp"><i class="fas fa-campground"></i> Camping</span>
+                        </div>
+                        <button class="btn book-now-btn" data-tour="Simien Mountains Trek" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Bale Mountains -->
+                <div class="hike-card initial" data-category="multi-day">
+                    <div class="hike-image" style="background-image: url('../images/imag4.jpg');">
+                        <span class="difficulty moderate" data-i18n="hiking_bale_difficulty">Moderate</span>
+                        <div class="hover-details">
+                            <h3 data-i18n="hiking_bale_title">Bale Mountains Trek</h3>
+                            <p data-i18n="hiking_bale_highlight">Ethiopian Wolf Habitat</p>
+                        </div>
+                    </div>
+                    <div class="hike-details">
+                        <div class="hike-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hiking_bale_location">Oromia Region</span></span>
+                            <span><i class="fas fa-clock"></i> <span data-i18n="hiking_bale_duration">2-6 days</span></span>
+                            <span><i class="fas fa-mountain"></i> <span data-i18n="hiking_bale_peak">4,377m peak</span></span>
+                        </div>
+                        <h3 data-i18n="hiking_bale_title">Bale Mountains Trek</h3>
+                        <p data-i18n="hiking_bale_desc">Afro-alpine meadows, Harenna Forest, and the world's rarest canid: the Ethiopian wolf.</p>
+                        <div class="hike-highlights">
+                            <span data-i18n="hiking_bale_highlight_wildlife"><i class="fas fa-paw"></i> Wildlife spotting</span>
+                            <span data-i18n="hiking_bale_highlight_forest"><i class="fas fa-tree"></i> Ancient forests</span>
+                        </div>
+                        <button class="btn book-now-btn" data-tour="Bale Mountains Trek" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Wenchi Crater Lake -->
+                <div class="hike-card initial" data-category="day-hike">
+                    <div class="hike-image" style="background-image: url('../images/imag5.jpg');">
+                        <span class="difficulty easy" data-i18n="hiking_wenchi_difficulty">Easy</span>
+                        <div class="hover-details">
+                            <h3 data-i18n="hiking_wenchi_title">Wenchi Crater Lake Hike</h3>
+                            <p data-i18n="hiking_wenchi_highlight">Volcanic Wonder</p>
+                        </div>
+                    </div>
+                    <div class="hike-details">
+                        <div class="hike-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hiking_wenchi_location">Oromia Region</span></span>
+                            <span><i class="fas fa-clock"></i> <span data-i18n="hiking_wenchi_duration">1 day</span></span>
+                            <span><i class="fas fa-water"></i> <span data-i18n="hiking_wenchi_feature">Crater lake</span></span>
+                        </div>
+                        <h3 data-i18n="hiking_wenchi_title">Wenchi Crater Lake Hike</h3>
+                        <p data-i18n="hiking_wenchi_desc">Explore a stunning volcanic crater lake surrounded by lush greenery and waterfalls.</p>
+                        <div class="hike-highlights">
+                            <span data-i18n="hiking_wenchi_highlight_lake"><i class="fas fa-water"></i> Scenic lake views</span>
+                            <span data-i18n="hiking_wenchi_highlight_horse"><i class="fas fa-horse"></i> Optional horseback</span>
+                        </div>
+                        <button class="btn book-now-btn" data-tour="Wenchi Crater Lake Hike" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Danakil Adventure -->
+                <div class="hike-card initial" data-category="multi-day">
+                    <div class="hike-image" style="background-image: url('../images/imag8.jpg');">
+                        <span class="difficulty hard" data-i18n="hiking_danakil_difficulty">Hard</span>
+                        <div class="hover-details">
+                            <h3 data-i18n="hiking_danakil_title">Danakil Adventure</h3>
+                            <p data-i18n="hiking_danakil_highlight">Hottest Place on Earth</p>
+                        </div>
+                    </div>
+                    <div class="hike-details">
+                        <div class="hike-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hiking_danakil_location">Afar Region</span></span>
+                            <span><i class="fas fa-clock"></i> <span data-i18n="hiking_danakil_duration">3-5 days</span></span>
+                            <span><i class="fas fa-temperature-high"></i> <span data-i18n="hiking_danakil_feature">Extreme heat</span></span>
+                        </div>
+                        <h3 data-i18n="hiking_danakil_title">Danakil Adventure</h3>
+                        <p data-i18n="hiking_danakil_desc">Otherworldly landscapes: salt flats, active volcanoes, and hydrothermal fields.</p>
+                        <div class="hike-highlights">
+                            <span data-i18n="hiking_danakil_highlight_volcano"><i class="fas fa-fire"></i> Erta Ale volcano</span>
+                            <span data-i18n="hiking_danakil_highlight_salt"><i class="fas fa-water"></i> Salt lakes</span>
+                        </div>
+                        <button class="btn book-now-btn" data-tour="Danakil Adventure" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Menagesha Suba Forest -->
+                <div class="hike-card" data-category="day-hike">
+                    <div class="hike-image" style="background-image: url('../images/imag6.jpg');">
+                        <span class="difficulty easy" data-i18n="hiking_menagesha_difficulty">Easy</span>
+                        <div class="hover-details">
+                            <h3 data-i18n="hiking_menagesha_title">Menagesha Suba Forest</h3>
+                            <p data-i18n="hiking_menagesha_highlight">Near Addis Ababa</p>
+                        </div>
+                    </div>
+                    <div class="hike-details">
+                        <div class="hike-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hiking_menagesha_location">Oromia Region</span></span>
+                            <span><i class="fas fa-clock"></i> <span data-i18n="hiking_menagesha_duration">1 day</span></span>
+                            <span><i class="fas fa-tree"></i> <span data-i18n="hiking_menagesha_feature">Ancient forest</span></span>
+                        </div>
+                        <h3 data-i18n="hiking_menagesha_title">Menagesha Suba Forest</h3>
+                        <p data-i18n="hiking_menagesha_desc">Ethiopia's oldest protected area with juniper trees, colobus monkeys, and scenic trails.</p>
+                        <div class="hike-highlights">
+                            <span data-i18n="hiking_menagesha_highlight_family"><i class="fas fa-hiking"></i> Family-friendly</span>
+                            <span data-i18n="hiking_menagesha_highlight_bird"><i class="fas fa-binoculars"></i> Birdwatching</span>
+                        </div>
+                        <button class="btn book-now-btn" data-tour="Menagesha Suba Forest" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Arba Minch -->
+                <div class="hike-card" data-category="multi-day">
+                    <div class="hike-image" style="background-image: url('../images/imag9.jpg');">
+                        <span class="difficulty moderate" data-i18n="hiking_arba_difficulty">Moderate</span>
+                        <div class="hover-details">
+                            <h3 data-i18n="hiking_arba_title">Arba Minch Rift Valley Trek</h3>
+                            <p data-i18n="hiking_arba_highlight">Rift Valley Lakes</p>
+                        </div>
+                    </div>
+                    <div class="hike-details">
+                        <div class="hike-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hiking_arba_location">SNNPR Region</span></span>
+                            <span><i class="fas fa-clock"></i> <span data-i18n="hiking_arba_duration">2-4 days</span></span>
+                            <span><i class="fas fa-mountain"></i> <span data-i18n="hiking_arba_feature">Nechisar Park</span></span>
+                        </div>
+                        <h3 data-i18n="hiking_arba_title">Arba Minch Rift Valley Trek</h3>
+                        <p data-i18n="hiking_arba_desc">Hike through Nechisar National Park with views of Lakes Abaya and Chamo, plus crocodile spotting.</p>
+                        <div class="hike-highlights">
+                            <span data-i18n="hiking_arba_highlight_lake"><i class="fas fa-water"></i> Lake vistas</span>
+                            <span data-i18n="hiking_arba_highlight_wildlife"><i class="fas fa-binoculars"></i> Wildlife</span>
+                        </div>
+                        <button class="btn book-now-btn" data-tour="Arba Minch Rift Valley Trek" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Gondar Cultural Trek -->
+                <div class="hike-card" data-category="cultural day-hike">
+                    <div class="hike-image" style="background-image: url('../images/imag7.jpg');">
+                        <span class="difficulty moderate" data-i18n="hiking_gondar_difficulty">Moderate</span>
+                        <div class="hover-details">
+                            <h3 data-i18n="hiking_gondar_title">Gondar Cultural Trek</h3>
+                            <p data-i18n="hiking_gondar_highlight">Royal Castles</p>
+                        </div>
+                    </div>
+                    <div class="hike-details">
+                        <div class="hike-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hiking_gondar_location">Amhara Region</span></span>
+                            <span><i class="fas fa-clock"></i> <span data-i18n="hiking_gondar_duration">1-2 days</span></span>
+                            <span><i class="fas fa-landmark"></i> <span data-i18n="hiking_gondar_feature">Historical sites</span></span>
+                        </div>
+                        <h3 data-i18n="hiking_gondar_title">Gondar Cultural Trek</h3>
+                        <p data-i18n="hiking_gondar_desc">Explore the medieval castles of Fasil Ghebbi and hike to nearby monasteries with stunning views.</p>
+                        <div class="hike-highlights">
+                            <span data-i18n="hiking_gondar_highlight_royal"><i class="fas fa-castle"></i> Royal history</span>
+                            <span data-i18n="hiking_gondar_highlight_church"><i class="fas fa-pray"></i> Debre Berhan Selassie</span>
+                        </div>
+                        <button class="btn book-now-btn" data-tour="Gondar Cultural Trek" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Harar Walled City Hike -->
+                <div class="hike-card" data-category="cultural day-hike">
+                    <div class="hike-image" style="background-image: url('../images/2.jpg');">
+                        <span class="difficulty easy" data-i18n="hiking_harar_difficulty">Easy</span>
+                        <div class="hover-details">
+                            <h3 data-i18n="hiking_harar_title">Harar Walled City Hike</h3>
+                            <p data-i18n="hiking_harar_highlight">UNESCO Old Town</p>
+                        </div>
+                    </div>
+                    <div class="hike-details">
+                        <div class="hike-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hiking_harar_location">Harari Region</span></span>
+                            <span><i class="fas fa-clock"></i> <span data-i18n="hiking_harar_duration">1 day</span></span>
+                            <span><i class="fas fa-city"></i> <span data-i18n="hiking_harar_feature">Walled city</span></span>
+                        </div>
+                        <h3 data-i18n="hiking_harar_title">Harar Walled City Hike</h3>
+                        <p data-i18n="hiking_harar_desc">Walk through the ancient Jugol walls, markets, and witness the unique hyena feeding tradition.</p>
+                        <div class="hike-highlights">
+                            <span data-i18n="hiking_harar_highlight_islamic"><i class="fas fa-history"></i> Islamic heritage</span>
+                            <span data-i18n="hiking_harar_highlight_hyena"><i class="fas fa-paw"></i> Hyena encounter</span>
+                        </div>
+                        <button class="btn book-now-btn" data-tour="Harar Walled City Hike" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More/Show Less Button -->
+            <button class="view-toggle-btn" id="view-toggle" data-i18n="nav_view_more">View More</button>
+        </div>
+    </section>
+
+    <!-- Why Hike With Us? -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Hiking Tours?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Expert Local Guides</h3>
+                    <p>Certified guides fluent in English and local languages.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Eco-Friendly</h3>
+                    <p>We follow Leave No Trace principles and support local communities.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Authentic Meals</h3>
+                    <p>Enjoy traditional Ethiopian cuisine prepared on the trail.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-first-aid"></i>
+                    <h3>Safety First</h3>
+                    <p>Emergency protocols, first-aid trained staff, and satellite phones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready for Your Adventure?</h2>
+            <p>Contact us to customize your dream hiking itinerary.</p>
+            <a href="#contact" class="btn-cta"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="bookingModal" role="dialog" aria-labelledby="booking-title" aria-modal="true">
+        <div class="booking-card">
+            <button class="close-modal" id="closeModal">×</button>
+            
+            <div class="booking-header">
+                <h1 class="booking-title" id="booking-title" data-i18n="booking_title">Book Your Adventure</h1>
+                <p class="booking-subtitle" data-i18n="booking_subtitle">Complete your reservation in just a few steps</p>
+            </div>
+            
+            <form class="booking-form" id="bookingForm">
+                <input type="hidden" id="category" name="category" value="Hiking">
+                
+                <div class="form-group">
+                    <label for="fullName" data-i18n="booking_full_name">Full Name*</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Your full name" required data-i18n="booking_full_name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" data-i18n="booking_email">Email*</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required data-i18n="booking_email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone" data-i18n="booking_phone">Phone Number*</label>
+                    <div style="display: flex; gap: 8px; align-items: center;">
+                        <select id="countryCode" name="countryCode" style="width: 110px; padding: 12px 8px; border: 2px solid #a8dadc; border-radius: 8px; font-size: 15px;">
+                            <option value="+251" selected>🇪🇹 +251</option>
+                            <option value="+1">🇺🇸 +1</option>
+                            <option value="+44">🇬🇧 +44</option>
+                            <option value="+49">🇩🇪 +49</option>
+                            <option value="+91">🇮🇳 +91</option>
+                            <option value="+254">🇰🇪 +254</option>
+                            <option value="+27">🇿🇦 +27</option>
+                            <option value="+33">🇫🇷 +33</option>
+                            <option value="+39">🇮🇹 +39</option>
+                            <option value="+34">🇪🇸 +34</option>
+                            <option value="+86">🇨🇳 +86</option>
+                            <option value="+81">🇯🇵 +81</option>
+                            <option value="+61">🇦🇺 +61</option>
+                            <option value="+1">🇨🇦 +1</option>
+                            <option value="+966">🇸🇦 +966</option>
+                            <option value="+971">🇦🇪 +971</option>
+                            <option value="+90">🇹🇷 +90</option>
+                            <option value="+55">🇧🇷 +55</option>
+                            <option value="+7">🇷🇺 +7</option>
+                            <option value="+20">🇪🇬 +20</option>
+                        </select>
+                        <input type="tel" id="phone" name="phone" placeholder="___ ______" required style="flex: 1;">
+                    </div>
+                </div>
+                
+                <div class="form-group select-wrapper">
+                    <label for="tourCategory">Tour Category*</label>
+                    <select id="tourCategory" name="tourCategory" class="tour-selector">
+                        <option value="City Tour">City Tour</option>
+                        <option value="Hiking" selected>Hiking Adventure</option>
+                    </select>
+                </div>
+                
+                <div class="form-group select-wrapper">
+                    <label for="cityTours">City Tours</label>
+                    <select id="cityTours" name="cityTours" class="tour-selector">
+                        <option value="" selected disabled>Select city tour</option>
+                        <option value="National Museum">National Museum</option>
+                        <option value="Entoto Park">Entoto Park</option>
+                        <option value="Merkato Market">Merkato Market</option>
+                        <option value="Addis Ababa Night Tour">Addis Ababa Night Tour</option>
+                        <option value="Ethiopian Coffee Tour">Ethiopian Coffee Tour</option>
+                        <option value="Unity Park">Unity Park</option>
+                    </select>
+                </div>
+                
+                <div class="form-group select-wrapper">
+                    <label for="hiking">Hiking Adventures</label>
+                    <select id="hiking" name="hiking" class="tour-selector">
+                        <option value="" selected disabled>Select hiking tour</option>
+                        <option value="Simien Mountains Trek">Simien Mountains Trek</option>
+                        <option value="Bale Mountains Trek">Bale Mountains Trek</option>
+                        <option value="Danakil Adventure">Danakil Adventure</option>
+                        <option value="Wenchi Crater Lake Hike">Wenchi Crater Lake Hike</option>
+                        <option value="Menagesha Suba Forest">Menagesha Suba Forest</option>
+                        <option value="Arba Minch Rift Valley Trek">Arba Minch Rift Valley Trek</option>
+                        <option value="Gondar Cultural Trek">Gondar Cultural Trek</option>
+                        <option value="Harar Walled City Hike">Harar Walled City Hike</option>
+                        <option value="Lalibela Churches">Lalibela Churches</option>
+                        <option value="Omo Valley">Omo Valley</option>
+                    </select>
+                </div>
+                
+                <input type="hidden" id="tourType" name="tourType" required>
+                
+                <div class="form-group">
+                    <label for="tourDate">Tour Date*</label>
+                    <input type="date" id="tourDate" name="tourDate" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="participants">Number of Participants*</label>
+                    <input type="number" id="participants" name="participants" min="1" max="20" value="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="specialRequests" data-i18n="booking_special_requests">Special Requests</label>
+                    <textarea id="specialRequests" name="specialRequests" placeholder="Dietary restrictions, accessibility needs, etc." data-i18n="booking_special_requests"></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="termsAgree" name="termsAgree" required>
+                    <label for="termsAgree" data-i18n="booking_terms">I agree to the <a href="/terms" class="terms-link">terms and conditions</a></label>
+                </div>
+                
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <span class="btn-text" data-i18n="booking_submit">Complete Booking</span>
+                    <span class="spinner" id="spinner"></span>
+                </button>
+            </form>
+            
+            <div id="confirmationMessage" class="confirmation-message">
+                <div class="confirmation-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                    </svg>
+                </div>
+                <h2 data-i18n="booking_confirmed">Booking Confirmed!</h2>
+                <p data-i18n="booking_thank_you">Thank you for choosing Yetenbi Ethiopia Tours</p>
+                <div class="confirmation-details" id="confirmationDetails">
+                    <!-- Booking details will be inserted here -->
+                </div>
+                <button class="back-to-form" id="backToForm" data-i18n="booking_book_another">Book Another Tour</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-overlay"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="../images/logo1.png" alt="Yetenbi Ethiopia Tours" class="footer-logo me-3">
+                            <h3 class="text-uppercase fw-bold mb-0">Yetenbi Ethiopia Tours</h3>
+                        </div>
+                        <p>Your trusted travel partner for discovering the rich culture and breathtaking landscapes of Ethiopia.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0">&copy; 2025 Yetenbi Ethiopia Tours. All Rights Reserved.</p>
+                        <a href="../index.html" class="text-decoration-none mt-2 d-inline-block">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navbarNav = document.getElementById('navbarNav');
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    navbarNav.classList.toggle('show');
+                });
+            }
+
+            const bookingModal = document.getElementById('bookingModal');
+            const bookingForm = document.getElementById('bookingForm');
+            const confirmationMessage = document.getElementById('confirmationMessage');
+            const closeModal = document.getElementById('closeModal');
+            const backToForm = document.getElementById('backToForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const spinner = document.getElementById('spinner');
+            const tourCategory = document.getElementById('tourCategory');
+            const cityTours = document.getElementById('cityTours');
+            const hiking = document.getElementById('hiking');
+            const tourType = document.getElementById('tourType');
+            const countryCode = document.getElementById('countryCode');
+            const phone = document.getElementById('phone');
+
+            // Set minimum date to today
+            const tourDateInput = document.getElementById('tourDate');
+            if (tourDateInput) {
+                tourDateInput.min = new Date().toISOString().split('T')[0];
+            }
+
+            // Open modal and prefill form when "Book Now" is clicked
+            document.querySelectorAll('.book-now-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    bookingModal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                    bookingForm.style.display = 'flex';
+                    confirmationMessage.style.display = 'none';
+                    bookingForm.reset();
+                    tourType.value = '';
+                    cityTours.value = '';
+                    hiking.value = '';
+
+                    let tourName = this.dataset.tour;
+                    const category = this.dataset.category;
+
+                    const tourNameMap = {
+                        'Danakil Depression': 'Danakil Adventure',
+                        'Bale Mountains': 'Bale Mountains Trek',
+                        'Simien Mountains': 'Simien Mountains Trek',
+                        'Wenchi Crater': 'Wenchi Crater Lake Hike',
+                        'Addis Night Tour': 'Addis Ababa Night Tour',
+                        'Coffee Tour': 'Ethiopian Coffee Tour'
+                    };
+                    tourName = tourNameMap[tourName] || tourName;
+
+                    tourCategory.value = category;
+                    document.getElementById('category').value = category;
+
+                    if (category === 'City Tour') {
+                        cityTours.required = true;
+                        hiking.required = false;
+                        cityTours.value = tourName;
+                        hiking.value = '';
+                    } else if (category === 'Hiking') {
+                        hiking.required = true;
+                        cityTours.required = false;
+                        hiking.value = tourName;
+                        cityTours.value = '';
+                    }
+
+                    tourType.value = tourName;
+                    document.getElementById('fullName').focus();
+                });
+            });
+
+            // Close modal
+            closeModal.addEventListener('click', function() {
+                bookingModal.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+
+            // Close when clicking outside
+            bookingModal.addEventListener('click', function(e) {
+                if (e.target === bookingModal) {
+                    bookingModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Sync tour category with dropdowns
+            tourCategory.addEventListener('change', function() {
+                if (this.value === 'City Tour') {
+                    cityTours.required = true;
+                    hiking.required = false;
+                    hiking.value = '';
+                    document.getElementById('category').value = 'City Tour';
+                } else {
+                    cityTours.required = false;
+                    hiking.required = true;
+                    cityTours.value = '';
+                    document.getElementById('category').value = 'Hiking';
+                }
+            });
+
+            // Update hidden tourType field
+            cityTours.addEventListener('change', function() {
+                if (this.value) {
+                    tourType.value = this.value;
+                    document.getElementById('category').value = 'City Tour';
+                }
+            });
+
+            hiking.addEventListener('change', function() {
+                if (this.value) {
+                    tourType.value = this.value;
+                    document.getElementById('category').value = 'Hiking';
+                }
+            });
+
+            // Form submission
+            bookingForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+
+                submitBtn.disabled = true;
+                spinner.style.display = 'block';
+
+                const fullPhone = countryCode.value + phone.value.replace(/^0+/, '');
+                const formData = {
+                    category: document.getElementById('category').value,
+                    fullName: document.getElementById('fullName').value.trim(),
+                    email: document.getElementById('email').value.trim(),
+                    phone: fullPhone,
+                    tourType: document.getElementById('tourType').value,
+                    tourDate: document.getElementById('tourDate').value,
+                    participants: parseInt(document.getElementById('participants').value, 10),
+                    specialRequests: document.getElementById('specialRequests').value.trim() || 'None'
+                };
+
+                try {
+                    const scriptUrl = 'https://script.google.com/macros/s/AKfycbz7Ws_f5OCTrYj_O6iMIDv1WUHcTK9VHtrDdGtY6pe4btdppPUDgrShjTM_tlMD9cDQbQ/exec';
+                    await fetch(scriptUrl, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(formData)
+                    });
+
+                    const result = { status: 'success', bookingId: 'Pending' };
+
+                    bookingForm.style.display = 'none';
+                    confirmationMessage.style.display = 'block';
+
+                    const formattedDate = new Date(formData.tourDate).toLocaleDateString('en-US', {
+                        weekday: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                    });
+
+                    document.getElementById('confirmationDetails').innerHTML = `
+                        <div class="detail-row">
+                            <span class="detail-label">Booking ID:</span>
+                            <span class="detail-value">${result.bookingId}</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Tour:</span>
+                            <span class="detail-value">${formData.tourType}</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Date:</span>
+                            <span class="detail-value">${formattedDate}</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Participants:</span>
+                            <span class="detail-value">${formData.participants}</span>
+                        </div>
+                        ${formData.specialRequests !== 'None' ? `
+                        <div class="detail-row">
+                            <span class="detail-label">Special Requests:</span>
+                            <span class="detail-value">${formData.specialRequests}</span>
+                        </div>` : ''}
+                    `;
+                } catch (error) {
+                    console.error('Booking Error:', error);
+                    const errorDiv = document.createElement('div');
+                    errorDiv.style.color = 'red';
+                    errorDiv.style.marginBottom = '15px';
+                    errorDiv.textContent = `Error: ${error.message || 'Failed to submit booking. Please try again.'}`;
+                    bookingForm.prepend(errorDiv);
+                    setTimeout(() => errorDiv.remove(), 5000);
+                } finally {
+                    submitBtn.disabled = false;
+                    spinner.style.display = 'none';
+                }
+            });
+
+            // Back to form button
+            backToForm.addEventListener('click', function() {
+                confirmationMessage.style.display = 'none';
+                bookingForm.style.display = 'flex';
+                bookingForm.reset();
+                tourType.value = '';
+                cityTours.value = '';
+                hiking.value = '';
+            });
+
+            // Filter Hikes by Category
+            document.querySelectorAll('.filter-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    const filter = button.dataset.filter;
+                    document.querySelectorAll('.hike-card').forEach(card => {
+                        if (filter === 'all' || card.dataset.category.includes(filter)) {
+                            card.classList.remove('hidden');
+                        } else {
+                            card.classList.add('hidden');
+                        }
+                    });
+
+                    const visibleCards = document.querySelectorAll('.hike-card:not(.hidden)').length;
+                    const initialCards = document.querySelectorAll('.hike-card.initial').length;
+                    const toggleBtn = document.getElementById('view-toggle');
+                    if (visibleCards <= initialCards) {
+                        toggleBtn.textContent = 'View More';
+                        toggleBtn.style.display = 'block';
+                    } else {
+                        toggleBtn.textContent = 'Show Less';
+                        toggleBtn.style.display = 'block';
+                    }
+                });
+            });
+
+            // View More/Show Less Toggle Functionality
+            const viewToggleBtn = document.getElementById('view-toggle');
+            let isExpanded = false;
+            viewToggleBtn.addEventListener('click', () => {
+                if (!isExpanded) {
+                    document.querySelectorAll('.hike-card.hidden').forEach(card => {
+                        card.classList.remove('hidden');
+                    });
+                    viewToggleBtn.textContent = 'Show Less';
+                    isExpanded = true;
+                } else {
+                    document.querySelectorAll('.hike-card:not(.initial)').forEach(card => {
+                        card.classList.add('hidden');
+                    });
+                    viewToggleBtn.textContent = 'View More';
+                    isExpanded = false;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
