@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Character encoding -->
+        <meta charset="UTF-8">
+        <!-- Responsive viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- SEO Meta Tags -->
+        <title>Addis Ababa Layover Tour - Yetenbi Ethiopia Tours</title>
+        <meta name="description" content="Addis Ababa layover tour highlights: duration, transportation, tour types, and group sizes for travelers with limited time in Ethiopia's capital.">
+        <meta name="keywords" content="Addis Ababa layover tour, Addis Ababa airport layover, Ethiopia layover tour, city tour details, tour duration, transportation">
+        <meta name="author" content="Yetenbi Ethiopia Tours">
+        <meta name="robots" content="index, follow">
+    
+        <!-- Open Graph Tags -->
+        <meta property="og:title" content="Addis Ababa Layover Tour - Yetenbi Ethiopia Tours">
+        <meta property="og:description" content="Layover tour highlights for Addis Ababa: duration, transportation, tour types, and group sizes.">
+        <meta property="og:image" content="https://yetenbiethiopiatours.com/images/image1.jpg">
+        <meta property="og:url" content="https://yetenbiethiopiatours.com/addis-ababa-layover.html">
+        <link rel="canonical" href="https://yetenbiethiopiatours.com/addis-ababa-layover.html">
+        <meta property="og:type" content="website">
+    
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="images/logo1.png">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Font Awesome CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css">
+    
+        <style>
+            * {
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            html {
+                scroll-behavior: smooth;
+            }
+            
+            body {
+                overflow-x: hidden;
+                line-height: 1.6;
+            }
+            
+            /* Smooth fade-in animation */
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            .highlight-item,
+            .content-card,
+            .timeline-item {
+                animation: fadeInUp 0.6s ease-out;
+            }
+            
+            .highlight-item:nth-child(1) { animation-delay: 0.1s; }
+            .highlight-item:nth-child(2) { animation-delay: 0.2s; }
+            .highlight-item:nth-child(3) { animation-delay: 0.3s; }
+            .highlight-item:nth-child(4) { animation-delay: 0.4s; }
+            
+            /* Tour Highlights Section */
+            .tour-highlights {
+                background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+                padding: 120px 0 100px;
+                position: relative;
+                overflow: hidden;
+                margin-top: 100px;
+            }
+            
+            .tour-highlights::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 5px;
+                background: linear-gradient(90deg, #f8c107, #1a3c5e, #f8c107);
+            }
+            
+            .highlight-item {
+                text-align: center;
+                padding: 40px 25px;
+                background: white;
+                border-radius: 16px;
+                box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                height: 100%;
+                border: 2px solid transparent;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .highlight-item::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(248, 193, 7, 0.1), transparent);
+                transition: left 0.5s;
+            }
+            
+            .highlight-item:hover::before {
+                left: 100%;
+            }
+            
+            .highlight-item:hover {
+                transform: translateY(-10px) scale(1.02);
+                box-shadow: 0 15px 40px rgba(248, 193, 7, 0.2);
+                border-color: #f8c107;
+            }
+            
+            .highlight-item i {
+                font-size: 3.5rem;
+                background: linear-gradient(135deg, #f8c107, #e6b306);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                margin-bottom: 20px;
+                display: inline-block;
+                transition: transform 0.3s ease;
+            }
+            
+            .highlight-item:hover i {
+                transform: scale(1.2) rotate(5deg);
+            }
+            
+            .highlight-item h4 {
+                color: #1a3c5e;
+                font-weight: 700;
+                margin-bottom: 12px;
+                font-size: 1.4rem;
+                letter-spacing: -0.5px;
+            }
+            
+            .highlight-item p {
+                color: #555;
+                margin: 0;
+                font-size: 1.05rem;
+                font-weight: 500;
+            }
+            
+            .section-title {
+                text-align: center;
+                font-size: 3rem;
+                font-weight: 800;
+                background: linear-gradient(135deg, #1a3c5e, #2c5f7d);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                margin-bottom: 20px;
+                position: relative;
+                padding-bottom: 20px;
+            }
+            
+            .section-title::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80px;
+                height: 4px;
+                background: linear-gradient(90deg, #f8c107, #e6b306);
+                border-radius: 2px;
+            }
+            
+            .section-subtitle {
+                text-align: center;
+                font-size: 1.15rem;
+                color: #666;
+                max-width: 700px;
+                margin: 0 auto 60px;
+                line-height: 1.8;
+                font-weight: 400;
+            }
+            
+            /* Main Content Section */
+            .tour-content-section {
+                padding: 100px 0;
+                background: #ffffff;
+            }
+            
+            .content-card {
+                background: white;
+                border-radius: 20px;
+                padding: 50px;
+                box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+                margin-bottom: 40px;
+                border: 1px solid rgba(248, 193, 7, 0.1);
+                transition: all 0.3s ease;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .content-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 5px;
+                height: 100%;
+                background: linear-gradient(180deg, #f8c107, #e6b306);
+            }
+            
+            .content-card:hover {
+                box-shadow: 0 15px 50px rgba(0,0,0,0.12);
+                transform: translateY(-5px);
+            }
+            
+            .content-card h2 {
+                color: #1a3c5e;
+                font-size: 2.2rem;
+                font-weight: 800;
+                margin-bottom: 30px;
+                padding-bottom: 20px;
+                border-bottom: 4px solid;
+                border-image: linear-gradient(90deg, #f8c107, #e6b306) 1;
+                position: relative;
+            }
+            
+            .content-card h3 {
+                color: #1a3c5e;
+                font-size: 1.6rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            
+            /* Itinerary Timeline */
+            .itinerary-timeline {
+                position: relative;
+                padding-left: 50px;
+            }
+            
+            .itinerary-timeline::before {
+                content: '';
+                position: absolute;
+                left: 20px;
+                top: 0;
+                bottom: 0;
+                width: 3px;
+                background: linear-gradient(180deg, #f8c107, #e6b306, #f8c107);
+                border-radius: 2px;
+            }
+            
+            .timeline-item {
+                position: relative;
+                margin-bottom: 35px;
+                background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                border-left: 4px solid transparent;
+            }
+            
+            .timeline-item:hover {
+                transform: translateX(15px);
+                box-shadow: 0 10px 35px rgba(248, 193, 7, 0.2);
+                border-left-color: #f8c107;
+                background: white;
+            }
+            
+            .timeline-item::before {
+                content: '';
+                position: absolute;
+                left: -37px;
+                top: 30px;
+                width: 20px;
+                height: 20px;
+                background: linear-gradient(135deg, #f8c107, #e6b306);
+                border-radius: 50%;
+                border: 4px solid white;
+                box-shadow: 0 0 0 4px #f8c107, 0 0 20px rgba(248, 193, 7, 0.5);
+                transition: all 0.3s ease;
+            }
+            
+            .timeline-item:hover::before {
+                transform: scale(1.3);
+                box-shadow: 0 0 0 4px #f8c107, 0 0 30px rgba(248, 193, 7, 0.8);
+            }
+            
+            .timeline-time {
+                color: #f8c107;
+                font-weight: 800;
+                font-size: 1.15rem;
+                margin-bottom: 12px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+            
+            .timeline-time i {
+                font-size: 1.2rem;
+            }
+            
+            .timeline-title {
+                color: #1a3c5e;
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-bottom: 12px;
+                letter-spacing: -0.3px;
+            }
+            
+            .timeline-description {
+                color: #555;
+                line-height: 1.8;
+                font-size: 1.05rem;
+            }
+            
+            /* Sidebar Styling */
+            .sidebar-card {
+                background: white;
+                border-radius: 20px;
+                padding: 35px;
+                box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+                margin-bottom: 25px;
+                position: sticky;
+                top: 120px;
+                border: 1px solid rgba(248, 193, 7, 0.1);
+                transition: all 0.3s ease;
+            }
+            
+            .sidebar-card:hover {
+                box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+            }
+            
+            .price-display {
+                text-align: center;
+                padding: 40px 25px;
+                background: linear-gradient(135deg, #f8c107 0%, #e6b306 50%, #f8c107 100%);
+                background-size: 200% 200%;
+                animation: gradientShift 3s ease infinite;
+                border-radius: 16px;
+                color: #1a3c5e;
+                margin-bottom: 30px;
+                box-shadow: 0 8px 25px rgba(248, 193, 7, 0.3);
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .price-display::before {
+                content: '';
+                position: absolute;
+                top: -50%;
+                left: -50%;
+                width: 200%;
+                height: 200%;
+                background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+                animation: rotate 10s linear infinite;
+            }
+            
+            @keyframes gradientShift {
+                0%, 100% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+            }
+            
+            @keyframes rotate {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+            
+            .price-display .price {
+                font-size: 3.5rem;
+                font-weight: 900;
+                margin-bottom: 8px;
+                position: relative;
+                z-index: 1;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            }
+            
+            .price-display .price-label {
+                font-size: 1.1rem;
+                opacity: 0.95;
+                font-weight: 600;
+                position: relative;
+                z-index: 1;
+            }
+            
+            .info-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .info-list li {
+                padding: 15px 0;
+                border-bottom: 1px solid #f0f0f0;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                transition: all 0.3s ease;
+            }
+            
+            .info-list li:hover {
+                background: rgba(248, 193, 7, 0.05);
+                padding-left: 10px;
+                border-radius: 8px;
+            }
+            
+            .info-list li:last-child {
+                border-bottom: none;
+            }
+            
+            .info-list li i {
+                color: #f8c107;
+                width: 24px;
+                text-align: center;
+                font-size: 1.1rem;
+            }
+            
+            .info-list li strong {
+                color: #1a3c5e;
+                min-width: 130px;
+                font-weight: 700;
+            }
+            
+            .info-list li span {
+                color: #555;
+                font-weight: 500;
+            }
+            
+            /* Included/Excluded Lists */
+            .included-excluded {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+                margin-top: 35px;
+            }
+            
+            .included-box, .excluded-box {
+                padding: 30px;
+                border-radius: 15px;
+                transition: all 0.3s ease;
+            }
+            
+            .included-box {
+                background: linear-gradient(135deg, rgba(248, 193, 7, 0.1) 0%, rgba(248, 193, 7, 0.05) 100%);
+                border-left: 5px solid #f8c107;
+                box-shadow: 0 5px 15px rgba(248, 193, 7, 0.1);
+            }
+            
+            .included-box:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(248, 193, 7, 0.2);
+            }
+            
+            .excluded-box {
+                background: linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.01) 100%);
+                border-left: 5px solid #999;
+            }
+            
+            .excluded-box:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            }
+            
+            .included-box h4, .excluded-box h4 {
+                color: #1a3c5e;
+                font-weight: 700;
+                margin-bottom: 20px;
+                font-size: 1.3rem;
+            }
+            
+            .included-box ul, .excluded-box ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .included-box ul li, .excluded-box ul li {
+                padding: 10px 0;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                font-size: 1.05rem;
+            }
+            
+            .included-box ul li i {
+                color: #f8c107;
+                font-size: 1.1rem;
+            }
+            
+            .excluded-box ul li i {
+                color: #999;
+                font-size: 1.1rem;
+            }
+            
+            /* Book Now Button */
+            .btn-book-tour {
+                background: linear-gradient(135deg, #1a3c5e 0%, #2c5f7d 100%);
+                color: white;
+                padding: 18px 35px;
+                border-radius: 50px;
+                font-weight: 700;
+                font-size: 1.15rem;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                border: none;
+                width: 100%;
+                box-shadow: 0 5px 20px rgba(26, 60, 94, 0.3);
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .btn-book-tour::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 0;
+                height: 0;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.2);
+                transform: translate(-50%, -50%);
+                transition: width 0.6s, height 0.6s;
+            }
+            
+            .btn-book-tour:hover::before {
+                width: 300px;
+                height: 300px;
+            }
+            
+            .btn-book-tour:hover {
+                background: linear-gradient(135deg, #2c5f7d 0%, #1a3c5e 100%);
+                transform: translateY(-5px) scale(1.02);
+                box-shadow: 0 10px 40px rgba(26, 60, 94, 0.4);
+                color: white;
+            }
+            
+            .btn-book-tour i {
+                position: relative;
+                z-index: 1;
+            }
+            
+            /* Cancellation Policy */
+            .policy-box {
+                background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+                padding: 35px;
+                border-radius: 15px;
+                border-left: 5px solid #1a3c5e;
+                margin-top: 35px;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+                transition: all 0.3s ease;
+            }
+            
+            .policy-box:hover {
+                box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+                transform: translateY(-3px);
+            }
+            
+            .policy-box h4 {
+                color: #1a3c5e;
+                font-weight: 700;
+                margin-bottom: 20px;
+                font-size: 1.4rem;
+            }
+            
+            .policy-box p {
+                color: #555;
+                line-height: 1.8;
+                margin-bottom: 12px;
+                font-size: 1.05rem;
+            }
+            
+            .policy-box strong {
+                color: #1a3c5e;
+                font-weight: 700;
+            }
+            
+            /* Responsive Styles */
+            @media (max-width: 992px) {
+                .sidebar-card {
+                    position: relative;
+                    top: 0;
+                    margin-top: 40px;
+                }
+                
+                .tour-content-section {
+                    padding: 60px 0;
+                }
+            }
+            
+            @media (max-width: 768px) {
+                .tour-highlights {
+                    padding: 80px 0 60px;
+                    margin-top: 80px;
+                }
+                
+                .section-title {
+                    font-size: 2.2rem;
+                    margin-bottom: 15px;
+                }
+                
+                .section-subtitle {
+                    font-size: 1rem;
+                    margin-bottom: 40px;
+                    padding: 0 15px;
+                }
+                
+                .highlight-item {
+                    padding: 30px 20px;
+                    margin-bottom: 20px;
+                }
+                
+                .highlight-item i {
+                    font-size: 2.5rem;
+                }
+                
+                .highlight-item h4 {
+                    font-size: 1.2rem;
+                }
+                
+                .highlight-item p {
+                    font-size: 0.95rem;
+                }
+                
+                .tour-content-section {
+                    padding: 50px 0;
+                }
+                
+                .content-card {
+                    padding: 30px 20px;
+                    border-radius: 15px;
+                }
+                
+                .content-card h2 {
+                    font-size: 1.8rem;
+                    margin-bottom: 20px;
+                    padding-bottom: 15px;
+                }
+                
+                .included-excluded {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
+                
+                .included-box, .excluded-box {
+                    padding: 25px 20px;
+                }
+                
+                .sidebar-card {
+                    position: relative;
+                    top: 0;
+                    padding: 25px 20px;
+                    margin-top: 30px;
+                }
+                
+                .price-display {
+                    padding: 30px 20px;
+                }
+                
+                .price-display .price {
+                    font-size: 2.5rem;
+                }
+                
+                .itinerary-timeline {
+                    padding-left: 35px;
+                }
+                
+                .itinerary-timeline::before {
+                    left: 15px;
+                    width: 2px;
+                }
+                
+                .timeline-item {
+                    padding: 20px;
+                    margin-bottom: 25px;
+                }
+                
+                .timeline-item::before {
+                    left: -28px;
+                    width: 16px;
+                    height: 16px;
+                    border: 3px solid white;
+                }
+                
+                .timeline-time {
+                    font-size: 1rem;
+                }
+                
+                .timeline-title {
+                    font-size: 1.2rem;
+                }
+                
+                .timeline-description {
+                    font-size: 0.95rem;
+                }
+                
+                .info-list li {
+                    flex-wrap: wrap;
+                    padding: 12px 0;
+                }
+                
+                .info-list li strong {
+                    min-width: 100px;
+                    font-size: 0.95rem;
+                }
+                
+                .info-list li span {
+                    font-size: 0.9rem;
+                }
+                
+                .btn-book-tour {
+                    padding: 15px 25px;
+                    font-size: 1rem;
+                }
+                
+                .policy-box {
+                    padding: 25px 20px;
+                }
+                
+                .policy-box h4 {
+                    font-size: 1.2rem;
+                }
+                
+                .policy-box p {
+                    font-size: 0.95rem;
+                }
+            }
+            
+            @media (max-width: 576px) {
+                .section-title {
+                    font-size: 1.8rem;
+                }
+                
+                .highlight-item {
+                    padding: 25px 15px;
+                }
+                
+                .content-card {
+                    padding: 25px 15px;
+                }
+                
+                .content-card h2 {
+                    font-size: 1.5rem;
+                }
+                
+                .price-display .price {
+                    font-size: 2rem;
+                }
+                
+                .sidebar-card {
+                    padding: 20px 15px;
+                }
+            }
+        </style>
+    </head>
+<body>
+    <!-- Top Navbar -->
+    <div class="top-navbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="top-nav-contact">
+                        <a href="tel:+251913271706"><i class="fas fa-phone-alt"></i> +251 913 271706</a>
+                        <a href="mailto:yetenbiethiopiatours@gmail.com"><i class="fas fa-envelope"></i> yetenbiethiopiatours@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="top-nav-social">
+                        <a href="https://web.facebook.com/profile.php?id=61578615547963" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/Yetenbitour" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/yetenbiethiopiatours/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@yetenbiethiopiatours" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo1.png" alt="Yetenbi Ethiopia Tours">
+                Yetenbi
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ethiopiaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ethiopia
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ethiopiaDropdown">
+                            <li><a class="dropdown-item" href="index.html#about-us">The Country</a></li>
+                            <li><a class="dropdown-item" href="index.html#about-us">Getting There</a></li>
+                            <li><a class="dropdown-item" href="index.html#about-us">Visa and Immigration</a></li>
+                            <li><a class="dropdown-item" href="index.html#about-us">Best Time to Travel</a></li>
+                            <li><a class="dropdown-item" href="index.html#about-us">Health and Safety</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="toursDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tour Packages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="toursDropdown">
+                            <li><a class="dropdown-item active" href="addis-ababa-city-tour.html">Addis Ababa City Tours</a></li>
+                            <li><a class="dropdown-item" href="index.html#tours">Day Trips & Excursions</a></li>
+                            <li><a class="dropdown-item" href="index.html#tours">Group Tour</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="index.html#tours">Northern Ethiopia</a></li>
+                            <li><a class="dropdown-item" href="index.html#tours">Southern Ethiopia</a></li>
+                            <li><a class="dropdown-item" href="index.html#tours">Eastern Ethiopia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="activitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Activities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="activitiesDropdown">
+                            <li><a class="dropdown-item" href="index.html#tours">Experiences</a></li>
+                            <li><a class="dropdown-item" href="index.html#hikes">Trekking and Hiking</a></li>
+                            <li><a class="dropdown-item" href="index.html#tours">Adventure and Safari</a></li>
+                            <li><a class="dropdown-item" href="index.html#tours">Coffee Tours</a></li>
+                            <li><a class="dropdown-item" href="index.html#tours">Birding Tours</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="true">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesDropdown" style="min-width: 200px;">
+                            <li><a class="dropdown-item" href="concierge-service.html"><i class="fas fa-concierge-bell me-2"></i>Concierge Service</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="nav-link btn-book" href="index.html#contact">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tour Highlights Section -->
+    <section id="tour-highlights" class="tour-highlights">
+        <div class="container">
+            <h2 class="section-title">Tour Highlights</h2>
+            <p class="section-subtitle">Discover what makes our tours special and what to expect during your adventure</p>
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="highlight-item">
+                        <i class="fas fa-clock"></i>
+                        <h4>Duration</h4>
+                        <p>3-8 hours</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="highlight-item">
+                        <i class="fas fa-bus"></i>
+                        <h4>Transportation</h4>
+                        <p>Mini Bus / Private Vehicle</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="highlight-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Tour Type</h4>
+                        <p>Group Tour / Private Tour</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="highlight-item">
+                        <i class="fas fa-user-friends"></i>
+                        <h4>Group Size</h4>
+                        <p>portable</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="tour-content-section">
+        <div class="container">
+            <div class="row">
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    <!-- Tour Overview -->
+                    <div class="content-card">
+                        <h2>Tour Overview</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: #666;">
+                            Experience the best of Addis Ababa on a full/half-day layover tour.
+                            Visit the National Museum of Ethiopia and see the famous Lucy fossil.
+                            Explore the historic Holy Trinity Cathedral and vibrant Merkato Market.
+                            Enjoy panoramic city views from the scenic Entoto Hills.
+                            Discover the rich history, culture, and traditions of Ethiopia’s capital.
+                            Perfect for travelers with limited time book your Addis Ababa layover tour today!
+                        </p>
+                    </div>
+
+                    <!-- Detailed Itinerary -->
+                    <div class="content-card">
+                        <h2>Detailed Itinerary</h2>
+                        <div class="itinerary-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-time">
+                                    <i class="fas fa-clock"></i> 7:00 AM
+                                </div>
+                                <h4 class="timeline-title">Hotel Pickup / Airport Pickup</h4>
+                                <p class="timeline-description">Meet your professional guide and driver at your hotel or airport. Brief introduction and overview of the day's itinerary.</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-time">
+                                    <i class="fas fa-clock"></i> 7:30 AM
+                                </div>
+                                <h4 class="timeline-title">Drive to Entoto Hills</h4>
+                                <p class="timeline-description">Enjoy a scenic drive to Entoto Hills, the highest point in Addis Ababa. Take in breathtaking panoramic views of the entire city and surrounding mountains.</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-time">
+                                    <i class="fas fa-clock"></i> 9:00 AM
+                                </div>
+                                <h4 class="timeline-title">Ethnological Museum</h4>
+                                <p class="timeline-description">Visit the Ethnological Museum, housed in the former palace of Emperor Haile Selassie. Explore exhibits showcasing Ethiopia's diverse cultures, traditions, and artifacts.</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-time">
+                                    <i class="fas fa-clock"></i> 11:00 AM
+                                </div>
+                                <h4 class="timeline-title">National Museum of Ethiopia</h4>
+                                <p class="timeline-description">Discover the National Museum, home to "Lucy" - the 3.2-million-year-old hominid fossil. Explore Ethiopia's rich archaeological heritage, royal artifacts, and ancient treasures.</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-time">
+                                    <i class="fas fa-clock"></i> 1:00 PM
+                                </div>
+                                <h4 class="timeline-title">Lunch Break</h4>
+                                <p class="timeline-description">Enjoy a traditional Ethiopian lunch at a local restaurant. Experience authentic cuisine and learn about Ethiopian dining customs.</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-time">
+                                    <i class="fas fa-clock"></i> 2:30 PM
+                                </div>
+                                <h4 class="timeline-title">St. George Cathedral</h4>
+                                <p class="timeline-description">Visit St. George Cathedral, known for its distinctive octagonal form. This historic church is a significant religious and cultural landmark in Addis Ababa.</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-time">
+                                    <i class="fas fa-clock"></i> 4:00 PM
+                                </div>
+                                <h4 class="timeline-title">Merkato Market</h4>
+                                <p class="timeline-description">Explore Merkato, one of Africa's largest open-air markets. Immerse yourself in local culture, shop for traditional crafts, spices, and experience the vibrant atmosphere.</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-time">
+                                    <i class="fas fa-clock"></i> 5:00 PM
+                                </div>
+                                <h4 class="timeline-title">Traditional Coffee Ceremony</h4>
+                                <p class="timeline-description">End your day with an authentic Ethiopian coffee ceremony. Experience the traditional way coffee is prepared and served, a cultural ritual that's central to Ethiopian hospitality.</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-time">
+                                    <i class="fas fa-clock"></i> 5:30 PM
+                                </div>
+                                <h4 class="timeline-title">Return to Hotel / Airport</h4>
+                                <p class="timeline-description">Conclude the tour and return to your hotel or airport. Your guide will ensure you have all the information you need for the rest of your stay.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Inclusions & Exclusions -->
+                    <div class="content-card">
+                        <h2>What's Included & Excluded</h2>
+                        <div class="included-excluded">
+                            <div class="included-box">
+                                <h4><i class="fas fa-check-circle me-2"></i>Included</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Fuel expenses and driver allowances</li>
+                                    <li><i class="fas fa-check"></i> Bottled water</li>
+                                    <li><i class="fas fa-check"></i> Cultural coffee experience</li>
+                                    <li><i class="fas fa-check"></i> English-speaking professional guide</li>
+                                    <li><i class="fas fa-check"></i> Hotel/Airport pickup and drop-off</li>
+                                    <li><i class="fas fa-check"></i> Comfortable air-conditioned vehicle</li>
+                                </ul>
+                            </div>
+                            <div class="excluded-box">
+                                <h4><i class="fas fa-times-circle me-2"></i>Excluded</h4>
+                                <ul>
+                                    <li><i class="fas fa-times"></i> Alcoholic drinks</li>
+                                    <li><i class="fas fa-times"></i> Camera and video charges</li>
+                                    <li><i class="fas fa-times"></i> Lunch and dinner</li>
+                                    <li><i class="fas fa-times"></i> Personal insurance</li>
+                                    <li><i class="fas fa-times"></i> Tips and gratuities</li>
+                                    <li><i class="fas fa-times"></i> Personal expenses</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cancellation Policy -->
+                    <div class="content-card">
+                        <div class="policy-box">
+                            <h4><i class="fas fa-info-circle me-2"></i>Cancellation Policy</h4>
+                            <p><strong>Free cancellation:</strong> Cancel up to 24 hours before the tour starts.</p>
+                            <p><strong>Weather:</strong> In case of severe weather conditions, we will offer alternative dates.</p>
+                            <p><strong>No advanced payment</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="sidebar-card" id="booking">
+                        <div class="price-display">
+                            <div class="price">From $33</div>
+                            <div class="price-label">per person</div>
+                            <p style="font-size: 0.85rem; margin-top: 10px; opacity: 0.8;">Price varies by group size</p>
+                        </div>
+
+                        <a href="index.html#contact" class="btn-book-tour">
+                            <i class="fas fa-calendar-check me-2"></i>Book Now
+                        </a>
+
+                        <div style="margin-top: 30px;">
+                            <h3 style="color: #1a3c5e; font-size: 1.3rem; font-weight: 600; margin-bottom: 20px;">
+                                <i class="fas fa-info-circle me-2" style="color: #f8c107;"></i>Quick Info
+                            </h3>
+                            <ul class="info-list">
+                                <li>
+                                    <i class="fas fa-users"></i>
+                                    <strong>Group Size:</strong>
+                                    <span>2-12 people</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-language"></i>
+                                    <strong>Language:</strong>
+                                    <span>English</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-bus"></i>
+                                    <strong>Transport:</strong>
+                                    <span>Included</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-utensils"></i>
+                                    <strong>Meals:</strong>
+                                    <span>Not included</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-ticket-alt"></i>
+                                    <strong>Entrance Fees:</strong>
+                                    <span>Not Included</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-camera"></i>
+                                    <strong>Photography:</strong>
+                                    <span>Allowed</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-calendar"></i>
+                                    <strong>Available:</strong>
+                                    <span>Daily</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div style="margin-top: 30px;">
+                            <h3 style="color: #1a3c5e; font-size: 1.3rem; font-weight: 600; margin-bottom: 20px;">
+                                <i class="fas fa-shield-alt me-2" style="color: #f8c107;"></i>Safety & Health
+                            </h3>
+                            <ul class="info-list">
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>COVID-19:</strong>
+                                    <span>Safety protocols</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Guides:</strong>
+                                    <span>Licensed professionals</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Vehicles:</strong>
+                                    <span>Insured & maintained</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>First Aid:</strong>
+                                    <span>Kit available</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px; text-align: center;">
+                            <h4 style="color: #1a3c5e; margin-bottom: 15px;">Need Help?</h4>
+                            <p style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">Our team is here to assist you</p>
+                            <a href="tel:+251913271706" style="color: #f8c107; text-decoration: none; font-weight: 600;">
+                                <i class="fas fa-phone me-2"></i>+251 913 271706
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-overlay"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="images/logo1.png" alt="Yetenbi Ethiopia Tours" class="footer-logo me-3">
+                            <h3 class="text-uppercase fw-bold mb-0">Yetenbi Ethiopia Tours</h3>
+                        </div>
+                        <p>Your trusted travel partner for discovering the rich culture and breathtaking landscapes of Ethiopia.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0">&copy; 2025 Yetenbi Ethiopia Tours. All Rights Reserved.</p>
+                        <a href="index.html" class="text-decoration-none mt-2 d-inline-block">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navbarNav = document.getElementById('navbarNav');
+            
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    navbarNav.classList.toggle('show');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

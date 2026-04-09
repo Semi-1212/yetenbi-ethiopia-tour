@@ -3,9 +3,39 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>8 Days Ethiopia Coffee Tours - Full Itinerary | Yetenbi Ethiopia Tours</title>
-        <meta name="description" content="Experience an 8-day immersive coffee tour in Ethiopia. Visit Bonga (birthplace of coffee), explore Bebeka Coffee Plantation, discover Mankira, and participate in traditional coffee ceremonies. Complete itinerary included.">
-        <meta name="keywords" content="8 days coffee tour Ethiopia, Bonga coffee tour, Bebeka coffee plantation, Mankira coffee discovery, Jimma coffee tour, Ethiopia coffee itinerary, coffee origin tour Ethiopia">
+        <title>8 Days Ethiopia Coffee Tour | Coffee Origin Trail in Bonga, Bebeka & Jimma | Yetenbi</title>
+        <meta name="description" content="Book an 8-day Ethiopia coffee tour to Bonga, Mankira, Bebeka and Jimma. Visit Arabica origin forests, coffee farms and plantations, and enjoy authentic Ethiopian coffee ceremony experiences.">
+        <meta name="keywords" content="ethiopia coffee tour, 8 days coffee tour ethiopia, ethiopian coffee tour package, bonga coffee tour, kaffa coffee origin tour, mankira coffee discovery, bebeka coffee plantation tour, jimma coffee tour, coffee farm tour ethiopia, coffee plantation ethiopia, ethiopian arabica origin tour, ethiopian coffee ceremony tour, coffee tasting ethiopia, coffee heritage tour ethiopia, birthplace of coffee tour, private coffee tour ethiopia">
+        <link rel="canonical" href="https://yetenbiethiopiatours.com/activities/8-days-coffee-tour.html">
+        <meta property="og:title" content="8 Days Ethiopia Coffee Tour | Bonga, Bebeka, Jimma & Coffee Ceremony">
+        <meta property="og:description" content="Explore Ethiopia's coffee origin trail in Bonga, Mankira, Bebeka and Jimma with farm visits, coffee tasting and traditional ceremony.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://yetenbiethiopiatours.com/activities/8-days-coffee-tour.html">
+        <meta property="og:image" content="https://yetenbiethiopiatours.com/images/coffee1.jpg">
+        <meta property="og:locale" content="en_US">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="8 Days Ethiopia Coffee Tour | Origin of Arabica">
+        <meta name="twitter:description" content="Coffee origin tour in Ethiopia: Bonga, Mankira, Bebeka and Jimma with plantation visits and Ethiopian coffee ceremony.">
+        <meta name="twitter:image" content="https://yetenbiethiopiatours.com/images/coffee1.jpg">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TouristTrip",
+            "name": "8 Days Ethiopia Coffee Tour",
+            "description": "Guided coffee tour in Ethiopia covering Addis Ababa, Jimma, Bonga, Mankira and Bebeka with coffee farm visits and ceremony experiences.",
+            "keywords": "ethiopia coffee tour, bonga coffee tour, bebeka coffee plantation, jimma coffee tour, ethiopian coffee ceremony",
+            "touristType": "Coffee lovers and cultural travelers",
+            "provider": {
+                "@type": "TravelAgency",
+                "name": "Yetenbi Ethiopia Tours",
+                "url": "https://yetenbiethiopiatours.com/"
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://yetenbiethiopiatours.com/activities/8-days-coffee-tour.html"
+            }
+        }
+        </script>
         <meta name="author" content="Yetenbi Ethiopia Tours">
         <link rel="icon" type="image/png" href="../images/logo1.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -59,45 +89,41 @@
             .itinerary-card {
                 background: white;
                 border-radius: 15px;
-                padding: 30px;
+                padding: 34px;
                 margin-bottom: 25px;
                 box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-                transition: all 0.3s ease;
                 border-left: 5px solid #f8c107;
             }
-            
-            .itinerary-card:hover {
-                transform: translateX(5px);
-                box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            .itinerary-card h3 { font-size: 1.6rem; font-weight: 700; color: #1a3c5e; margin-bottom: 10px; }
+            .itinerary-card .itinerary-intro { color: #555; line-height: 1.75; margin-bottom: 20px; }
+            .itinerary-list { list-style: none; padding: 0; margin: 0; }
+            .itinerary-list li {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 12px;
+                align-items: start;
+                padding: 14px 0;
+                border-bottom: 1px solid #efefef;
+                color: #555;
+                line-height: 1.7;
             }
-            
-            .itinerary-card .day-number {
-                display: inline-block;
-                background: linear-gradient(135deg, #f8c107, #ffd700);
-                color: white;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                text-align: center;
-                line-height: 50px;
-                font-weight: 700;
-                font-size: 1.2rem;
-                margin-bottom: 15px;
-            }
-            
-            .itinerary-card h3 {
-                font-size: 1.5rem;
+            .itinerary-list li:last-child { border-bottom: none; }
+            .itinerary-day {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 70px;
+                height: 34px;
+                border-radius: 999px;
+                font-size: 0.9rem;
                 font-weight: 700;
                 color: #1a3c5e;
-                margin-bottom: 15px;
+                background: #fff5d6;
             }
-            
-            .itinerary-card p {
-                color: #555;
-                line-height: 1.8;
-                font-size: 1rem;
-                margin: 0;
-            }
+            .itinerary-route { font-weight: 700; color: #1a3c5e; margin-right: 6px; }
+            .tour-layout-section { padding: 80px 0; background: #f8f9fa; }
+            .left-info-stack .info-card { margin-bottom: 20px; }
+            .left-info-stack .info-card:last-child { margin-bottom: 0; }
             
             .info-section {
                 padding: 80px 0;
@@ -346,90 +372,86 @@
         </div>
     </section>
 
-    <!-- Itinerary Section -->
-    <section class="itinerary-section">
+    <!-- Itinerary + Inclusions Layout -->
+    <section class="tour-layout-section">
         <div class="container">
             <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 700; color: #1a3c5e;">Detailed Itinerary</h2>
-            
-            <div class="itinerary-card">
-                <div class="day-number">1</div>
-                <h3>Day 1: Addis Ababa</h3>
-                <p>You will be met upon arrival and transferred to your hotel. Refresh and begin your sightseeing of Addis with a drive up to mount Entoto for a panoramic view of Addis. Descend down and drive to National museum where you will have a chance to spot the oldest hominids of 'Lucy' fossil. Visit and proceed to the Holy Trinity built during the WWII. Then proceed to Ethnographic museum, which use to be the palace of Emperor Hailesellase. To wrap up you drive to merkato, the biggest market in East Africa. Overnight in Addis.</p>
-            </div>
-
-            <div class="itinerary-card">
-                <div class="day-number">2</div>
-                <h3>Day 2: Addis Ababa - Jimma</h3>
-                <p>Early in the morning after breakfast, you will drive to Jimma (345 Km from Addis). On the way you will pass through beautiful landscapes as you drive through the Gibe River Valley. Later, you can visit Jimma Museum and King Abba Jiffar Place. You will have dinner and spend the night at the hotel. Overnight stay in Honey land hotel.</p>
-            </div>
-
-            <div class="itinerary-card">
-                <div class="day-number">3</div>
-                <h3>Day 3: Jimma - Bonga</h3>
-                <p>After an early morning breakfast you will drive to Bonga (125 Kms from Jimma) the birth place of coffee. And upon arrival at Bonga, you will visit to a traditional Kaffa house and learn about the culture of the Kaffa people. You will have lunch at Bonga. After having lunch drive to Ellelo, Adiyo falls, the Dadiben and Gora Hot spring. You will have dinner and spend the night at the hotel. Overnight stay in Kaffa Guest house.</p>
-            </div>
-
-            <div class="itinerary-card">
-                <div class="day-number">4</div>
-                <h3>Day 4: Mankira</h3>
-                <p>An early morning trek after breakfast will take you to Mankira, the place where coffee Arabica was discovered. En route visit the ancient Adaracha Medhane Alem church and the Gurguto natural Bridge. You will have dinner and spend the night at the hotel. Overnight stay in Kaffa Guest house.</p>
-            </div>
-
-            <div class="itinerary-card">
-                <div class="day-number">5</div>
-                <h3>Day 5: Bebeka</h3>
-                <p>You will be driven to Bebeka (30 km from Mizan Tefari) right after breakfast. There you will check into a hotel and after a brief break, you will have lunch. Later you will visit the largest Coffee Plantation in Ethiopia (covers some 6,000 hectares and is the largest and oldest Coffee Plantation in Ethiopia). In the evening, you will have dinner and spend the night at the hotel. Overnight stay in Bebeka Guest house, or Camping.</p>
-            </div>
-
-            <div class="itinerary-card">
-                <div class="day-number">6</div>
-                <h3>Day 6: Bebeka Coffee Plantation</h3>
-                <p>In the morning after having breakfast explores the coffee plantation from seedling to Coffee Bean. Taste the Ethiopian Coffee Arabica at Bebeka. Stay the day in Bebeka. Overnight stay in Bebeka Guest house, or Camping.</p>
-            </div>
-
-            <div class="itinerary-card">
-                <div class="day-number">7</div>
-                <h3>Day 7: Bebeka - Jimma</h3>
-                <p>In the morning after breakfast you drive back to Jimma. Depending on arrival you can continue a visit to the Jimma attractions. Visit the historical palace of Sultan Abba Jifar (1853 – 1925) that is standing at Jiren. Still stands with its colorful architectural beauty. And continue your visit to Jimma museum that displays most of the historical materials of King Abba Jifar, his kingdom and cultural objects of the local Oromo people and that of the other ethnic groups around Kaffa. Overnight stay in Honey land hotel, Jimma.</p>
-            </div>
-
-            <div class="itinerary-card">
-                <div class="day-number">8</div>
-                <h3>Day 8: Jimma - Addis Ababa - Departure</h3>
-                <p>In the morning, you will have breakfast and drive back to Addis Ababa. You will have lunch at Woliso. You will arrive in Addis Ababa late afternoon and you will do some shopping for souvenirs. In the evening attend a folkloric dinner where you will have a chance to taste several national dishes and watch dances of the various ethnic groups of Ethiopia. The traditional Ethiopian coffee ceremony will also be served. Later you will be transferred to the airport for your departure.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Info Section -->
-    <section class="info-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="info-card">
-                        <h3><i class="fas fa-check-circle"></i> Package Includes</h3>
-                        <ul class="info-list">
-                            <li>All entrance fees</li>
-                            <li>Bottled Water</li>
-                            <li>4WD vehicle with Driver and Fuel</li>
-                            <li>Professional Guide Service</li>
-                            <li>Accommodation as per itinerary</li>
-                            <li>Meals as specified in the itinerary</li>
-                        </ul>
-                    </div>
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-7">
+                    <article class="itinerary-card mb-0" itemscope itemtype="https://schema.org/TouristTrip">
+                        <h3 itemprop="name">8-Day Ethiopia Coffee Origin Itinerary</h3>
+                        <p class="itinerary-intro" itemprop="description">
+                            A simple day-by-day Ethiopia coffee tour through Addis Ababa, Jimma, Bonga, Mankira and Bebeka focused on Arabica origins, farm visits and coffee culture.
+                        </p>
+                        <ol class="itinerary-list">
+                            <li itemprop="itinerary" itemscope itemtype="https://schema.org/ListItem">
+                                <meta itemprop="position" content="1">
+                                <span class="itinerary-day">Day 1</span>
+                                <div><span class="itinerary-route" itemprop="name">Addis Ababa arrival and city highlights:</span> Airport transfer, Addis sightseeing, and overnight in Addis Ababa.</div>
+                            </li>
+                            <li itemprop="itinerary" itemscope itemtype="https://schema.org/ListItem">
+                                <meta itemprop="position" content="2">
+                                <span class="itinerary-day">Day 2</span>
+                                <div><span class="itinerary-route" itemprop="name">Addis Ababa to Jimma:</span> Scenic drive via Gibe Valley with Jimma cultural visits and overnight stay.</div>
+                            </li>
+                            <li itemprop="itinerary" itemscope itemtype="https://schema.org/ListItem">
+                                <meta itemprop="position" content="3">
+                                <span class="itinerary-day">Day 3</span>
+                                <div><span class="itinerary-route" itemprop="name">Jimma to Bonga (Kaffa):</span> Visit the birthplace region of coffee, local culture, and nearby natural attractions.</div>
+                            </li>
+                            <li itemprop="itinerary" itemscope itemtype="https://schema.org/ListItem">
+                                <meta itemprop="position" content="4">
+                                <span class="itinerary-day">Day 4</span>
+                                <div><span class="itinerary-route" itemprop="name">Mankira coffee origin trek:</span> Explore Mankira, linked to Arabica discovery, plus heritage and nature stops.</div>
+                            </li>
+                            <li itemprop="itinerary" itemscope itemtype="https://schema.org/ListItem">
+                                <meta itemprop="position" content="5">
+                                <span class="itinerary-day">Day 5</span>
+                                <div><span class="itinerary-route" itemprop="name">Transfer to Bebeka Plantation:</span> Travel to Bebeka and visit one of Ethiopia's best-known coffee plantations.</div>
+                            </li>
+                            <li itemprop="itinerary" itemscope itemtype="https://schema.org/ListItem">
+                                <meta itemprop="position" content="6">
+                                <span class="itinerary-day">Day 6</span>
+                                <div><span class="itinerary-route" itemprop="name">Bebeka coffee experience day:</span> Learn the full process from seedling to bean and taste Ethiopian Arabica coffee.</div>
+                            </li>
+                            <li itemprop="itinerary" itemscope itemtype="https://schema.org/ListItem">
+                                <meta itemprop="position" content="7">
+                                <span class="itinerary-day">Day 7</span>
+                                <div><span class="itinerary-route" itemprop="name">Bebeka back to Jimma:</span> Return to Jimma with optional historical and museum visits.</div>
+                            </li>
+                            <li itemprop="itinerary" itemscope itemtype="https://schema.org/ListItem">
+                                <meta itemprop="position" content="8">
+                                <span class="itinerary-day">Day 8</span>
+                                <div><span class="itinerary-route" itemprop="name">Jimma to Addis Ababa departure:</span> Drive to Addis, enjoy farewell dinner and Ethiopian coffee ceremony, then airport transfer.</div>
+                            </li>
+                        </ol>
+                    </article>
                 </div>
-                <div class="col-lg-6">
-                    <div class="info-card">
-                        <h3><i class="fas fa-times-circle"></i> Package Excludes</h3>
-                        <ul class="info-list excluded">
-                            <li>Personal expenses (e.g., souvenirs, snacks)</li>
-                            <li>Tips and gratuities</li>
-                            <li>Optional activities or excursions</li>
-                            <li>Alcoholic Drinks</li>
-                            <li>Video and Camera Charges</li>
-                            <li>International flights</li>
-                            <li>Travel insurance</li>
-                        </ul>
+                <div class="col-lg-5">
+                    <div class="left-info-stack">
+                        <div class="info-card">
+                            <h3><i class="fas fa-check-circle"></i> Package Includes</h3>
+                            <ul class="info-list">
+                                <li>All entrance fees</li>
+                                <li>Bottled Water</li>
+                                <li>4WD vehicle with Driver and Fuel</li>
+                                <li>Professional Guide Service</li>
+                                <li>Accommodation as per itinerary</li>
+                                <li>Meals as specified in the itinerary</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-times-circle"></i> Package Excludes</h3>
+                            <ul class="info-list excluded">
+                                <li>Personal expenses (e.g., souvenirs, snacks)</li>
+                                <li>Tips and gratuities</li>
+                                <li>Optional activities or excursions</li>
+                                <li>Alcoholic Drinks</li>
+                                <li>Video and Camera Charges</li>
+                                <li>International flights</li>
+                                <li>Travel insurance</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

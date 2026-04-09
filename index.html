@@ -557,416 +557,6 @@
     </div>
 </section>
 
-<!-- Why Travel With Us Section -->
-<section id="why-travel-with-us" class="py-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); padding: 80px 0;">
-    <div class="container">
-        <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 700; color: #1a3c5e; margin-bottom: 50px;">Why Travel With Us?</h2>
-        
-        <div class="row g-4 justify-content-center">
-            <!-- Award 1: TripAdvisor -->
-            <div class="col-md-3 col-sm-6">
-                <div class="award-card text-center" style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%;">
-                    <div class="award-icon mb-3" style="font-size: 3rem; color: #00af87;">
-                        <i class="fab fa-tripadvisor"></i>
-                    </div>
-                    <h4 style="font-size: 1.1rem; font-weight: 600; color: #1a3c5e; margin-bottom: 10px;">#1 Tours & Activities</h4>
-                    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">We are a leading tour and travel operator in Ethiopia.</p>
-                    <div class="award-badge" style="display: inline-block; background: #00af87; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">
-                        TripAdvisor
-                    </div>
-                </div>
-            </div>
-
-            <!-- Award 2: World Travel Awards -->
-            <div class="col-md-3 col-sm-6">
-                <div class="award-card text-center" style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%;">
-                    <div class="award-icon mb-3" style="font-size: 3rem; color: #f8c107;">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h4 style="font-size: 1.1rem; font-weight: 600; color: #1a3c5e; margin-bottom: 10px;">Ethiopia's Leading Tour Operator 2025</h4>
-                    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">Winner of the World Travel Awards for excellence in service.</p>
-                    <div class="award-badge" style="display: inline-block; background: #f8c107; color: #1a3c5e; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">
-                        World Travel Awards
-                    </div>
-                </div>
-            </div>
-
-            <!-- Award 3: Travelers' Choice -->
-            <div class="col-md-3 col-sm-6">
-                <div class="award-card text-center" style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%;">
-                    <div class="award-icon mb-3" style="font-size: 3rem; color: #e74c3c;">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h4 style="font-size: 1.1rem; font-weight: 600; color: #1a3c5e; margin-bottom: 10px;">Travelers' Choice</h4>
-                    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">Winner of the Travelers' Choice Awards for multiple years.</p>
-                    <div class="award-badge" style="display: inline-block; background: #e74c3c; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">
-                        TripAdvisor
-                    </div>
-                </div>
-            </div>
-
-            <!-- Award 4: Oromia Tourism Commission -->
-            <div class="col-md-3 col-sm-6">
-                <div class="award-card text-center" style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%;">
-                    <div class="award-icon mb-3" style="font-size: 3rem; color: #6a4029;">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h4 style="font-size: 1.1rem; font-weight: 600; color: #1a3c5e; margin-bottom: 10px;">Best Tour Operator 2023</h4>
-                    <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">Awarded for excellence in service and customer satisfaction.</p>
-                    <div class="award-badge" style="display: inline-block; background: #6a4029; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">
-                        Oromia Tourism
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<style>
-.award-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
-}
-</style>
-
-
-<!-- Interactive Map Section -->
-<section id="map-section" class="py-5">
-    <div class="container text-center">
-        <h2 class="title" data-i18n="map_title">Explore Addis Ababa</h2>
-        <p class="subtitle" data-i18n="map_subtitle">Click on the markers to explore top attractions.</p>
-        <div class="map-container">
-            <div id="map"></div>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- Google Maps API & Script -->
-<script>
-    function initMap() {
-        var addisAbaba = { lat: 9.03, lng: 38.74 };
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 13,
-        center: addisAbaba,
-        minZoom: 12, // Prevents zooming too far out
-        maxZoom: 18, // Allows zooming in but not too much
-        gestureHandling: "none", // Disables scroll zoom
-        zoomControl: true, // Enables zoom control buttons
-        restriction: { // Restrict the map to Addis Ababa
-            latLngBounds: {
-                north: 9.12,
-                south: 8.95,
-                east: 38.85,
-                west: 38.65
-            },
-            strictBounds: true
-        },
-        styles: [
-            { elementType: "geometry", stylers: [{ color: "#e9e5dc" }] },
-            { elementType: "labels.text.fill", stylers: [{ color: "#3e2723" }] },
-            { elementType: "labels.text.stroke", stylers: [{ color: "#fafafa" }] },
-            { featureType: "poi.park", elementType: "geometry", stylers: [{ color: "#c5e1a5" }] }
-        ]
-    });
-
-        // Locations with Custom Icons
-        var locations = [
-            { 
-                name: "National Museum of Ethiopia", lat: 9.038, lng: 38.761, 
-                info: "Home of 'Lucy', one of the oldest human fossils.",
-                image: "images/national-museum.jpg",
-                icon: "icons/museum.png"
-            },
-            { 
-                name: "Merkato Market", lat: 9.043, lng: 38.698, 
-                info: "Africa's largest open-air market with vibrant local trade.",
-                image: "images/merkato.jpg",
-                icon: "icons/market.png"
-            },
-            { 
-                name: "Holy Trinity Cathedral", lat: 9.035, lng: 38.759, 
-                info: "A stunning historical church with unique architecture.",
-                image: "images/holy-trinity.jpg",
-                icon: "icons/church.png"
-            },
-            { 
-                name: "Entoto Park", lat: 9.102, lng: 38.729, 
-                info: "A scenic park with breathtaking views and hiking trails.",
-                image: "images/entoto.jpg",
-                icon: "icons/park.png"
-            },
-            { 
-                name: "Red Terror Martyrs' Memorial Museum", lat: 9.016, lng: 38.750, 
-                info: "A museum commemorating victims of the Derg regime.",
-                image: "images/redterror.jpg",
-                icon: "icons/museum.png"
-            },
-            { 
-                name: "Unity Park", lat: 9.015, lng: 38.758, 
-                info: "A historical and recreational park with cultural exhibits.",
-                image: "images/unity-park.jpg",
-                icon: "icons/park.png"
-            },
-            { 
-                name: "Meskel Square", lat: 9.018, lng: 38.751, 
-                info: "A large public square, famous for Meskel celebrations.",
-                image: "images/meskel-square.jpg",
-                icon: "icons/landmark.png"
-            },
-            { 
-                name: "Zoma Museum", lat: 9.002, lng: 38.738, 
-                info: "An eco-friendly art museum showcasing Ethiopian culture.",
-                image: "images/zoma-museum.jpg",
-                icon: "icons/museum.png"
-            },
-            { 
-                name: "Addis Ababa Museum", lat: 9.029, lng: 38.759, 
-                info: "A museum showcasing Addis Ababa's rich history and culture.",
-                image: "images/addis-ababa-museum.jpg",
-                icon: "icons/museum.png"
-            }
-        ];
-
-        // Adding Custom Markers with Animation
-        locations.forEach(function (place) {
-        var marker = new google.maps.Marker({
-            position: { lat: place.lat, lng: place.lng },
-            map: map,
-            title: place.name,
-            icon: {
-                url: place.icon,
-                scaledSize: new google.maps.Size(40, 40)
-            },
-            animation: google.maps.Animation.DROP
-        });
-
-        var infoWindow = new google.maps.InfoWindow({
-            content: `
-                <div class="info-window">
-                    <img src="${place.image}" alt="${place.name}" class="info-img">
-                    <h5>${place.name}</h5>
-                    <p>${place.info}</p>
-                </div>
-            `
-        });
-
-        marker.addListener("click", function () {
-            infoWindow.open(map, marker);
-            map.panTo(marker.getPosition());
-            marker.setAnimation(google.maps.Animation.BOUNCE);
-            setTimeout(() => marker.setAnimation(null), 1500);
-            });
-        });
-    }
-</script>
-<!-- Load Google Maps API -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYOqdy7-yvM-yvpborjiUdeKh3GakDywA&callback=initMap"></script>
-
-<!-- Tours Section -->
-<section id="tours" class="container my-5" style="padding: 80px 0;">
-    <div class="text-center mb-5">
-        <h2 class="section-title" style="font-size: 2.5rem; font-weight: 700; color: #1a3c5e; margin-bottom: 15px;" data-i18n="tours_title">Popular Tour Packages</h2>
-        <p class="section-subtitle" style="font-size: 1.1rem; color: #666; max-width: 700px; margin: 0 auto; margin-bottom: 20px;" data-i18n="tours_subtitle">Experience the top-rated journeys with Yetenbi Ethiopia Tours, featuring the best of Ethiopia. Explore vibrant destinations, cultural experiences, and breathtaking landscapes.</p>
-        <a href="addis-ababa-city-tour.html" class="btn" style="background: #f8c107; color: #1a3c5e; padding: 10px 25px; border-radius: 25px; font-weight: 600; text-decoration: none; display: inline-block; margin-top: 10px;">
-            <i class="fas fa-city me-2"></i>View Full Addis Ababa City Tour Details
-        </a>
-    </div>
-    <div class="row">
-        <!-- Tour 1: National Museum -->
-        <div class="col-md-4 tour-card-wrapper initial">
-            <div class="tour-card">
-                <img src="images/nation.jpg" class="tour-img" alt="National Museum">
-                <div class="tour-content">
-                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
-                        <h5 class="tour-title" data-i18n="tour_national_museum_title" style="margin: 0;">National Museum</h5>
-                        <span style="background: #f8c107; color: #1a3c5e; padding: 4px 10px; border-radius: 15px; font-size: 0.75rem; font-weight: 600;">City Tour</span>
-                    </div>
-                    <p class="tour-text" data-i18n="tour_national_museum_desc">Step back in time with the Lucy fossil, a 3.2-million-year-old marvel, amid treasures whispering Ethiopia's ancient tales. <br><em>Duration: 3 hours</em></p>
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px; padding-top: 15px; border-top: 1px solid #e0e0e0;">
-                        <div>
-                            <span style="font-size: 1.5rem; font-weight: 700; color: #1a3c5e;">$33</span>
-                            <span style="font-size: 0.9rem; color: #666;">/Person</span>
-                        </div>
-                    <button class="tour-btn book-now-btn" data-i18n="nav_book_now">Book Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tour 2: Entoto Park -->
-        <div class="col-md-4 tour-card-wrapper initial">
-            <div class="tour-card">
-                <img src="images/entoto.jpg" class="tour-img" alt="Entoto Park">
-                <div class="tour-content">
-                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
-                        <h5 class="tour-title" data-i18n="tour_entoto_park_title" style="margin: 0;">Entoto Park</h5>
-                        <span style="background: #f8c107; color: #1a3c5e; padding: 4px 10px; border-radius: 15px; font-size: 0.75rem; font-weight: 600;">City Tour</span>
-                    </div>
-                    <p class="tour-text" data-i18n="tour_entoto_park_desc">Bask in the <strong>panoramic views</strong> atop Addis Ababa's crown, where lush trails and cultural gems await. <br><em>Duration: 4 hours</em></p>
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px; padding-top: 15px; border-top: 1px solid #e0e0e0;">
-                        <div>
-                            <span style="font-size: 1.5rem; font-weight: 700; color: #1a3c5e;">$45</span>
-                            <span style="font-size: 0.9rem; color: #666;">/Person</span>
-                        </div>
-                    <button class="tour-btn book-now-btn" data-tour="Entoto Park" data-category="City Tour" data-i18n="nav_book_now">Book Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tour 3: Merkato Market -->
-        <div class="col-md-4 tour-card-wrapper initial">
-            <div class="tour-card">
-                <img src="images/merkato.jpg" class="tour-img" alt="Merkato Market">
-                <div class="tour-content">
-                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
-                        <h5 class="tour-title" data-i18n="tour_merkato_title" style="margin: 0;">Merkato Market</h5>
-                        <span style="background: #f8c107; color: #1a3c5e; padding: 4px 10px; border-radius: 15px; font-size: 0.75rem; font-weight: 600;">City Tour</span>
-                    </div>
-                    <p class="tour-text" data-i18n="tour_merkato_desc">Dive into the <strong>largest open-air market</strong> in Africa, a kaleidoscope of colors and commerce in Addis Ababa's heart. <br><em>Duration: 3 hours</em></p>
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px; padding-top: 15px; border-top: 1px solid #e0e0e0;">
-                        <div>
-                            <span style="font-size: 1.5rem; font-weight: 700; color: #1a3c5e;">$33</span>
-                            <span style="font-size: 0.9rem; color: #666;">/Person</span>
-                        </div>
-                    <button class="tour-btn book-now-btn" data-tour="Merkato Market" data-category="City Tour" data-i18n="nav_book_now">Book Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tour 4: Unity Park -->
-        <div class="col-md-4 tour-card-wrapper initial">
-            <div class="tour-card">
-                <img src="images/unity-park.jpg" class="tour-img" alt="Unity Park">
-                <div class="tour-content">
-                    <h5 class="tour-title" data-i18n="tour_unity_park_title">Unity Park</h5>
-                    <p class="tour-text" data-i18n="tour_unity_park_desc">Experience Ethiopia's heritage at <strong>Unity Park</strong>, a historical and recreational park featuring royal palaces, gardens, and cultural exhibits. <br><em>Duration: 3 hours</em></p>
-                    <button class="tour-btn book-now-btn" data-tour="Unity Park" data-category="City Tour" data-i18n="nav_book_now">Book Now</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tour 5: Addis Ababa Night Tour -->
-        <div class="col-md-4 tour-card-wrapper initial">
-            <div class="tour-card">
-                <img src="images/image10.jpg" class="tour-img" alt="Addis Ababa Night Tour">
-                <div class="tour-content">
-                    <h5 class="tour-title" data-i18n="tour_night_title">Addis Ababa Night Tour</h5>
-                    <p class="tour-text" data-i18n="tour_night_desc">Savor the <strong>nightlife scene</strong>, where Addis Ababa glows with music, flavors, and starlit landmarks. <br><em>Duration: 4 hours</em></p>
-                    <button class="tour-btn book-now-btn" data-tour="Addis Ababa Night Tour" data-category="City Tour" data-i18n="nav_book_now">Book Now</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tour 6: Omo Valley -->
-        <div class="col-md-4 tour-card-wrapper initial">
-            <div class="tour-card">
-                <img src="images/image13.jpg" class="tour-img" alt="Omo Valley">
-                <div class="tour-content">
-                    <h5 class="tour-title" data-i18n="tour_omo_valley_title">Omo Valley</h5>
-                    <p class="tour-text" data-i18n="tour_omo_valley_desc">Meet the <strong>tribal communities</strong> of the south, their vibrant traditions painting Ethiopia's cultural tapestry. <br><em>Duration: 3 days</em></p>
-                    <button class="tour-btn book-now-btn" data-tour="Omo Valley" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tour 7: Danakil Depression -->
-        <div class="col-md-4 tour-card-wrapper hidden">
-            <div class="tour-card">
-                <img src="images/image15.jpg" class="tour-img" alt="Danakil Depression">
-                <div class="tour-content">
-                    <h5 class="tour-title" data-i18n="tour_danakil_title">Danakil Depression</h5>
-                    <p class="tour-text" data-i18n="tour_danakil_desc">Marvel at the <strong>volcanic landscapes</strong>, an alien world of fiery hues in Ethiopia's wild frontier. <br><em>Duration: 2 days</em></p>
-                    <button class="tour-btn book-now-btn" data-tour="Danakil Depression" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tour 8: Ethiopian Coffee Tour -->
-        <div class="col-md-4 tour-card-wrapper hidden">
-            <div class="tour-card">
-                <img src="images/image16.jpg" class="tour-img" alt="Ethiopian Coffee Tour">
-                <div class="tour-content">
-                    <h5 class="tour-title" data-i18n="tour_coffee_title">Ethiopian Coffee Tour</h5>
-                    <p class="tour-text" data-i18n="tour_coffee_desc">Delight in the <strong>coffee ceremony</strong>, a ritual of aroma and warmth, born in Kaffa's rich soil. <br><em>Duration: 3 hours</em></p>
-                    <button class="tour-btn book-now-btn" data-tour="Ethiopian Coffee Tour" data-category="City Tour" data-i18n="nav_book_now">Book Now</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tour 9: Bale Mountains -->
-        <div class="col-md-4 tour-card-wrapper hidden">
-            <div class="tour-card">
-                <img src="images/image17.jpg" class="tour-img" alt="Bale Mountains">
-                <div class="tour-content">
-                    <h5 class="tour-title" data-i18n="tour_bale_mountains_title">Bale Mountains</h5>
-                    <p class="tour-text" data-i18n="tour_bale_mountains_desc">Trek through the <strong>alpine wonders</strong>, where rare wildlife and misty peaks crown Ethiopia's highlands. <br><em>Duration: 2 days</em></p>
-                    <button class="tour-btn book-now-btn" data-tour="Bale Mountains" data-category="Hiking" data-i18n="nav_book_now">Book Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="text-center mt-4">
-        <button id="view-toggle" class="hero-btn" data-i18n="nav_view_more">View More</button>
-    </div>
-    <style>
-        /* Hide cards with the .hidden class */
-        .tour-card-wrapper.hidden {
-            display: none;
-        }
-        /* Hero Section-inspired button style */
-        .hero-btn {
-            padding: 12px 30px;
-            font-size: 18px;
-            font-weight: bold;
-            background-color: #e76f51; /* Vibrant orange for Hero Section */
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .hero-btn:hover {
-            background-color: #c95f43; /* Darker orange on hover */
-            transform: scale(1.05);
-        }
-        .hero-btn:active {
-            transform: scale(0.95);
-        }
-    </style>
-</section>
-
-<script>
-// View More/Show Less Toggle Functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const viewToggleBtn = document.getElementById('view-toggle');
-    let isExpanded = false;
-
-    viewToggleBtn.addEventListener('click', () => {
-        if (!isExpanded) {
-            // Show all tour cards
-            document.querySelectorAll('.tour-card-wrapper.hidden').forEach(card => {
-                card.classList.remove('hidden');
-            });
-            viewToggleBtn.textContent = 'Show Less';
-            isExpanded = true;
-        } else {
-            // Hide non-initial tour cards
-            document.querySelectorAll('.tour-card-wrapper:not(.initial)').forEach(card => {
-                card.classList.add('hidden');
-            });
-            viewToggleBtn.textContent = 'View More';
-            isExpanded = false;
-        }
-    });
-});
-</script>
-
 <!-- Testimonials/Reviews Section -->
 <section id="testimonials" class="py-5" style="background: #f8f9fa; padding: 80px 0;">
     <div class="container">
@@ -1884,7 +1474,37 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="blog-grid" id="blogContainer"></div>
   </div>
 </section>
+<!-- Google Reviews Section -->
+<section id="google-reviews" class="py-5" style="background: #f8f9fa;">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Google Reviews</h2>
+      <p class="section-subtitle">Trusted reviews powered by Shapo</p>
+      <div class="header-divider"></div>
+    </div>
+
+    <div class="shapo-wrapper">
+      <div id="shapo-widget-15cc6176368d4d8b189a"></div>
+      <script id="shapo-embed-js" type="text/javascript" src="https://cdn.shapo.io/js/embed.js" defer></script>
+    </div>
+  </div>
+</section>
 <style>
+.shapo-wrapper {
+  max-width: 920px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+  padding: 24px 28px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 576px) {
+  .shapo-wrapper {
+    max-width: 100%;
+    padding: 16px 14px;
+  }
+}
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -2410,7 +2030,7 @@ function addReadMoreTracking() {
                         <ul class="list-unstyled">
                             <li class="mb-2"><a href="#home" class="text-decoration-none d-block py-1">Home</a></li>
                             <li class="mb-2"><a href="#tours" class="text-decoration-none d-block py-1">Tours</a></li>
-                            <li class="mb-2"><a href="#map" class="text-decoration-none d-block py-1">Destinations</a></li>
+                            <li class="mb-2"><a href="#about-us" class="text-decoration-none d-block py-1">Destinations</a></li>
                             <li class="mb-2"><a href="#about-us" class="text-decoration-none d-block py-1">About Us</a></li>
                             <li class="mb-2"><a href="#blog" class="text-decoration-none d-block py-1">Travel Blog</a></li>
                             <li class="mb-2"><a href="#contact" class="text-decoration-none d-block py-1">Contact</a></li>
