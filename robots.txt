@@ -1,0 +1,5 @@
+# Yetenbi Ethiopia Tours — allow crawling; point crawlers to the sitemap
+User-agent: *
+Allow: /
+
+Sitemap: https://yetenbiethiopiatours.com/sitemap.xml

@@ -3,10 +3,55 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Trekking and Hiking - Yetenbi Ethiopia Tours | Mountain Adventures</title>
-        <meta name="description" content="Explore Ethiopia's stunning mountain ranges with our trekking and hiking tours. Simien Mountains, Bale Mountains, and more adventure trails.">
-        <meta name="keywords" content="Ethiopia trekking, hiking Ethiopia, Simien Mountains, Bale Mountains, mountain trekking Ethiopia">
+        <title>Best Ethiopia Trekking &amp; Hiking Tours | Top Simien &amp; Bale Hikes | Yetenbi</title>
+        <meta name="description" content="Book the best Ethiopia trekking and hiking tours: top Simien Mountains treks, Bale Mountains hikes, Danakil adventure, Wenchi Crater Lake and guided cultural trails.">
+        <meta name="keywords" content="best Ethiopia trekking tours, top Ethiopia hiking tours, Ethiopia trekking tours, Ethiopia hiking tours, Simien Mountains trek, best Simien Mountains trekking, Bale Mountains hiking, Danakil adventure tour, Wenchi Crater Lake hike, guided trekking Ethiopia, Ethiopia mountain hikes, cultural hiking Ethiopia, Yetenbi Ethiopia Tours">
         <meta name="author" content="Yetenbi Ethiopia Tours">
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+        <link rel="canonical" href="https://yetenbiethiopiatours.com/activities/trekking-and-hiking.html">
+        <meta name="theme-color" content="#1a3c5e">
+        <meta property="og:title" content="Best Ethiopia Trekking &amp; Hiking Tours | Top Simien &amp; Bale Hikes">
+        <meta property="og:description" content="Explore top Ethiopia hiking tours with local guides: Simien Mountains, Bale Mountains, Danakil, Wenchi Crater Lake and cultural trekking routes.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://yetenbiethiopiatours.com/activities/trekking-and-hiking.html">
+        <meta property="og:image" content="https://yetenbiethiopiatours.com/images/image1.jpg">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="Yetenbi Ethiopia Tours">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@Yetenbitour">
+        <meta name="twitter:title" content="Best Ethiopia Trekking &amp; Hiking Tours | Yetenbi">
+        <meta name="twitter:description" content="Top guided hikes in Ethiopia: Simien Mountains, Bale Mountains, Danakil, Wenchi Crater Lake and cultural trails.">
+        <meta name="twitter:image" content="https://yetenbiethiopiatours.com/images/image1.jpg">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Best Ethiopia Trekking and Hiking Tours",
+            "description": "Best Ethiopia trekking and hiking tours including top Simien Mountains treks, Bale Mountains hikes, Danakil adventure, Wenchi Crater Lake, and guided cultural trails.",
+            "url": "https://yetenbiethiopiatours.com/activities/trekking-and-hiking.html",
+            "image": "https://yetenbiethiopiatours.com/images/image1.jpg",
+            "publisher": { "@type": "Organization", "name": "Yetenbi Ethiopia Tours", "url": "https://yetenbiethiopiatours.com/" },
+            "isPartOf": { "@type": "WebSite", "name": "Yetenbi Ethiopia Tours", "url": "https://yetenbiethiopiatours.com/" },
+            "about": [
+                "best Ethiopia trekking tours",
+                "top Ethiopia hiking tours",
+                "Simien Mountains trek",
+                "Bale Mountains hiking",
+                "Danakil adventure",
+                "Wenchi Crater Lake hike"
+            ]
+        }
+        </script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://yetenbiethiopiatours.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Trekking and Hiking", "item": "https://yetenbiethiopiatours.com/activities/trekking-and-hiking.html" }
+            ]
+        }
+        </script>
         <link rel="icon" type="image/png" href="../images/logo1.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -55,9 +100,96 @@
                 transform: translateY(-5px);
                 box-shadow: 0 15px 40px rgba(0,0,0,0.15);
             }
+            .hikes-grid {
+                grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+                gap: 18px;
+            }
+            .hike-card {
+                border-radius: 10px;
+            }
+            .hike-card:hover {
+                transform: translateY(-6px);
+            }
+            .hike-image {
+                height: 155px;
+            }
+            .hike-details {
+                padding: 12px;
+            }
+            .hike-details h3 {
+                font-size: 1.05rem;
+                margin-bottom: 8px;
+            }
+            .hike-details p {
+                font-size: 0.84rem;
+                line-height: 1.45;
+                margin-bottom: 10px;
+            }
+            .hike-meta {
+                gap: 6px;
+                margin-bottom: 9px;
+            }
+            .hike-meta span,
+            .hike-highlights span {
+                font-size: 0.72rem;
+            }
+            .hike-details .btn {
+                font-size: 0.82rem;
+                padding: 8px 14px;
+            }
+            #confirmationMessage {
+                display: none;
+            }
+            .modal-overlay {
+                padding: 16px;
+                overflow-y: auto;
+            }
+            .booking-card {
+                width: min(100%, 760px);
+                max-height: calc(100vh - 32px);
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            .booking-form {
+                gap: 14px;
+            }
             @media (max-width: 768px) {
                 .activity-hero h1 {
                     font-size: 2.5rem;
+                }
+                .hikes-grid {
+                    grid-template-columns: 1fr;
+                    gap: 16px;
+                }
+                .hike-image {
+                    height: 150px;
+                }
+                .modal-overlay {
+                    padding: 10px;
+                    align-items: flex-start;
+                }
+                .booking-card {
+                    width: 100%;
+                    max-height: calc(100vh - 20px);
+                    margin-top: 10px;
+                    border-radius: 14px;
+                }
+                .booking-header {
+                    padding: 14px 14px 8px;
+                }
+                .booking-title {
+                    font-size: 1.3rem;
+                    line-height: 1.3;
+                }
+                .booking-subtitle {
+                    font-size: 0.95rem;
+                }
+                .booking-form {
+                    padding: 0 14px 14px;
+                    gap: 10px;
+                }
+                .booking-form .form-group label {
+                    font-size: 0.92rem;
                 }
             }
         </style>
@@ -88,35 +220,168 @@
     <!-- Main Navbar -->
     <nav class="navbar navbar-expand-lg main-navbar">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">
+            <a class="navbar-brand" href="../index.html#home">
                 <img src="../images/logo1.png" alt="Yetenbi Ethiopia Tours">
                 Yetenbi
             </a>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">
+                <span class="hamburger-box" aria-hidden="true">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html#home">Home</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html#home" data-i18n="nav_home">Home</a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="activitiesDropdown" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ethiopiaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ethiopia
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ethiopiaDropdown">
+                            <li><a class="dropdown-item" href="../index.html#about-us">The Country</a></li>
+                            <li><a class="dropdown-item" href="../index.html#about-us">Getting There</a></li>
+                            <li><a class="dropdown-item" href="../index.html#about-us">Visa and Immigration</a></li>
+                            <li><a class="dropdown-item" href="../index.html#about-us">Best Time to Travel</a></li>
+                            <li><a class="dropdown-item" href="../index.html#about-us">Health and Safety</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="toursDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav_tours">
+                            Tour Packages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="toursDropdown">
+                            <li><a class="dropdown-item" href="../addis-ababa-city-tour.html">Addis Ababa City Tours</a></li>
+                            <li><a class="dropdown-item" href="../index.html#tours">Day Trips &amp; Excursions</a></li>
+                            <li><a class="dropdown-item" href="../index.html#tours">Group Tour</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../northern-ethiopia.html">Northern Ethiopia</a></li>
+                            <li><a class="dropdown-item" href="../southern-ethiopia.html">Southern Ethiopia</a></li>
+                            <li><a class="dropdown-item" href="../index.html#tours">Eastern Ethiopia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="activitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="true">
                             Activities
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="activitiesDropdown">
                             <li><a class="dropdown-item" href="experiences.html">Experiences</a></li>
-                            <li><a class="dropdown-item active" href="trekking-and-hiking.html">Trekking and Hiking</a></li>
+                            <li><a class="dropdown-item" href="trekking-and-hiking.html">Trekking and Hiking</a></li>
                             <li><a class="dropdown-item" href="adventure-and-safari.html">Adventure and Safari</a></li>
                             <li><a class="dropdown-item" href="coffee-tour.html">Coffee Tours</a></li>
                             <li><a class="dropdown-item" href="birding-tour.html">Birding Tours</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
-                    <li class="nav-item ms-lg-3"><a class="nav-link btn-book" href="../index.html#contact">Book Now</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="true">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesDropdown" style="min-width: 200px;">
+                            <li><a class="dropdown-item" href="../concierge-service.html"><i class="fas fa-concierge-bell me-2"></i>Concierge Service</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#blog" data-i18n="nav_blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="nav-link btn-book" href="../index.html#contact" data-i18n="nav_book_now">Book Now</a>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <select id="languageSelect" class="form-select form-select-sm" style="width:auto; display:inline-block;">
+                            <option value="en" data-i18n="lang_en">&#127468;&#127463; English</option>
+                            <option value="es" data-i18n="lang_es">&#127466;&#127480; Espa&ntilde;ol</option>
+                            <option value="fr" data-i18n="lang_fr">&#127467;&#127479; Fran&ccedil;ais</option>
+                            <option value="zh" data-i18n="lang_zh">&#127464;&#127475; &#20013;&#25991;</option>
+                            <option value="ar" data-i18n="lang_ar">&#127480;&#127462; &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</option>
+                            <option value="ru" data-i18n="lang_ru">&#127479;&#127482; &#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</option>
+                            <option value="pt" data-i18n="lang_pt">&#127477;&#127481; Portugu&ecirc;s</option>
+                            <option value="de" data-i18n="lang_de">&#127465;&#127466; Deutsch</option>
+                            <option value="ja" data-i18n="lang_ja">&#127471;&#127477; &#26085;&#26412;&#35486;</option>
+                            <option value="hi" data-i18n="lang_hi">&#127470;&#127475; &#2361;&#2367;&#2344;&#2381;&#2342;&#2368;</option>
+                        </select>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Mobile Sidebar -->
+    <div id="sidebar" class="sidebar" aria-hidden="true">
+        <div class="sidebar-header">
+            <div class="sidebar-lang-wrap">
+                <span class="sidebar-lang-icon" aria-hidden="true">&#127482;&#127480;</span>
+                <select id="sidebarLanguageSelect" class="form-select form-select-sm sidebar-lang-select" aria-label="Language">
+                    <option value="en" data-i18n="lang_en">English</option>
+                    <option value="es" data-i18n="lang_es">Espa&ntilde;ol</option>
+                    <option value="fr" data-i18n="lang_fr">Fran&ccedil;ais</option>
+                    <option value="zh" data-i18n="lang_zh">&#20013;&#25991;</option>
+                    <option value="ar" data-i18n="lang_ar">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</option>
+                    <option value="ru" data-i18n="lang_ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</option>
+                    <option value="pt" data-i18n="lang_pt">Portugu&ecirc;s</option>
+                    <option value="de" data-i18n="lang_de">Deutsch</option>
+                    <option value="ja" data-i18n="lang_ja">&#26085;&#26412;&#35486;</option>
+                    <option value="hi" data-i18n="lang_hi">&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;</option>
+                </select>
+            </div>
+            <button type="button" class="sidebar-close-btn" id="closeSidebar" aria-label="Close menu">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="sidebar-body">
+            <a href="../index.html#home" class="active" data-i18n="nav_home">Home</a>
+            <button type="button" class="dropdown-btn" aria-expanded="false">
+                <span>Ethiopia</span>
+                <span class="sidebar-chevron"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
+            </button>
+            <div class="dropdown-container">
+                <a href="../index.html#about-us">The Country</a>
+                <a href="../index.html#about-us">Getting There</a>
+                <a href="../index.html#about-us">Visa and Immigration</a>
+                <a href="../index.html#about-us">Best Time to Travel</a>
+                <a href="../index.html#about-us">Health and Safety</a>
+            </div>
+            <button type="button" class="dropdown-btn" aria-expanded="false">
+                <span>Tour Packages</span>
+                <span class="sidebar-chevron"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
+            </button>
+            <div class="dropdown-container">
+                <a href="../addis-ababa-city-tour.html">Addis Ababa City Tours</a>
+                <a href="../index.html#tours">Day Trips &amp; Excursions</a>
+                <a href="../index.html#tours">Group Tour</a>
+                <a href="../northern-ethiopia.html">Northern Ethiopia</a>
+                <a href="../southern-ethiopia.html">Southern Ethiopia</a>
+                <a href="../index.html#tours">Eastern Ethiopia</a>
+            </div>
+            <button type="button" class="dropdown-btn" aria-expanded="false">
+                <span>Activities</span>
+                <span class="sidebar-chevron"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
+            </button>
+            <div class="dropdown-container">
+                <a href="experiences.html">Experiences</a>
+                <a href="trekking-and-hiking.html">Trekking and Hiking</a>
+                <a href="adventure-and-safari.html">Adventure and Safari</a>
+                <a href="coffee-tour.html">Coffee Tours</a>
+                <a href="birding-tour.html">Birding Tours</a>
+            </div>
+            <button type="button" class="dropdown-btn" aria-expanded="false">
+                <span>Services</span>
+                <span class="sidebar-chevron"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
+            </button>
+            <div class="dropdown-container">
+                <a href="../concierge-service.html">Concierge Service</a>
+            </div>
+            <a href="../index.html#blog" data-i18n="sidebar_blog">Blog</a>
+            <a href="../index.html#contact" data-i18n="sidebar_contact">Contact us</a>
+            <a href="../index.html#contact" class="btn-book mt-3 text-center" data-i18n="nav_book_now">Book Now</a>
+        </div>
+    </div>
     <!-- Hiking Hero Banner -->
     <section class="hiking-hero">
         <div class="hero-overlay">
@@ -147,10 +412,6 @@
                     </button>
                 </div>
             </div>
-            <a href="#hikes" class="scroll-indicator" aria-label="Scroll to hiking section">
-                <span>Scroll</span>
-                <i class="fas fa-chevron-down"></i>
-            </a>
         </div>
     </section>
 
@@ -370,9 +631,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- View More/Show Less Button -->
-            <button class="view-toggle-btn" id="view-toggle" data-i18n="nav_view_more">View More</button>
         </div>
     </section>
 
@@ -410,14 +668,14 @@
         <div class="container">
             <h2>Ready for Your Adventure?</h2>
             <p>Contact us to customize your dream hiking itinerary.</p>
-            <a href="#contact" class="btn-cta"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+            <a href="https://wa.me/251913271706?text=Hi%2C%20I%27m%20interested%20in%20planning%20a%20trekking%20or%20hiking%20tour%20in%20Ethiopia." target="_blank" rel="noopener noreferrer" class="btn-cta"><i class="fab fa-whatsapp"></i> Get in Touch</a>
         </div>
     </section>
 
     <!-- Booking Modal -->
     <div class="modal-overlay" id="bookingModal" role="dialog" aria-labelledby="booking-title" aria-modal="true">
         <div class="booking-card">
-            <button class="close-modal" id="closeModal">×</button>
+            <button type="button" class="close-modal" id="closeModal" aria-label="Close">×</button>
             
             <div class="booking-header">
                 <h1 class="booking-title" id="booking-title" data-i18n="booking_title">Book Your Adventure</h1>
@@ -467,30 +725,10 @@
                 </div>
                 
                 <div class="form-group select-wrapper">
-                    <label for="tourCategory">Tour Category*</label>
-                    <select id="tourCategory" name="tourCategory" class="tour-selector">
-                        <option value="City Tour">City Tour</option>
-                        <option value="Hiking" selected>Hiking Adventure</option>
-                    </select>
-                </div>
-                
-                <div class="form-group select-wrapper">
-                    <label for="cityTours">City Tours</label>
-                    <select id="cityTours" name="cityTours" class="tour-selector">
-                        <option value="" selected disabled>Select city tour</option>
-                        <option value="National Museum">National Museum</option>
-                        <option value="Entoto Park">Entoto Park</option>
-                        <option value="Merkato Market">Merkato Market</option>
-                        <option value="Addis Ababa Night Tour">Addis Ababa Night Tour</option>
-                        <option value="Ethiopian Coffee Tour">Ethiopian Coffee Tour</option>
-                        <option value="Unity Park">Unity Park</option>
-                    </select>
-                </div>
-                
-                <div class="form-group select-wrapper">
-                    <label for="hiking">Hiking Adventures</label>
-                    <select id="hiking" name="hiking" class="tour-selector">
+                    <label for="hiking">Hiking Adventure*</label>
+                    <select id="hiking" name="hiking" class="tour-selector" required>
                         <option value="" selected disabled>Select hiking tour</option>
+                        <option value="Custom Trek Planning">Custom Trek Planning</option>
                         <option value="Simien Mountains Trek">Simien Mountains Trek</option>
                         <option value="Bale Mountains Trek">Bale Mountains Trek</option>
                         <option value="Danakil Adventure">Danakil Adventure</option>
@@ -543,27 +781,193 @@
                 <div class="confirmation-details" id="confirmationDetails">
                     <!-- Booking details will be inserted here -->
                 </div>
-                <button class="back-to-form" id="backToForm" data-i18n="booking_book_another">Book Another Tour</button>
+                <button type="button" class="back-to-form" id="backToForm" data-i18n="booking_book_another">Book Another Tour</button>
             </div>
         </div>
     </div>
-
     <!-- Footer -->
     <footer class="footer-section">
+        <!-- Background overlay for better readability -->
         <div class="footer-overlay"></div>
+        
         <div class="container">
             <div class="footer-content">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="../images/logo1.png" alt="Yetenbi Ethiopia Tours" class="footer-logo me-3">
-                            <h3 class="text-uppercase fw-bold mb-0">Yetenbi Ethiopia Tours</h3>
+                <div class="row g-4">
+                    <!-- Company Info -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-about">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="../images/logo1.png" alt="Yetenbi Ethiopia Tours" class="footer-logo me-3">
+                                <h3 class="text-uppercase fw-bold mb-0">Yetenbi Ethiopia Tours</h3>
+                            </div>
+                            <p class="mb-3">Your trusted travel partner for discovering the rich culture and breathtaking landscapes of Ethiopia.</p>
+                            <div class="footer-newsletter">
+                                <h6 class="mb-2">Subscribe to our newsletter</h6>
+                                <form class="d-flex" id="newsletterForm" action="https://script.google.com/macros/s/AKfycbyHBM8uIiG4ec19ITxFmM5wvDgjPH2qzqr0wUw1IcaAxsiSarrRTbGc_Y2vjth5eIk7/exec" method="POST" target="_blank">
+                                    <input type="email" name="email" class="form-control rounded-0" placeholder="Your email" required>
+                                    <button type="submit" class="btn btn-primary rounded-0">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                                <div id="formMessage" class="mt-2" style="display:none;"></div>
+                            </div>
+                            <!-- TripAdvisor Link Below Newsletter -->
+                            <div class="footer-tripadvisor mt-4 mb-2" style="display: flex; flex-direction: column; align-items: center;">
+                                <a href="https://www.tripadvisor.com/Attraction_Review-g293791-d33341522-Yetenbi_Ethiopia_Tours-Addis_Ababa.html" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                                    <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="Tripadvisor" style="height:40px; width:auto; display:block;">
+                                </a>
+                                <a href="https://www.tripadvisor.com/UserReviewEdit-g293791-d33341522-Yetenbi_Ethiopia_Tours-Addis_Ababa.html" target="_blank" rel="noopener noreferrer" style="color: #fff; font-size: 1.1rem; font-weight: 500; margin-top: 6px; text-decoration: underline;">
+                                    Review us on TripAdvisor!
+                                </a>
+                            </div>
                         </div>
-                        <p>Your trusted travel partner for discovering the rich culture and breathtaking landscapes of Ethiopia.</p>
                     </div>
-                    <div class="col-md-6 text-md-end">
-                        <p class="mb-0">&copy; 2025 Yetenbi Ethiopia Tours. All Rights Reserved.</p>
-                        <a href="../index.html" class="text-decoration-none mt-2 d-inline-block">Back to Home</a>
+
+                    <!-- Newsletter Submission Script -->
+        <script>
+            document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const messageDiv = document.getElementById('formMessage');
+                const scriptUrl = 'https://script.google.com/macros/s/AKfycbyHBM8uIiG4ec19ITxFmM5wvDgjPH2qzqr0wUw1IcaAxsiSarrRTbGc_Y2vjth5eIk7/exec';
+                const submitBtn = form.querySelector('button[type="submit"]');
+                const originalBtnText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<span class="btn-spinner"></span> Sending...';
+                submitBtn.disabled = true;
+                messageDiv.style.display = 'none';
+
+                fetch(scriptUrl, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => response.text())
+                .then(text => {
+                    messageDiv.style.display = 'block';
+                    messageDiv.textContent = text.includes('Thank you') ? 'Thank you for subscribing!' : text;
+                    messageDiv.className = 'mt-2 text-success';
+                    form.reset();
+                })
+                .catch(error => {
+                    messageDiv.style.display = 'block';
+                    messageDiv.textContent = 'Thank you for subscribing!';
+                    messageDiv.className = 'mt-2 text-success';
+                    form.reset();
+                })
+                .finally(() => {
+                    submitBtn.innerHTML = originalBtnText;
+                    submitBtn.disabled = false;
+                    setTimeout(() => {
+                        messageDiv.style.display = 'none';
+                    }, 5000);
+                });
+            });
+            </script>
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-links">
+                            <h5 class="text-uppercase fw-bold mb-4">Explore</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="../index.html" class="text-decoration-none d-block py-1">Home</a></li>
+                                <li class="mb-2"><a href="../activities/experiences.html" class="text-decoration-none d-block py-1">Experiences</a></li>
+                                <li class="mb-2"><a href="../northern-ethiopia.html" class="text-decoration-none d-block py-1">Northern Ethiopia</a></li>
+                                <li class="mb-2"><a href="../southern-ethiopia.html" class="text-decoration-none d-block py-1">Southern Ethiopia</a></li>
+                                <li class="mb-2"><a href="../addis-ababa-city-tour.html" class="text-decoration-none d-block py-1">Addis Ababa City Tours</a></li>
+                                <li class="mb-2"><a href="../concierge-service.html" class="text-decoration-none d-block py-1">Concierge Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-contact">
+                            <h5 class="text-uppercase fw-bold mb-4">Contact Us</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-3 d-flex">
+                                    <i class="fas fa-map-marker-alt me-3 mt-1"></i>
+                                    <span>Addis Ababa, Ethiopia</span>
+                                </li>
+                                <li class="mb-3 d-flex">
+                                    <i class="fas fa-phone-alt me-3 mt-1"></i>
+                                    <a href="tel:+251913271706" class="text-decoration-none">+251 913271706</a>
+                                </li>
+                                <li class="mb-3 d-flex">
+                                    <i class="fas fa-envelope me-3 mt-1"></i>
+                                <a href="mailto:info@yetenbitours.com" class="text-decoration-none">yetenbiethiopiatours@gmail.com</a>
+                                </li>
+                                <li class="mb-3 d-flex">
+                                    <i class="fas fa-clock me-3 mt-1"></i>
+                                    <span>24 hr Mon-Sun</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Popular Tours -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-tours">
+                            <h5 class="text-uppercase fw-bold mb-4" data-i18n="footer_popular_tours">Popular Tours</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="../northern-ethiopia.html" class="text-decoration-none d-block py-1" data-i18n="footer_historic_route">Historic Route</a></li>
+                                <li class="mb-2"><a href="../activities/danakil-gheralta-lalibela.html" class="text-decoration-none d-block py-1" data-i18n="footer_danakil">Danakil Depression</a></li>
+                                <li class="mb-2"><a href="../southern-ethiopia.html" class="text-decoration-none d-block py-1" data-i18n="footer_omo_valley">Omo Valley Tribes</a></li>
+                                <li class="mb-2"><a href="../activities/trekking-and-hiking.html" class="text-decoration-none d-block py-1" data-i18n="footer_simien_mountains">Simien Mountains</a></li>
+                                <li class="mb-2"><a href="../addis-ababa-city-tour.html" class="text-decoration-none d-block py-1" data-i18n="footer_addis_ababa_city_tour">Addis Ababa City Tour</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <hr class="footer-divider my-4">
+
+                <!-- Payment Methods & Partners -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <h6 class="text-uppercase fw-bold mb-3" style="color: #f8c107;">We Work With</h6>
+                        <div class="partner-badges" style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center;">
+                            <span style="background: rgba(255,255,255,0.2); padding: 8px 15px; border-radius: 5px; font-size: 0.9rem;">Viator</span>
+                            <span style="background: rgba(255,255,255,0.2); padding: 8px 15px; border-radius: 5px; font-size: 0.9rem;">Tourradar</span>
+                            <span style="background: rgba(255,255,255,0.2); padding: 8px 15px; border-radius: 5px; font-size: 0.9rem;">GetYourGuide</span>
+                            <span style="background: rgba(255,255,255,0.2); padding: 8px 15px; border-radius: 5px; font-size: 0.9rem;">KAYAK</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="footer-divider my-4">
+
+                <div class="row align-items-center">
+                    <!-- Social Media -->
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <div class="footer-social">
+                            <span class="me-3">Follow us:</span>
+                            <a href="https://web.facebook.com/profile.php?id=61578615547963" target="_blank" rel="noopener noreferrer" class="social-icon me-2">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://x.com/Yetenbitour" target="_blank" rel="noopener noreferrer" class="social-icon me-2">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/yetenbiethiopiatours/" target="_blank" rel="noopener noreferrer" class="social-icon me-2">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@yetenbiethiopiatours" target="_blank" rel="noopener noreferrer" class="social-icon me-2">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://youtube.com/yetenbitours" target="_blank" rel="noopener noreferrer" class="social-icon me-2">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="col-md-6">
+                        <div class="footer-copyright">
+                            <p class="mb-0">&copy; <span id="current-year">2025</span> Yetenbi Ethiopia Tours. All Rights Reserved.</p>
+                            <div class="footer-legal mt-2">
+                                <a href="#" class="text-decoration-none me-3" data-i18n="footer_privacy_policy">Privacy Policy</a>
+                                <a href="#" class="text-decoration-none me-3" data-i18n="footer_terms_of_service">Terms of Service</a>
+                                <a href="#" class="text-decoration-none" data-i18n="footer_faq">FAQ</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -571,17 +975,10 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/mobile-sidebar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-            const navbarNav = document.getElementById('navbarNav');
-            if (mobileMenuBtn) {
-                mobileMenuBtn.addEventListener('click', () => {
-                    navbarNav.classList.toggle('show');
-                });
-            }
-
             const bookingModal = document.getElementById('bookingModal');
             const bookingForm = document.getElementById('bookingForm');
             const confirmationMessage = document.getElementById('confirmationMessage');
@@ -589,8 +986,6 @@
             const backToForm = document.getElementById('backToForm');
             const submitBtn = document.getElementById('submitBtn');
             const spinner = document.getElementById('spinner');
-            const tourCategory = document.getElementById('tourCategory');
-            const cityTours = document.getElementById('cityTours');
             const hiking = document.getElementById('hiking');
             const tourType = document.getElementById('tourType');
             const countryCode = document.getElementById('countryCode');
@@ -611,37 +1006,20 @@
                     confirmationMessage.style.display = 'none';
                     bookingForm.reset();
                     tourType.value = '';
-                    cityTours.value = '';
                     hiking.value = '';
 
                     let tourName = this.dataset.tour;
-                    const category = this.dataset.category;
 
                     const tourNameMap = {
                         'Danakil Depression': 'Danakil Adventure',
                         'Bale Mountains': 'Bale Mountains Trek',
                         'Simien Mountains': 'Simien Mountains Trek',
-                        'Wenchi Crater': 'Wenchi Crater Lake Hike',
-                        'Addis Night Tour': 'Addis Ababa Night Tour',
-                        'Coffee Tour': 'Ethiopian Coffee Tour'
+                        'Wenchi Crater': 'Wenchi Crater Lake Hike'
                     };
                     tourName = tourNameMap[tourName] || tourName;
 
-                    tourCategory.value = category;
-                    document.getElementById('category').value = category;
-
-                    if (category === 'City Tour') {
-                        cityTours.required = true;
-                        hiking.required = false;
-                        cityTours.value = tourName;
-                        hiking.value = '';
-                    } else if (category === 'Hiking') {
-                        hiking.required = true;
-                        cityTours.required = false;
-                        hiking.value = tourName;
-                        cityTours.value = '';
-                    }
-
+                    document.getElementById('category').value = 'Hiking';
+                    hiking.value = tourName;
                     tourType.value = tourName;
                     document.getElementById('fullName').focus();
                 });
@@ -661,29 +1039,7 @@
                 }
             });
 
-            // Sync tour category with dropdowns
-            tourCategory.addEventListener('change', function() {
-                if (this.value === 'City Tour') {
-                    cityTours.required = true;
-                    hiking.required = false;
-                    hiking.value = '';
-                    document.getElementById('category').value = 'City Tour';
-                } else {
-                    cityTours.required = false;
-                    hiking.required = true;
-                    cityTours.value = '';
-                    document.getElementById('category').value = 'Hiking';
-                }
-            });
-
             // Update hidden tourType field
-            cityTours.addEventListener('change', function() {
-                if (this.value) {
-                    tourType.value = this.value;
-                    document.getElementById('category').value = 'City Tour';
-                }
-            });
-
             hiking.addEventListener('change', function() {
                 if (this.value) {
                     tourType.value = this.value;
@@ -776,7 +1132,6 @@
                 bookingForm.style.display = 'flex';
                 bookingForm.reset();
                 tourType.value = '';
-                cityTours.value = '';
                 hiking.value = '';
             });
 
@@ -795,39 +1150,11 @@
                         }
                     });
 
-                    const visibleCards = document.querySelectorAll('.hike-card:not(.hidden)').length;
-                    const initialCards = document.querySelectorAll('.hike-card.initial').length;
-                    const toggleBtn = document.getElementById('view-toggle');
-                    if (visibleCards <= initialCards) {
-                        toggleBtn.textContent = 'View More';
-                        toggleBtn.style.display = 'block';
-                    } else {
-                        toggleBtn.textContent = 'Show Less';
-                        toggleBtn.style.display = 'block';
-                    }
                 });
-            });
-
-            // View More/Show Less Toggle Functionality
-            const viewToggleBtn = document.getElementById('view-toggle');
-            let isExpanded = false;
-            viewToggleBtn.addEventListener('click', () => {
-                if (!isExpanded) {
-                    document.querySelectorAll('.hike-card.hidden').forEach(card => {
-                        card.classList.remove('hidden');
-                    });
-                    viewToggleBtn.textContent = 'Show Less';
-                    isExpanded = true;
-                } else {
-                    document.querySelectorAll('.hike-card:not(.initial)').forEach(card => {
-                        card.classList.add('hidden');
-                    });
-                    viewToggleBtn.textContent = 'View More';
-                    isExpanded = false;
-                }
             });
         });
     </script>
+    <div id="overlay" class="nav-backdrop" aria-hidden="true"></div>
 </body>
 </html>
 
