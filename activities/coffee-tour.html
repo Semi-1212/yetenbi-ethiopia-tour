@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RW0EFGY79V"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RW0EFGY79V');
+        </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Best Ethiopia Coffee Tours | Top Coffee Farm &amp; Ceremony Trips | Yetenbi</title>
@@ -25,14 +33,14 @@
         <meta property="og:description" content="Book top Ethiopia coffee tours with farm visits, traditional coffee ceremony, Yirgacheffe, Sidamo, Harrar tasting, cupping and custom itineraries.">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://yetenbiethiopiatours.com/activities/coffee-tour.html">
-        <meta property="og:image" content="https://yetenbiethiopiatours.com/images/coffee2.jpg">
+        <meta property="og:image" content="https://yetenbiethiopiatours.com/images/coffee2.webp">
         <meta property="og:locale" content="en_US">
         <meta property="og:site_name" content="Yetenbi Ethiopia Tours">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@Yetenbitour">
         <meta name="twitter:title" content="Best Ethiopia Coffee Tours | Yetenbi">
         <meta name="twitter:description" content="Top coffee tours in Ethiopia: farm visits, jebena ceremony, Yirgacheffe, Sidamo, Harrar tasting and cupping.">
-        <meta name="twitter:image" content="https://yetenbiethiopiatours.com/images/coffee2.jpg">
+        <meta name="twitter:image" content="https://yetenbiethiopiatours.com/images/coffee2.webp">
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -67,7 +75,7 @@
         }
         </script>
         <meta name="author" content="Yetenbi Ethiopia Tours">
-        <link rel="icon" type="image/png" href="../images/logo1.png">
+        <link rel="icon" type="image/webp" href="../images/logo1.webp">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -127,9 +135,35 @@
                 max-width: 36rem;
                 margin-left: auto;
                 margin-right: auto;
+                margin-bottom: 18px;
                 line-height: 1.45;
                 text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
                 animation: fadeInUp 1s ease-out 0.2s both;
+            }
+
+            .activity-hero .btn-hero-book {
+                background: #f8c107;
+                color: #1a1a1a;
+                padding: 12px 26px;
+                border-radius: 999px;
+                font-weight: 700;
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                border: none;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+                transition: all 0.3s ease;
+                animation: fadeInUp 1s ease-out 0.4s both;
+            }
+
+            .activity-hero .btn-hero-book:hover,
+            .activity-hero .btn-hero-book:focus {
+                background: #00af87;
+                color: #fff;
+                transform: translateY(-2px);
+                box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
             }
             
             @keyframes fadeInUp {
@@ -347,7 +381,9 @@
             
             .tour-card-image {
                 position: relative;
-                width: 100%;
+                width: auto;
+                min-width: 118px;
+                text-align: center;
                 height: 155px;
                 overflow: hidden;
             }
@@ -518,25 +554,27 @@
             }
             
             .btn-inquire {
-                background: linear-gradient(135deg, #25D366, #128C7E);
+                background: #1a3c5e;
                 color: white;
-                padding: 8px 14px;
-                border-radius: 16px;
-                font-weight: 600;
+                padding: 8px 18px;
+                border-radius: 999px;
+                font-weight: 700;
                 text-decoration: none;
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
                 transition: all 0.3s ease;
-                width: 100%;
+                width: auto;
+                min-width: 132px;
+                align-self: center;
                 border: none;
                 font-size: 0.82rem;
             }
             
             .btn-inquire:hover {
-                background: linear-gradient(135deg, #128C7E, #25D366);
+                background: #122b45;
                 transform: translateY(-2px);
-                box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+                box-shadow: 0 5px 15px rgba(26, 60, 94, 0.3);
                 color: white;
             }
             
@@ -609,7 +647,7 @@
                 <div class="col-md-6">
                     <div class="top-nav-contact">
                         <a href="tel:+251913271706"><i class="fas fa-phone-alt"></i> +251 913 271706</a>
-                        <a href="mailto:yetenbiethiopiatours@gmail.com"><i class="fas fa-envelope"></i> yetenbiethiopiatours@gmail.com</a>
+                        <a href="mailto:info@yetenbiethiopiatours.com"><i class="fas fa-envelope"></i> info@yetenbiethiopiatours.com</a>
                     </div>
                 </div>
                 <div class="col-md-6 text-md-end">
@@ -628,7 +666,7 @@
     <nav class="navbar navbar-expand-lg main-navbar">
         <div class="container">
             <a class="navbar-brand" href="../index.html#home">
-                <img src="../images/logo1.png" alt="Yetenbi Ethiopia Tours">
+                <img src="../images/logo1.webp" alt="Yetenbi Ethiopia Tours">
                 Yetenbi
             </a>
             
@@ -645,17 +683,8 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="../index.html#home" data-i18n="nav_home">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="ethiopiaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Ethiopia
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="ethiopiaDropdown">
-                            <li><a class="dropdown-item" href="../about-us.html#the-country">The Country</a></li>
-                            <li><a class="dropdown-item" href="../about-us.html#getting-there">Getting There</a></li>
-                            <li><a class="dropdown-item" href="../about-us.html#visa-and-immigration">Visa and Immigration</a></li>
-                            <li><a class="dropdown-item" href="../about-us.html#best-time-to-travel">Best Time to Travel</a></li>
-                            <li><a class="dropdown-item" href="../about-us.html#health-and-safety">Health and Safety</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about-us.html">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="toursDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav_tours">
@@ -663,12 +692,11 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="toursDropdown">
                             <li><a class="dropdown-item" href="../addis-ababa-city-tour.html">Addis Ababa City Tours</a></li>
-                            <li><a class="dropdown-item" href="../index.html#tours">Day Trips &amp; Excursions</a></li>
-                            <li><a class="dropdown-item" href="../index.html#tours">Group Tour</a></li>
+                            <li><a class="dropdown-item" href="../day-trips-excursions.html">Day Trips &amp; Excursions</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="../northern-ethiopia.html">Northern Ethiopia</a></li>
                             <li><a class="dropdown-item" href="../southern-ethiopia.html">Southern Ethiopia</a></li>
-                            <li><a class="dropdown-item" href="../index.html#tours">Eastern Ethiopia</a></li>
+                            <li><a class="dropdown-item" href="../eastern-ethiopia.html">Eastern Ethiopia</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -743,28 +771,17 @@
         </div>
         <div class="sidebar-body">
             <a href="../index.html#home" class="active" data-i18n="nav_home">Home</a>
-            <button type="button" class="dropdown-btn" aria-expanded="false">
-                <span>Ethiopia</span>
-                <span class="sidebar-chevron"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
-            </button>
-            <div class="dropdown-container">
-                <a href="../about-us.html#the-country">The Country</a>
-                <a href="../about-us.html#getting-there">Getting There</a>
-                <a href="../about-us.html#visa-and-immigration">Visa and Immigration</a>
-                <a href="../about-us.html#best-time-to-travel">Best Time to Travel</a>
-                <a href="../about-us.html#health-and-safety">Health and Safety</a>
-            </div>
+            <a href="../about-us.html">About Us</a>
             <button type="button" class="dropdown-btn" aria-expanded="false">
                 <span>Tour Packages</span>
                 <span class="sidebar-chevron"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
             </button>
             <div class="dropdown-container">
                 <a href="../addis-ababa-city-tour.html">Addis Ababa City Tours</a>
-                <a href="../index.html#tours">Day Trips &amp; Excursions</a>
-                <a href="../index.html#tours">Group Tour</a>
+                <a href="../day-trips-excursions.html">Day Trips &amp; Excursions</a>
                 <a href="../northern-ethiopia.html">Northern Ethiopia</a>
                 <a href="../southern-ethiopia.html">Southern Ethiopia</a>
-                <a href="../index.html#tours">Eastern Ethiopia</a>
+                <a href="../eastern-ethiopia.html">Eastern Ethiopia</a>
             </div>
             <button type="button" class="dropdown-btn" aria-expanded="false">
                 <span>Activities</span>
@@ -797,9 +814,9 @@
         </video>
         <div class="container">
             <h1><i class="fas fa-coffee"></i> Coffee Tours</h1>
-            <p>Birthplace of coffee — farm tours, jebena ceremony, Yirgacheffe · Sidamo · Harrar</p>
-            <a href="https://wa.me/251913271706" target="_blank" class="btn btn-light btn-sm mt-2 px-3 py-2" style="animation: fadeInUp 1s ease-out 0.4s both; font-size: 0.875rem;">
-                <i class=""></i> Book Now
+            <p>Birthplace of coffee — farm tours, coffee ceremony, Yirgacheffe · Sidamo · Harrar</p>
+            <a href="https://wa.me/251913271706?text=Hello%2C%20I%20would%20like%20to%20book%20a%20coffee%20tour%20in%20Ethiopia." target="_blank" rel="noopener noreferrer" class="btn-hero-book">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i> Book Now
             </a>
         </div>
     </section>
@@ -813,7 +830,7 @@
                         <meta itemprop="author" content="Yetenbi Ethiopia Tours">
                         <meta itemprop="keywords" content="Ethiopia coffee tour, Ethiopian coffee ceremony, coffee farm tour Ethiopia, Yirgacheffe coffee tour, Sidamo coffee tour, Harrar coffee tour, coffee plantation Ethiopia, traditional coffee ceremony, coffee origin Ethiopia, coffee processing tour, coffee tasting Ethiopia, book coffee tour Ethiopia, Addis Ababa coffee ceremony, specialty coffee Ethiopia, coffee cupping Ethiopia, jebena ceremony">
                         <link itemprop="url" href="https://yetenbiethiopiatours.com/activities/coffee-tour.html">
-                        <h2 id="coffee-tour-main-heading" itemprop="headline">Ethiopia Coffee Tours — Farm Visits, Jebena Ceremony &amp; Regional Tasting</h2>
+                        <h2 id="coffee-tour-main-heading" itemprop="headline">Ethiopia Coffee Tours — Farm Visits, Coffee Ceremony &amp; Regional Tasting</h2>
                         <p class="activity-lead" itemprop="description">Arabica’s <strong>coffee origin</strong>: guided <strong>Ethiopia coffee tours</strong> and <strong>coffee farm tours in Ethiopia</strong> in <strong>Yirgacheffe</strong>, <strong>Sidamo</strong>, and <strong>Harrar</strong>, plus <strong>Addis Ababa coffee ceremony</strong> options—plantations, processing, and <strong>Ethiopian specialty coffee</strong> with local hosts.</p>
                         
                         <div itemprop="articleBody">
@@ -889,19 +906,19 @@
                         <div class="tour-card-image">
                             <div class="tour-image-slider" data-slider="tour1">
                                 <div class="tour-image-slide active">
-                                    <img src="../images/coffee2.jpg" alt="5 Days Ethiopia Coffee Tours">
+                                    <img src="../images/coffee2.webp" alt="5 Days Ethiopia Coffee Tours">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee1.jpg" alt="5 Days Ethiopia Coffee Tours">
+                                    <img src="../images/coffee1.webp" alt="5 Days Ethiopia Coffee Tours">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee11.jpg" alt="5 Days Ethiopia Coffee Tours">
+                                    <img src="../images/coffee11.webp" alt="5 Days Ethiopia Coffee Tours">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee4.jpg" alt="5 Days Ethiopia Coffee Tours">
+                                    <img src="../images/coffee4.webp" alt="5 Days Ethiopia Coffee Tours">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee5.jpg" alt="5 Days Ethiopia Coffee Tours">
+                                    <img src="../images/coffee5.webp" alt="5 Days Ethiopia Coffee Tours">
                                 </div>
                             </div>
                             <button class="tour-image-nav prev" onclick="changeImage('tour1', -1)">
@@ -923,7 +940,7 @@
                                     <i class="fas fa-clock"></i>
                                     <span>5 Days</span>
                                 </div>
-                                <a href="https://wa.me/251913271706" target="_blank" class="btn-inquire">
+                                <a href="https://wa.me/251913271706?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20the%205%20Days%20Coffee%20Plantation%20Tour." target="_blank" rel="noopener noreferrer" class="btn-inquire">
                                     Inquire Now
                                 </a>
                             </div>
@@ -937,19 +954,19 @@
                         <div class="tour-card-image">
                             <div class="tour-image-slider" data-slider="tour2">
                                 <div class="tour-image-slide active">
-                                    <img src="../images/coffee3.jpg" alt="5 Days Ethiopian Combined Tours">
+                                    <img src="../images/coffee3.webp" alt="5 Days Ethiopian Combined Tours">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee13.jpg" alt="5 Days Ethiopian Combined Tours">
+                                    <img src="../images/coffee13.webp" alt="5 Days Ethiopian Combined Tours">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee5.jpg" alt="5 Days Ethiopian Combined Tours">
+                                    <img src="../images/coffee5.webp" alt="5 Days Ethiopian Combined Tours">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee6.jpg" alt="5 Days Ethiopian Combined Tours">
+                                    <img src="../images/coffee6.webp" alt="5 Days Ethiopian Combined Tours">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee7.jpg" alt="5 Days Ethiopian Combined Tours">
+                                    <img src="../images/coffee7.webp" alt="5 Days Ethiopian Combined Tours">
                                 </div>
                             </div>
                             <button class="tour-image-nav prev" onclick="changeImage('tour2', -1)">
@@ -971,7 +988,7 @@
                                     <i class="fas fa-clock"></i>
                                     <span>5 Days 4 Night</span>
                                 </div>
-                                <a href="https://wa.me/251913271706" target="_blank" class="btn-inquire">
+                                <a href="https://wa.me/251913271706?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%205%20Days%20Ethiopian%20Combined%20Tours%20to%20Coffee%20Plantation%20and%20Rituals." target="_blank" rel="noopener noreferrer" class="btn-inquire">
                                     Inquire Now
                                 </a>
                             </div>
@@ -985,19 +1002,19 @@
                         <div class="tour-card-image">
                             <div class="tour-image-slider" data-slider="tour3">
                                 <div class="tour-image-slide active">
-                                    <img src="../images/coffee1.jpg" alt="8 Days Ethiopia Coffee Tours">
+                                    <img src="../images/coffee1.webp" alt="8 Days Ethiopia Coffee Tours">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee10.jpg" alt="8 Days Ethiopia Coffee Tours">
+                                    <img src="../images/coffee10.webp" alt="8 Days Ethiopia Coffee Tours">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee7.jpg" alt="8 Days Ethiopia Coffee Tours">
+                                    <img src="../images/coffee7.webp" alt="8 Days Ethiopia Coffee Tours">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee8.jpg" alt="8 Days Ethiopia Coffee Tours">
+                                    <img src="../images/coffee8.webp" alt="8 Days Ethiopia Coffee Tours">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee11.jpg" alt="8 Days Ethiopia Coffee Tours">
+                                    <img src="../images/coffee11.webp" alt="8 Days Ethiopia Coffee Tours">
                                 </div>
                             </div>
                             <button class="tour-image-nav prev" onclick="event.stopPropagation(); changeImage('tour3', -1)">
@@ -1033,28 +1050,28 @@
                         <div class="tour-card-image">
                             <div class="tour-image-slider" data-slider="tour4">
                                 <div class="tour-image-slide active">
-                                    <img src="../images/coffee9.jpg" alt="Traditional Coffee Ceremony">
+                                    <img src="../images/coffee9.webp" alt="Traditional Coffee Ceremony">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee8.jpg" alt="Traditional Coffee Ceremony">
+                                    <img src="../images/coffee8.webp" alt="Traditional Coffee Ceremony">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee4.jpg" alt="Traditional Coffee Ceremony">
+                                    <img src="../images/coffee4.webp" alt="Traditional Coffee Ceremony">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee10.jpg" alt="Traditional Coffee Ceremony">
+                                    <img src="../images/coffee10.webp" alt="Traditional Coffee Ceremony">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee11.jpg" alt="Traditional Coffee Ceremony">
+                                    <img src="../images/coffee11.webp" alt="Traditional Coffee Ceremony">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee12.jpg" alt="Traditional Coffee Ceremony">
+                                    <img src="../images/coffee12.webp" alt="Traditional Coffee Ceremony">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee13.jpg" alt="Traditional Coffee Ceremony">
+                                    <img src="../images/coffee13.webp" alt="Traditional Coffee Ceremony">
                                 </div>
                                 <div class="tour-image-slide">
-                                    <img src="../images/coffee14.jpg" alt="Traditional Coffee Ceremony">
+                                    <img src="../images/coffee14.webp" alt="Traditional Coffee Ceremony">
                                 </div>
                             </div>
                             <button class="tour-image-nav prev" onclick="changeImage('tour4', -1)">
@@ -1076,7 +1093,7 @@
                                     <i class="fas fa-clock"></i>
                                     <span>Half Day</span>
                                 </div>
-                                <a href="https://wa.me/251913271706" target="_blank" class="btn-inquire">
+                                <a href="https://wa.me/251913271706?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20the%20Half%20Day%20Coffee%20Tour." target="_blank" rel="noopener noreferrer" class="btn-inquire">
                                     Inquire Now
                                 </a>
                             </div>
@@ -1117,7 +1134,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-about">
                             <div class="d-flex align-items-center mb-3">
-                                <img src="../images/logo1.png" alt="Yetenbi Ethiopia Tours" class="footer-logo me-3">
+                                <img src="../images/logo1.webp" alt="Yetenbi Ethiopia Tours" class="footer-logo me-3">
                                 <h3 class="text-uppercase fw-bold mb-0">Yetenbi Ethiopia Tours</h3>
                             </div>
                             <p class="mb-3">Your trusted travel partner for discovering the rich culture and breathtaking landscapes of Ethiopia.</p>
@@ -1281,7 +1298,7 @@
                     <!-- Copyright -->
                     <div class="col-md-6">
                         <div class="footer-copyright">
-                            <p class="mb-0">&copy; <span id="current-year">2025</span> Yetenbi Ethiopia Tours. All Rights Reserved.</p>
+                            <p class="mb-0">&copy; <span id="current-year">2025</span> Yetenbi Ethiopia Tours. All Rights Reserved. Powered by <a href="https://www.linkedin.com/in/semira-abdurahman-4a2067392/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">Luna</a></p>
                             <div class="footer-legal mt-2">
                                 <a href="#" class="text-decoration-none me-3" data-i18n="footer_privacy_policy">Privacy Policy</a>
                                 <a href="#" class="text-decoration-none me-3" data-i18n="footer_terms_of_service">Terms of Service</a>
@@ -1360,7 +1377,16 @@
             });
         });
     </script>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/251913271706?text=Hello%21%20Welcome%20to%20Yetenbi%20Ethiopia%20Tours.%20We%20offer%20city%20tours%2C%20cultural%20experiences%2C%20hiking%20adventures%2C%20and%20more%20across%20Ethiopia.%20How%20can%20we%20help%20you%20plan%20your%20trip%20today%3F" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="wa-badge blink">What can I help you with?</span>
+        <span class="wa-notification-dot">1</span>
+    </a>
+
     <div id="overlay" class="nav-backdrop" aria-hidden="true"></div>
+    <script src="../js/tour-schema.js"></script>
+
 </body>
 </html>
 

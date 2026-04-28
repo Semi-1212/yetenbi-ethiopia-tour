@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RW0EFGY79V"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RW0EFGY79V');
+        </script>
         <!-- Character encoding -->
         <meta charset="UTF-8">
         <!-- Responsive viewport -->
@@ -18,7 +26,7 @@
         <!-- Open Graph Tags -->
         <meta property="og:title" content="Addis Ababa Layover Tour | Airport Pickup &amp; City Highlights">
         <meta property="og:description" content="Make the most of a short stay: guided Addis Ababa layover tour with pickup, Entoto, museums, Merkato and traditional coffee ceremony.">
-        <meta property="og:image" content="https://yetenbiethiopiatours.com/images/image11.jpg">
+        <meta property="og:image" content="https://yetenbiethiopiatours.com/images/image11.webp">
         <meta property="og:url" content="https://yetenbiethiopiatours.com/addis-ababa-layover.html">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="en_US">
@@ -27,7 +35,7 @@
         <meta name="twitter:site" content="@Yetenbitour">
         <meta name="twitter:title" content="Addis Ababa Layover Tour | Yetenbi Ethiopia Tours">
         <meta name="twitter:description" content="Airport or hotel pickup, city highlights, and coffee ceremony on your Addis Ababa layover.">
-        <meta name="twitter:image" content="https://yetenbiethiopiatours.com/images/image11.jpg">
+        <meta name="twitter:image" content="https://yetenbiethiopiatours.com/images/image11.webp">
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -59,7 +67,7 @@
         </script>
     
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="images/logo1.png">
+        <link rel="icon" type="image/webp" href="images/logo1.webp">
     
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -106,7 +114,7 @@
                 padding: 140px 0 100px;
                 text-align: center;
                 color: #fff;
-                background: linear-gradient(120deg, rgba(255, 255, 255, 0.18), rgba(255, 200, 80, 0.12)), url('images/image11.jpg') center/cover no-repeat;
+                background: linear-gradient(120deg, rgba(255, 255, 255, 0.18), rgba(255, 200, 80, 0.12)), url('images/image11.webp') center/cover no-repeat;
             }
             .layover-hero::after {
                 content: '';
@@ -416,63 +424,64 @@
             
             /* Itinerary + includes layout (aligned with 8-days coffee tour) */
             .tour-layout-section {
-                padding: 80px 0;
+                padding: 56px 0;
                 background: #f8f9fa;
             }
             .itinerary-card {
                 background: white;
-                border-radius: 15px;
-                padding: 34px;
-                margin-bottom: 25px;
-                box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-                border-left: 5px solid #f8c107;
+                border-radius: 10px;
+                padding: 18px;
+                margin-bottom: 16px;
+                box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+                border-left: 3px solid #f8c107;
             }
-            .itinerary-card h3 { font-size: 1.6rem; font-weight: 700; color: #1a3c5e; margin-bottom: 10px; }
-            .itinerary-card .itinerary-intro { color: #555; line-height: 1.75; margin-bottom: 20px; }
+            .itinerary-card h3 { font-size: 1.15rem; font-weight: 700; color: #1a3c5e; margin-bottom: 6px; }
+            .itinerary-card .itinerary-intro { color: #555; font-size: 0.84rem; line-height: 1.45; margin-bottom: 10px; }
             .itinerary-list { list-style: none; padding: 0; margin: 0; }
             .itinerary-list li {
                 display: grid;
                 grid-template-columns: auto 1fr;
-                gap: 12px;
+                gap: 8px;
                 align-items: start;
-                padding: 14px 0;
+                padding: 7px 0;
                 border-bottom: 1px solid #efefef;
                 color: #555;
-                line-height: 1.7;
+                font-size: 0.82rem;
+                line-height: 1.4;
             }
             .itinerary-list li:last-child { border-bottom: none; }
             .itinerary-day {
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                min-width: 88px;
-                padding: 0 10px;
-                height: 34px;
+                min-width: 66px;
+                padding: 0 7px;
+                height: 24px;
                 border-radius: 999px;
-                font-size: 0.82rem;
+                font-size: 0.68rem;
                 font-weight: 700;
                 color: #1a3c5e;
                 background: #fff5d6;
                 white-space: nowrap;
             }
             .itinerary-route { font-weight: 700; color: #1a3c5e; margin-right: 6px; }
-            .left-info-stack .info-card { margin-bottom: 20px; }
+            .left-info-stack .info-card { margin-bottom: 14px; }
             .left-info-stack .info-card:last-child { margin-bottom: 0; }
             .info-card {
                 background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-                border-radius: 15px;
-                padding: 30px;
-                margin-bottom: 30px;
+                border-radius: 10px;
+                padding: 18px;
+                margin-bottom: 18px;
                 border: 1px solid #e0e0e0;
             }
             .info-card h3 {
-                font-size: 1.8rem;
+                font-size: 1.15rem;
                 font-weight: 700;
                 color: #1a3c5e;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
                 display: flex;
                 align-items: center;
-                gap: 10px;
+                gap: 8px;
             }
             .info-card h3 i { color: #f8c107; }
             .layover-info-list {
@@ -481,12 +490,12 @@
                 margin: 0;
             }
             .layover-info-list li {
-                padding: 12px 0;
-                padding-left: 30px;
+                padding: 7px 0;
+                padding-left: 22px;
                 position: relative;
                 color: #555;
-                font-size: 1rem;
-                line-height: 1.7;
+                font-size: 0.84rem;
+                line-height: 1.45;
                 border-bottom: 1px solid #f0f0f0;
             }
             .layover-info-list li:last-child { border-bottom: none; }
@@ -497,7 +506,7 @@
                 position: absolute;
                 left: 0;
                 color: #00af87;
-                font-size: 1rem;
+                font-size: 0.78rem;
             }
             .layover-info-list.excluded li::before {
                 content: '\f00d';
@@ -510,7 +519,7 @@
                     padding: 36px 0 40px;
                 }
                 .tour-layout-section {
-                    padding: 60px 0;
+                    padding: 46px 0;
                 }
             }
             
@@ -579,20 +588,20 @@
                 }
                 
                 .tour-layout-section {
-                    padding: 50px 0;
+                    padding: 40px 0;
                 }
                 .itinerary-card {
-                    padding: 24px 18px;
+                    padding: 16px 14px;
                 }
                 .info-card {
-                    padding: 22px 18px;
+                    padding: 16px 14px;
                 }
                 .info-card h3 {
-                    font-size: 1.35rem;
+                    font-size: 1.05rem;
                 }
                 .itinerary-day {
-                    min-width: 80px;
-                    font-size: 0.78rem;
+                    min-width: 64px;
+                    font-size: 0.67rem;
                 }
                 
             }
@@ -623,7 +632,7 @@
                 <div class="col-md-6">
                     <div class="top-nav-contact">
                         <a href="tel:+251913271706"><i class="fas fa-phone-alt"></i> +251 913 271706</a>
-                        <a href="mailto:yetenbiethiopiatours@gmail.com"><i class="fas fa-envelope"></i> yetenbiethiopiatours@gmail.com</a>
+                        <a href="mailto:info@yetenbiethiopiatours.com"><i class="fas fa-envelope"></i> info@yetenbiethiopiatours.com</a>
                     </div>
                 </div>
                 <div class="col-md-6 text-md-end">
@@ -642,7 +651,7 @@
     <nav class="navbar navbar-expand-lg main-navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo1.png" alt="Yetenbi Ethiopia Tours">
+                <img src="images/logo1.webp" alt="Yetenbi Ethiopia Tours">
                 Yetenbi
             </a>
             
@@ -659,17 +668,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#home">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="ethiopiaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Ethiopia
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="ethiopiaDropdown">
-                            <li><a class="dropdown-item" href="about-us.html#the-country">The Country</a></li>
-                            <li><a class="dropdown-item" href="about-us.html#getting-there">Getting There</a></li>
-                            <li><a class="dropdown-item" href="about-us.html#visa-and-immigration">Visa and Immigration</a></li>
-                            <li><a class="dropdown-item" href="about-us.html#best-time-to-travel">Best Time to Travel</a></li>
-                            <li><a class="dropdown-item" href="about-us.html#health-and-safety">Health and Safety</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" id="toursDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -677,12 +677,11 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="toursDropdown">
                             <li><a class="dropdown-item active" href="addis-ababa-city-tour.html">Addis Ababa City Tours</a></li>
-                            <li><a class="dropdown-item" href="index.html#tours">Day Trips & Excursions</a></li>
-                            <li><a class="dropdown-item" href="index.html#tours">Group Tour</a></li>
+                            <li><a class="dropdown-item" href="day-trips-excursions.html">Day Trips & Excursions</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="northern-ethiopia.html">Northern Ethiopia</a></li>
                             <li><a class="dropdown-item" href="southern-ethiopia.html">Southern Ethiopia</a></li>
-                            <li><a class="dropdown-item" href="index.html#tours">Eastern Ethiopia</a></li>
+                            <li><a class="dropdown-item" href="eastern-ethiopia.html">Eastern Ethiopia</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -743,28 +742,17 @@
         </div>
         <div class="sidebar-body">
             <a href="index.html#home" data-i18n="nav_home">Home</a>
-            <button type="button" class="dropdown-btn" aria-expanded="false">
-                <span>Ethiopia</span>
-                <span class="sidebar-chevron"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
-            </button>
-            <div class="dropdown-container">
-                <a href="about-us.html#the-country">The Country</a>
-                <a href="about-us.html#getting-there">Getting There</a>
-                <a href="about-us.html#visa-and-immigration">Visa and Immigration</a>
-                <a href="about-us.html#best-time-to-travel">Best Time to Travel</a>
-                <a href="about-us.html#health-and-safety">Health and Safety</a>
-            </div>
+            <a href="about-us.html">About Us</a>
             <button type="button" class="dropdown-btn" aria-expanded="false">
                 <span>Tour Packages</span>
                 <span class="sidebar-chevron"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
             </button>
             <div class="dropdown-container">
                 <a href="addis-ababa-city-tour.html">Addis Ababa City Tours</a>
-                <a href="index.html#tours">Day Trips &amp; Excursions</a>
-                <a href="index.html#tours">Group Tour</a>
+                <a href="day-trips-excursions.html">Day Trips &amp; Excursions</a>
                 <a href="northern-ethiopia.html">Northern Ethiopia</a>
                 <a href="southern-ethiopia.html">Southern Ethiopia</a>
-                <a href="index.html#tours">Eastern Ethiopia</a>
+                <a href="eastern-ethiopia.html">Eastern Ethiopia</a>
             </div>
             <button type="button" class="dropdown-btn" aria-expanded="false">
                 <span>Activities</span>
@@ -872,9 +860,9 @@
     <!-- Itinerary + inclusions (layout matches 8-days coffee tour) -->
     <section class="tour-layout-section" id="booking">
         <div class="container">
-            <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 700; color: #1a3c5e;">Detailed Itinerary</h2>
+            <h2 class="text-center mb-4" style="font-size: 1.65rem; font-weight: 700; color: #1a3c5e;">Detailed Itinerary</h2>
             <div class="row g-4 align-items-start">
-                <div class="col-lg-7">
+                <div class="col-lg-6">
                     <article class="itinerary-card mb-0" id="layover-itinerary" itemscope itemtype="https://schema.org/TouristTrip">
                         <h3 itemprop="name">Addis Ababa layover day itinerary</h3>
                         <p class="itinerary-intro" itemprop="description">
@@ -920,7 +908,7 @@
                         </ol>
                     </article>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                     <div class="left-info-stack">
                         <div class="info-card">
                             <h3><i class="fas fa-check-circle"></i> Package Includes</h3>
@@ -961,7 +949,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-about">
                             <div class="d-flex align-items-center mb-3">
-                                <img src="images/logo1.png" alt="Yetenbi Ethiopia Tours" class="footer-logo me-3">
+                                <img src="images/logo1.webp" alt="Yetenbi Ethiopia Tours" class="footer-logo me-3">
                                 <h3 class="text-uppercase fw-bold mb-0">Yetenbi Ethiopia Tours</h3>
                             </div>
                             <p class="mb-3">Your trusted travel partner for discovering the rich culture and breathtaking landscapes of Ethiopia.</p>
@@ -1125,7 +1113,7 @@
                     <!-- Copyright -->
                     <div class="col-md-6">
                         <div class="footer-copyright">
-                            <p class="mb-0">&copy; <span id="current-year">2025</span> Yetenbi Ethiopia Tours. All Rights Reserved.</p>
+                            <p class="mb-0">&copy; <span id="current-year">2025</span> Yetenbi Ethiopia Tours. All Rights Reserved. Powered by <a href="https://www.linkedin.com/in/semira-abdurahman-4a2067392/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">Luna</a></p>
                             <div class="footer-legal mt-2">
                                 <a href="#" class="text-decoration-none me-3" data-i18n="footer_privacy_policy">Privacy Policy</a>
                                 <a href="#" class="text-decoration-none me-3" data-i18n="footer_terms_of_service">Terms of Service</a>
@@ -1141,7 +1129,16 @@
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/mobile-sidebar.js"></script>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/251913271706?text=Hello%21%20Welcome%20to%20Yetenbi%20Ethiopia%20Tours.%20We%20offer%20city%20tours%2C%20cultural%20experiences%2C%20hiking%20adventures%2C%20and%20more%20across%20Ethiopia.%20How%20can%20we%20help%20you%20plan%20your%20trip%20today%3F" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="wa-badge blink">What can I help you with?</span>
+        <span class="wa-notification-dot">1</span>
+    </a>
+
     <div id="overlay" class="nav-backdrop" aria-hidden="true"></div>
+    <script src="js/tour-schema.js"></script>
+
 </body>
 </html>
 

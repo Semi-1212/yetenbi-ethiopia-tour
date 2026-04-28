@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RW0EFGY79V"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RW0EFGY79V');
+        </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +22,7 @@
 
         <meta property="og:title" content="top northern-ethiopia historical tours -lalibela gonder axum | Yetenbi Ethiopia Tours">
         <meta property="og:description" content="Find clear Northern Ethiopia tour options with durations, tour type and pricing guidance for Lalibela, Gondar, Lake Tana, Gorgora and Tigray routes.">
-        <meta property="og:image" content="https://yetenbiethiopiatours.com/images/image14.jpg">
+        <meta property="og:image" content="https://yetenbiethiopiatours.com/images/image14.webp">
         <meta property="og:url" content="https://yetenbiethiopiatours.com/northern-ethiopia.html">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="en_US">
@@ -23,7 +31,7 @@
         <meta name="twitter:site" content="@Yetenbitour">
         <meta name="twitter:title" content="top northern-ethiopia historical tours -lalibela gonder axum | Yetenbi Ethiopia Tours">
         <meta name="twitter:description" content="Plan Northern Ethiopia tours with Lalibela, Gondar, Lake Tana and Tigray highlights.">
-        <meta name="twitter:image" content="https://yetenbiethiopiatours.com/images/image14.jpg">
+        <meta name="twitter:image" content="https://yetenbiethiopiatours.com/images/image14.webp">
 
         <script type="application/ld+json">
         {
@@ -51,7 +59,7 @@
         }
         </script>
 
-        <link rel="icon" type="image/png" href="images/logo1.png">
+        <link rel="icon" type="image/webp" href="images/logo1.webp">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -64,11 +72,12 @@
                 --safari-gold: #f8c107;
                 --safari-dark: #1a1f24;
                 --safari-green: #3a6b4f;
+                --east-blue: #1a3c5e;
             }
             .safari-hero {
                 margin-top: 90px;
                 min-height: 80vh;
-                background: url('images/image14.jpg') center/cover no-repeat;
+                background: url('images/image14.webp') center/cover no-repeat;
                 position: relative;
                 color: #fff;
                 display: flex;
@@ -165,40 +174,6 @@
                 box-sizing: border-box;
             }
 
-            #northern-tours article.tour-card {
-                display: flex;
-                flex-direction: column;
-            }
-            #northern-tours article.tour-card .tour-body {
-                display: flex;
-                flex-direction: column;
-                flex: 1;
-                min-height: 0;
-            }
-            #northern-tours .tour-card-actions {
-                margin-top: auto;
-                padding-top: 8px;
-                display: flex;
-                justify-content: center;
-            }
-            #northern-tours .tour-btn.book-now-btn {
-                width: auto;
-                text-align: center;
-                border: none;
-                cursor: pointer;
-                font-family: inherit;
-                min-width: 118px;
-                padding: 6px 12px;
-                font-size: 0.76rem;
-                line-height: 1.2;
-            }
-            @media (min-width: 992px) {
-                #northern-tours .col-lg-4 {
-                    flex: 0 0 auto;
-                    width: 25%;
-                }
-            }
-
             /* Booking modal (same adjustments as addis-ababa-city-tour.html) */
             .modal-overlay {
                 padding: 16px;
@@ -238,66 +213,144 @@
             }
 
             .tours-section {
-                padding: 24px 0 56px;
+                padding: 50px 0 70px;
             }
             .tours-section .section-title {
                 text-align: center;
-                color: #1a3c5e;
-                font-size: 2rem;
+                color: var(--east-blue);
                 font-weight: 800;
-                margin-bottom: 10px;
+                margin-bottom: 8px;
             }
             .tours-section .section-subtitle {
                 text-align: center;
-                color: #64758b;
-                max-width: 700px;
-                margin: 0 auto 26px;
-                font-size: 0.98rem;
+                color: #5f6b75;
+                max-width: 760px;
+                margin: 0 auto 34px;
             }
             .tour-card {
-                background: #fff;
-                border: 1px solid #e9edf2;
-                border-radius: 12px;
-                box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
                 height: 100%;
+                margin: 0;
+                background: #fff;
+                border-radius: 14px;
                 overflow: hidden;
-                transition: transform .25s ease, box-shadow .25s ease;
-                max-width: 95%;
-                margin: 12px auto;
+                box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+                transition: transform 0.25s ease, box-shadow 0.25s ease;
             }
-            .tour-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,0.09); }
+            .tour-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 28px rgba(0,0,0,0.09);
+            }
             .tour-thumb {
-                height: 120px;
-                background: linear-gradient(135deg, rgba(248,193,7,0.22), rgba(15,47,70,0.15)), url('images/image11.jpg') center/cover no-repeat;
+                height: 130px;
+                background: linear-gradient(135deg, rgba(248,193,7,0.2), rgba(26,60,94,0.2)), url('images/image14.webp') center/cover no-repeat;
             }
-            .tour-body { padding: 10px; }
+            .tour-thumb.north-simien {
+                background-image: linear-gradient(135deg, rgba(248,193,7,0.2), rgba(26,60,94,0.2)), url('images/Simien Mountains.jpg');
+            }
+            .tour-thumb.north-circuit {
+                background-image: linear-gradient(135deg, rgba(248,193,7,0.2), rgba(26,60,94,0.2)), url('images/yetenbi-axum.webp');
+            }
+            .tour-thumb.north-lalibela {
+                background-image: linear-gradient(135deg, rgba(248,193,7,0.2), rgba(26,60,94,0.2)), url('images/image14.webp');
+            }
+            .tour-thumb.north-laketana {
+                background-image: linear-gradient(135deg, rgba(248,193,7,0.2), rgba(26,60,94,0.2)), url('images/yetenbi-laketana.webp');
+            }
+            .tour-thumb.north-tigray {
+                background-image: linear-gradient(135deg, rgba(248,193,7,0.2), rgba(26,60,94,0.2)), url('images/yetenbi-tigraychurchs.webp');
+            }
+            .tour-thumb.north-mekelle {
+                background-image: linear-gradient(135deg, rgba(248,193,7,0.2), rgba(26,60,94,0.2)), url('images/imag7.webp');
+            }
+            .tour-thumb.north-historic {
+                background-image: linear-gradient(135deg, rgba(248,193,7,0.2), rgba(26,60,94,0.2)), url('images/imag3.webp');
+            }
+            .tour-thumb.north-gorgora {
+                background-image: linear-gradient(135deg, rgba(248,193,7,0.2), rgba(26,60,94,0.2)), url('images/yetenbi-gorgora.webp');
+            }
+            .tour-thumb.north-eightdays {
+                background-image: linear-gradient(135deg, rgba(248,193,7,0.2), rgba(26,60,94,0.2)), url('images/yetenbi-lalibela.webp');
+            }
+            .tour-body {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                min-height: 0;
+                padding: 18px;
+            }
             .badge-region {
-                display: inline-block;
-                font-size: .66rem;
-                font-weight: 700;
-                color: #1a3c5e;
-                background: #fff5d6;
-                border: 1px solid rgba(248,193,7,.45);
+                display: inline-flex;
+                align-self: flex-start;
+                background: rgba(26, 60, 94, 0.1);
+                color: var(--east-blue);
                 border-radius: 999px;
-                padding: 4px 8px;
-                margin-bottom: 8px;
+                padding: 5px 10px;
+                font-size: 0.74rem;
+                font-weight: 700;
+                margin-bottom: 10px;
             }
             .tour-title {
-                font-size: 0.9rem;
-                font-weight: 700;
-                color: #1a3c5e;
-                margin-bottom: 6px;
-                line-height: 1.25;
+                color: #172033;
+                font-size: 1.08rem;
+                font-weight: 800;
+                margin-bottom: 8px;
+                line-height: 1.35;
             }
             .tour-desc {
-                color: #64748b;
-                font-size: 0.76rem;
-                line-height: 1.35;
-                margin: 0 0 8px;
+                color: #4b5563;
+                font-size: 0.88rem;
+                line-height: 1.55;
+                margin-bottom: 12px;
             }
-            .tour-meta { color: #5f6b77; font-size: .78rem; margin-bottom: 4px; }
-            .tour-meta i { color: #f8c107; width: 14px; }
-            .tour-price { font-weight: 700; font-size: .95rem; color: #0f2f46; margin-top: 5px; }
+            .tour-meta,
+            .tour-price {
+                color: #53606b;
+                font-size: 0.84rem;
+                margin-bottom: 6px;
+            }
+            .tour-price {
+                color: var(--safari-green);
+                font-weight: 800;
+            }
+            .tour-meta i,
+            .tour-price i {
+                color: var(--safari-gold);
+                margin-right: 6px;
+            }
+            .tour-card-actions {
+                margin-top: auto;
+                padding-top: 8px;
+                display: flex;
+                justify-content: center;
+            }
+            .tour-btn.whatsapp-inquiry {
+                background: var(--east-blue);
+                color: #fff;
+                text-decoration: none;
+                border: none;
+                border-radius: 999px;
+                cursor: pointer;
+                font-family: inherit;
+                min-width: 118px;
+                padding: 8px 14px;
+                font-size: 0.78rem;
+                font-weight: 700;
+                line-height: 1.2;
+                text-align: center;
+            }
+            .tour-btn.whatsapp-inquiry:hover {
+                background: #122b45;
+                color: #fff;
+            }
+            @media (min-width: 992px) {
+                #northern-tours .col-lg-4 {
+                    flex: 0 0 auto;
+                    width: 25%;
+                }
+            }
 
             @media (max-width: 768px) {
                 .safari-hero { margin-top: 80px; min-height: 72vh; }
@@ -371,7 +424,7 @@
                 <div class="col-md-6">
                     <div class="top-nav-contact">
                         <a href="tel:+251913271706"><i class="fas fa-phone-alt"></i> +251 913 271706</a>
-                        <a href="mailto:yetenbiethiopiatours@gmail.com"><i class="fas fa-envelope"></i> yetenbiethiopiatours@gmail.com</a>
+                        <a href="mailto:info@yetenbiethiopiatours.com"><i class="fas fa-envelope"></i> info@yetenbiethiopiatours.com</a>
                     </div>
                 </div>
                 <div class="col-md-6 text-md-end">
@@ -389,33 +442,23 @@
     <nav class="navbar navbar-expand-lg main-navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo1.png" alt="Yetenbi Ethiopia Tours">
+                <img src="images/logo1.webp" alt="Yetenbi Ethiopia Tours">
                 Yetenbi
             </a>
             <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar"><span class="hamburger-box" aria-hidden="true"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></span></button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="ethiopiaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ethiopia</a>
-                        <ul class="dropdown-menu" aria-labelledby="ethiopiaDropdown">
-                            <li><a class="dropdown-item" href="about-us.html#the-country">The Country</a></li>
-                            <li><a class="dropdown-item" href="about-us.html#getting-there">Getting There</a></li>
-                            <li><a class="dropdown-item" href="about-us.html#visa-and-immigration">Visa and Immigration</a></li>
-                            <li><a class="dropdown-item" href="about-us.html#best-time-to-travel">Best Time to Travel</a></li>
-                            <li><a class="dropdown-item" href="about-us.html#health-and-safety">Health and Safety</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" id="toursDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tour Packages</a>
                         <ul class="dropdown-menu" aria-labelledby="toursDropdown">
                             <li><a class="dropdown-item" href="addis-ababa-city-tour.html">Addis Ababa City Tours</a></li>
-                            <li><a class="dropdown-item" href="index.html#tours">Day Trips & Excursions</a></li>
-                            <li><a class="dropdown-item" href="index.html#tours">Group Tour</a></li>
+                            <li><a class="dropdown-item" href="day-trips-excursions.html">Day Trips & Excursions</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item active" href="northern-ethiopia.html">Northern Ethiopia</a></li>
                             <li><a class="dropdown-item" href="southern-ethiopia.html">Southern Ethiopia</a></li>
-                            <li><a class="dropdown-item" href="index.html#tours">Eastern Ethiopia</a></li>
+                            <li><a class="dropdown-item" href="eastern-ethiopia.html">Eastern Ethiopia</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -434,7 +477,7 @@
                             <li><a class="dropdown-item" href="concierge-service.html"><i class="fas fa-concierge-bell me-2"></i>Concierge Service</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact-us.html#contact">Contact</a></li>
                 </ul>
             </div>
@@ -465,28 +508,17 @@
         </div>
         <div class="sidebar-body">
             <a href="index.html#home" data-i18n="nav_home">Home</a>
-            <button type="button" class="dropdown-btn" aria-expanded="false">
-                <span>Ethiopia</span>
-                <span class="sidebar-chevron"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
-            </button>
-            <div class="dropdown-container">
-                <a href="about-us.html#the-country">The Country</a>
-                <a href="about-us.html#getting-there">Getting There</a>
-                <a href="about-us.html#visa-and-immigration">Visa and Immigration</a>
-                <a href="about-us.html#best-time-to-travel">Best Time to Travel</a>
-                <a href="about-us.html#health-and-safety">Health and Safety</a>
-            </div>
+            <a href="about-us.html">About Us</a>
             <button type="button" class="dropdown-btn" aria-expanded="false">
                 <span>Tour Packages</span>
                 <span class="sidebar-chevron"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
             </button>
             <div class="dropdown-container">
                 <a href="addis-ababa-city-tour.html">Addis Ababa City Tours</a>
-                <a href="index.html#tours">Day Trips &amp; Excursions</a>
-                <a href="index.html#tours">Group Tour</a>
+                <a href="day-trips-excursions.html">Day Trips &amp; Excursions</a>
                 <a href="northern-ethiopia.html">Northern Ethiopia</a>
                 <a href="southern-ethiopia.html">Southern Ethiopia</a>
-                <a href="index.html#tours">Eastern Ethiopia</a>
+                <a href="eastern-ethiopia.html">Eastern Ethiopia</a>
             </div>
             <button type="button" class="dropdown-btn" aria-expanded="false">
                 <span>Activities</span>
@@ -525,7 +557,7 @@
             </div>
             <div class="hero-cta">
                 <a href="#northern-tours" class="btn-cta">Browse Northern Tours <i class="fas fa-arrow-down"></i></a>
-                <button type="button" class="btn-cta book-now-btn" data-category="Northern Ethiopia"><i class="fas fa-calendar-check"></i> Inquire Now</button>
+                <a href="https://wa.me/251913271706?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20Northern%20Ethiopia%20Tours." target="_blank" rel="noopener noreferrer" class="btn-cta"><i class="fas fa-calendar-check"></i> Inquire Now</a>
                 <a href="https://wa.me/251913271706" target="_blank" rel="noopener noreferrer" class="btn-outline"><i class="fab fa-whatsapp"></i> Plan via WhatsApp</a>
             </div>
         </div>
@@ -547,7 +579,7 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <article class="tour-card">
-                        <div class="tour-thumb"></div>
+                        <div class="tour-thumb north-simien" role="img" aria-label="Simien Mountains trekking landscape in Northern Ethiopia"></div>
                         <div class="tour-body">
                             <span class="badge-region">Northern Ethiopia</span>
                             <h3 class="tour-title">11 Days of Historic Route &amp; Simien Trekking Adventure</h3>
@@ -556,14 +588,14 @@
                             <p class="tour-meta"><i class="fas fa-user"></i> Private Tour</p>
                             <p class="tour-price">From $2,260 / person</p>
                             <div class="tour-card-actions">
-                                <button type="button" class="tour-btn book-now-btn" data-tour="11 Days of Historic Route &amp; Simien Trekking Adventure" data-category="Northern Ethiopia">Inquire Now</button>
+                                <a href="https://wa.me/251913271706?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%2011%20Days%20of%20Historic%20Route%20and%20Simien%20Trekking%20Adventure." target="_blank" rel="noopener noreferrer" class="tour-btn whatsapp-inquiry">Inquire Now</a>
                             </div>
                         </div>
                     </article>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <article class="tour-card">
-                        <div class="tour-thumb"></div>
+                        <div class="tour-thumb north-circuit" role="img" aria-label="Axum historical stelae and heritage sites in Northern Ethiopia"></div>
                         <div class="tour-body">
                             <span class="badge-region">Northern Ethiopia</span>
                             <h3 class="tour-title">14 Days Northern Ethiopia Tours</h3>
@@ -572,14 +604,14 @@
                             <p class="tour-meta"><i class="fas fa-users"></i> Price varies by group size</p>
                             <p class="tour-price">From $1,149 / person</p>
                             <div class="tour-card-actions">
-                                <button type="button" class="tour-btn book-now-btn" data-tour="14 Days Northern Ethiopia Tours" data-category="Northern Ethiopia">Inquire Now</button>
+                                <a href="https://wa.me/251913271706?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%2014%20Days%20Northern%20Ethiopia%20Tours." target="_blank" rel="noopener noreferrer" class="tour-btn whatsapp-inquiry">Inquire Now</a>
                             </div>
                         </div>
                     </article>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <article class="tour-card">
-                        <div class="tour-thumb"></div>
+                        <div class="tour-thumb north-lalibela" role="img" aria-label="Lalibela rock-hewn churches tour in Northern Ethiopia"></div>
                         <div class="tour-body">
                             <span class="badge-region">Northern Ethiopia</span>
                             <h3 class="tour-title">3 Days Tour to Lalibela (The 8th Wonder of the World)</h3>
@@ -587,14 +619,14 @@
                             <p class="tour-meta"><i class="fas fa-clock"></i> 3 Days</p>
                             <p class="tour-meta"><i class="fas fa-info-circle"></i> Price on request</p>
                             <div class="tour-card-actions">
-                                <button type="button" class="tour-btn book-now-btn" data-tour="3 Days Tour to Lalibela (The 8th Wonder of the World)" data-category="Northern Ethiopia">Inquire Now</button>
+                                <a href="https://wa.me/251913271706?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%203%20Days%20Tour%20to%20Lalibela%20%28The%208th%20Wonder%20of%20the%20World%29." target="_blank" rel="noopener noreferrer" class="tour-btn whatsapp-inquiry">Inquire Now</a>
                             </div>
                         </div>
                     </article>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <article class="tour-card">
-                        <div class="tour-thumb"></div>
+                        <div class="tour-thumb north-laketana" role="img" aria-label="Lake Tana boating and monastery experience in Bahir Dar"></div>
                         <div class="tour-body">
                             <span class="badge-region">Northern Ethiopia</span>
                             <h3 class="tour-title">4-Day Lake Tana &amp; Royal Gondar Experience with Gorgora</h3>
@@ -603,14 +635,14 @@
                             <p class="tour-meta"><i class="fas fa-user"></i> Private Tour</p>
                             <p class="tour-meta"><i class="fas fa-info-circle"></i> Price on request</p>
                             <div class="tour-card-actions">
-                                <button type="button" class="tour-btn book-now-btn" data-tour="4-Day Lake Tana &amp; Royal Gondar Experience with Gorgora" data-category="Northern Ethiopia">Inquire Now</button>
+                                <a href="https://wa.me/251913271706?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%204-Day%20Lake%20Tana%20and%20Royal%20Gondar%20Experience%20with%20Gorgora." target="_blank" rel="noopener noreferrer" class="tour-btn whatsapp-inquiry">Inquire Now</a>
                             </div>
                         </div>
                     </article>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <article class="tour-card">
-                        <div class="tour-thumb"></div>
+                        <div class="tour-thumb north-tigray" role="img" aria-label="Tigray rock churches and cliff landscapes in Northern Ethiopia"></div>
                         <div class="tour-body">
                             <span class="badge-region">Northern Ethiopia</span>
                             <h3 class="tour-title">5 Days Tigray Churches Tours</h3>
@@ -619,14 +651,14 @@
                             <p class="tour-meta"><i class="fas fa-users"></i> Price varies by group size</p>
                             <p class="tour-price">$1,087</p>
                             <div class="tour-card-actions">
-                                <button type="button" class="tour-btn book-now-btn" data-tour="5 Days Tigray Churches Tours" data-category="Northern Ethiopia">Inquire Now</button>
+                                <a href="https://wa.me/251913271706?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%205%20Days%20Tigray%20Churches%20Tours." target="_blank" rel="noopener noreferrer" class="tour-btn whatsapp-inquiry">Inquire Now</a>
                             </div>
                         </div>
                     </article>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <article class="tour-card">
-                        <div class="tour-thumb"></div>
+                        <div class="tour-thumb north-mekelle" role="img" aria-label="Mekelle and Gheralta heritage route in Tigray"></div>
                         <div class="tour-body">
                             <span class="badge-region">Northern Ethiopia</span>
                             <h3 class="tour-title">5-Day Mekelle &amp; Gheralta Heritage Tour</h3>
@@ -635,14 +667,14 @@
                             <p class="tour-meta"><i class="fas fa-user"></i> Private Tour</p>
                             <p class="tour-price">From $950 / person</p>
                             <div class="tour-card-actions">
-                                <button type="button" class="tour-btn book-now-btn" data-tour="5-Day Mekelle &amp; Gheralta Heritage Tour" data-category="Northern Ethiopia">Inquire Now</button>
+                                <a href="https://wa.me/251913271706?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%205-Day%20Mekelle%20and%20Gheralta%20Heritage%20Tour." target="_blank" rel="noopener noreferrer" class="tour-btn whatsapp-inquiry">Inquire Now</a>
                             </div>
                         </div>
                     </article>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <article class="tour-card">
-                        <div class="tour-thumb"></div>
+                        <div class="tour-thumb north-historic" role="img" aria-label="Northern Ethiopia historic route with castles and churches"></div>
                         <div class="tour-body">
                             <span class="badge-region">Northern Ethiopia</span>
                             <h3 class="tour-title">6 Days Northern Ethiopia Historic Route Tours</h3>
@@ -652,14 +684,14 @@
                             <p class="tour-meta"><i class="fas fa-users"></i> Price varies by group size</p>
                             <p class="tour-price">$1,345 - $5,600</p>
                             <div class="tour-card-actions">
-                                <button type="button" class="tour-btn book-now-btn" data-tour="6 Days Northern Ethiopia Historic Route Tours" data-category="Northern Ethiopia">Inquire Now</button>
+                                <a href="https://wa.me/251913271706?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%206%20Days%20Northern%20Ethiopia%20Historic%20Route%20Tours." target="_blank" rel="noopener noreferrer" class="tour-btn whatsapp-inquiry">Inquire Now</a>
                             </div>
                         </div>
                     </article>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <article class="tour-card">
-                        <div class="tour-thumb"></div>
+                        <div class="tour-thumb north-gorgora" role="img" aria-label="Gorgora and Lake Tana scenic northern Ethiopia tour"></div>
                         <div class="tour-body">
                             <span class="badge-region">Northern Ethiopia</span>
                             <h3 class="tour-title">7-Day Gorgora &amp; Historic North Ethiopia</h3>
@@ -668,14 +700,14 @@
                             <p class="tour-meta"><i class="fas fa-user"></i> Private Tour</p>
                             <p class="tour-meta"><i class="fas fa-info-circle"></i> Price on request</p>
                             <div class="tour-card-actions">
-                                <button type="button" class="tour-btn book-now-btn" data-tour="7-Day Gorgora &amp; Historic North Ethiopia" data-category="Northern Ethiopia">Inquire Now</button>
+                                <a href="https://wa.me/251913271706?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%207-Day%20Gorgora%20and%20Historic%20North%20Ethiopia." target="_blank" rel="noopener noreferrer" class="tour-btn whatsapp-inquiry">Inquire Now</a>
                             </div>
                         </div>
                     </article>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <article class="tour-card">
-                        <div class="tour-thumb"></div>
+                        <div class="tour-thumb north-eightdays" role="img" aria-label="Eight-day Northern Ethiopia itinerary highlights"></div>
                         <div class="tour-body">
                             <span class="badge-region">Northern Ethiopia</span>
                             <h3 class="tour-title">8 Days Northern Ethiopia Tours</h3>
@@ -685,7 +717,7 @@
                             <p class="tour-meta"><i class="fas fa-users"></i> Price varies by group size</p>
                             <p class="tour-price">From $1,060 / person</p>
                             <div class="tour-card-actions">
-                                <button type="button" class="tour-btn book-now-btn" data-tour="8 Days Northern Ethiopia Tours" data-category="Northern Ethiopia">Inquire Now</button>
+                                <a href="https://wa.me/251913271706?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%208%20Days%20Northern%20Ethiopia%20Tours." target="_blank" rel="noopener noreferrer" class="tour-btn whatsapp-inquiry">Inquire Now</a>
                             </div>
                         </div>
                     </article>
@@ -797,7 +829,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-about">
                             <div class="d-flex align-items-center mb-3">
-                                <img src="images/logo1.png" alt="Yetenbi Ethiopia Tours" class="footer-logo me-3">
+                                <img src="images/logo1.webp" alt="Yetenbi Ethiopia Tours" class="footer-logo me-3">
                                 <h3 class="text-uppercase fw-bold mb-0">Yetenbi Ethiopia Tours</h3>
                             </div>
                             <p class="mb-3">Your trusted travel partner for discovering the rich culture and breathtaking landscapes of Ethiopia.</p>
@@ -961,7 +993,7 @@
                     <!-- Copyright -->
                     <div class="col-md-6">
                         <div class="footer-copyright">
-                            <p class="mb-0">&copy; <span id="current-year">2025</span> Yetenbi Ethiopia Tours. All Rights Reserved.</p>
+                            <p class="mb-0">&copy; <span id="current-year">2025</span> Yetenbi Ethiopia Tours. All Rights Reserved. Powered by <a href="https://www.linkedin.com/in/semira-abdurahman-4a2067392/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">Luna</a></p>
                             <div class="footer-legal mt-2">
                                 <a href="#" class="text-decoration-none me-3" data-i18n="footer_privacy_policy">Privacy Policy</a>
                                 <a href="#" class="text-decoration-none me-3" data-i18n="footer_terms_of_service">Terms of Service</a>
@@ -1119,6 +1151,15 @@
             }
         });
     </script>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/251913271706?text=Hello%21%20Welcome%20to%20Yetenbi%20Ethiopia%20Tours.%20We%20offer%20city%20tours%2C%20cultural%20experiences%2C%20hiking%20adventures%2C%20and%20more%20across%20Ethiopia.%20How%20can%20we%20help%20you%20plan%20your%20trip%20today%3F" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="wa-badge blink">What can I help you with?</span>
+        <span class="wa-notification-dot">1</span>
+    </a>
+
     <div id="overlay" class="nav-backdrop" aria-hidden="true"></div>
+    <script src="js/tour-schema.js"></script>
+
 </body>
 </html>

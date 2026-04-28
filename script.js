@@ -1,97 +1,68 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const DEFAULT_LANGUAGE = 'en';
+    const languageSelectors = [
+        document.getElementById('languageSelect'),
+        document.getElementById('sidebarLanguageSelect')
+    ].filter(Boolean);
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Handle Read More/Less buttons
-    const readMoreBtns = document.querySelectorAll('.read-more-btn');
-    
-    readMoreBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const card = this.closest('.blog-card');
-            const isExpanded = card.classList.contains('expanded');
-            // Toggle only the current card
-            if (isExpanded) {
-                card.classList.remove('expanded');
-                this.setAttribute('aria-expanded', 'false');
-                this.querySelector('.btn-text').textContent = '';
-            } else {
-                card.classList.add('expanded');
-                this.setAttribute('aria-expanded', 'true');
-                this.querySelector('.btn-text').textContent = 'Read Less';
-                // Smooth scroll to card
-                setTimeout(() => {
-                    card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                }, 100);
-            }
-        });
-    });
-    
-    // Handle View All button
-    const viewAllBtn = document.getElementById('viewAllBtn');
-    if (viewAllBtn) {
-        viewAllBtn.addEventListener('click', function() {
-            const hiddenPosts = document.querySelectorAll('.hidden-post');
-            const isShowingAll = hiddenPosts[0].classList.contains('show-post');
-            
-            if (isShowingAll) {
-                hiddenPosts.forEach(post => {
-                    post.classList.remove('show-post');
-                    // Also close any expanded hidden posts
-                    post.classList.remove('expanded');
-                    const btn = post.querySelector('.read-more-btn');
-                    btn.setAttribute('aria-expanded', 'false');
-                    btn.querySelector('.btn-text').textContent = '';
-                });
-                this.textContent = 'View All Blog Posts';
-            } else {
-                hiddenPosts.forEach(post => {
-                    post.classList.add('show-post');
-                });
-                this.textContent = 'Show Less';
-            }
+    function syncLanguageSelectors(lang) {
+        languageSelectors.forEach(function (select) {
+            select.value = lang;
         });
     }
 
-    // Language switching logic
+    function applyTranslations(translations) {
+        document.querySelectorAll('[data-i18n]').forEach(function (element) {
+            const key = element.getAttribute('data-i18n');
+            const translation = translations[key];
+
+            if (typeof translation === 'undefined') {
+                return;
+            }
+
+            if (['INPUT', 'TEXTAREA'].includes(element.tagName)) {
+                element.placeholder = translation;
+                return;
+            }
+
+            if (element.tagName === 'OPTION') {
+                element.textContent = translation;
+                return;
+            }
+
+            element.innerHTML = translation;
+        });
+    }
+
     function setLanguage(lang) {
-        fetch(`lang/${lang}.json`)
-            .then(res => res.json())
-            .then(translations => {
-                document.querySelectorAll('[data-i18n]').forEach(el => {
-                    const key = el.getAttribute('data-i18n');
-                    if (translations[key]) {
-                        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-                            el.placeholder = translations[key];
-                        } else if (el.tagName === 'OPTION') {
-                            el.textContent = translations[key];
-                        } else {
-                            el.innerHTML = translations[key];
-                        }
-                    }
-                });
-            });
-        // Sync both selectors
-        document.getElementById('languageSelect').value = lang;
-        document.getElementById('sidebarLanguageSelect').value = lang;
+        syncLanguageSelectors(lang);
         localStorage.setItem('selectedLanguage', lang);
+
+        fetch(`lang/${lang}.json`)
+            .then(function (response) {
+                if (!response.ok) {
+                    throw new Error('Language file could not be loaded.');
+                }
+
+                return response.json();
+            })
+            .then(applyTranslations)
+            .catch(function (error) {
+                console.warn('Unable to apply selected language:', error);
+            });
     }
 
-    // Language selector event listeners
-    const langSelect = document.getElementById('languageSelect');
-    const sidebarLangSelect = document.getElementById('sidebarLanguageSelect');
-    function handleLangChange(e) {
-        setLanguage(e.target.value);
-    }
-    if (langSelect) langSelect.addEventListener('change', handleLangChange);
-    if (sidebarLangSelect) sidebarLangSelect.addEventListener('change', handleLangChange);
+    function initLanguageSelectors() {
+        languageSelectors.forEach(function (select) {
+            select.addEventListener('change', handleLangChange);
+        });
 
-    // On load, set language from localStorage or default to English
-    const savedLang = localStorage.getItem('selectedLanguage') || 'en';
-    setLanguage(savedLang);
+        setLanguage(localStorage.getItem('selectedLanguage') || DEFAULT_LANGUAGE);
 
-    // Sync selectors on open (for sidebar)
-    if (sidebarLangSelect) {
-        sidebarLangSelect.value = savedLang;
+        function handleLangChange(event) {
+            setLanguage(event.target.value);
+        }
     }
-    if (langSelect) {
-        langSelect.value = savedLang;
-    }
+
+    initLanguageSelectors();
 });

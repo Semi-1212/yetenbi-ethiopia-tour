@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RW0EFGY79V"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RW0EFGY79V');
+        </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>About Us | Ethiopia Tours &amp; Addis Ababa Tour Operator | Yetenbi</title>
@@ -12,7 +20,7 @@
         <meta name="theme-color" content="#1a3c5e">
         <meta property="og:title" content="About Us | Ethiopia Tours &amp; Addis Ababa Tour Operator">
         <meta property="og:description" content="Meet Yetenbi Ethiopia Tours, a local Ethiopian travel agency for Addis Ababa city tours, cultural tours, coffee tours, historical routes, hiking trips, and private Ethiopia tours.">
-        <meta property="og:image" content="https://yetenbiethiopiatours.com/images/imm2.jpg">
+        <meta property="og:image" content="https://yetenbiethiopiatours.com/images/imm2.webp">
         <meta property="og:url" content="https://yetenbiethiopiatours.com/about-us.html">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="en_US">
@@ -21,7 +29,7 @@
         <meta name="twitter:site" content="@Yetenbitour">
         <meta name="twitter:title" content="About Us | Yetenbi Ethiopia Tours">
         <meta name="twitter:description" content="A local Addis Ababa tour operator creating Ethiopia tours, coffee tours, cultural tours, hiking trips, layover tours, and custom private travel.">
-        <meta name="twitter:image" content="https://yetenbiethiopiatours.com/images/imm2.jpg">
+        <meta name="twitter:image" content="https://yetenbiethiopiatours.com/images/imm2.webp">
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -48,7 +56,7 @@
             }
         }
         </script>
-        <link rel="icon" type="image/png" href="images/logo1.png">
+        <link rel="icon" type="image/webp" href="images/logo1.webp">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -61,7 +69,7 @@
             .about-page-hero {
                 margin-top: var(--header-stack-height, 100px);
                 min-height: 440px;
-                background: linear-gradient(120deg, rgba(10,16,24,0.82), rgba(26,60,94,0.62)), url('images/imm2.jpg') center/cover no-repeat;
+                background: linear-gradient(120deg, rgba(10,16,24,0.82), rgba(26,60,94,0.62)), url('images/yetenbi addis-ababa-tour1.jpg') center/cover no-repeat;
                 color: #fff;
                 display: flex;
                 align-items: center;
@@ -218,6 +226,39 @@
                 margin: 0;
             }
 
+            .about-promo-card {
+                margin: 20px 0 18px;
+                padding: 18px 20px;
+                border-left: 4px solid #f8c107;
+                border-radius: 14px;
+                background: #fffaf0;
+                box-shadow: 0 10px 24px rgba(26,60,94,0.07);
+            }
+
+            .about-promo-card p {
+                color: #4f4035;
+                font-size: 0.9rem;
+                line-height: 1.65;
+                margin-bottom: 12px;
+            }
+
+            .about-promo-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .about-promo-tags span {
+                display: inline-flex;
+                align-items: center;
+                padding: 6px 11px;
+                border-radius: 999px;
+                background: rgba(26,60,94,0.08);
+                color: #1a3c5e;
+                font-size: 0.76rem;
+                font-weight: 700;
+            }
+
             .about-cta-section {
                 padding: 70px 0;
                 background: linear-gradient(120deg, #1a3c5e, #6a4029);
@@ -245,7 +286,7 @@
                 <div class="col-md-6">
                     <div class="top-nav-contact">
                         <a href="tel:+251913271706"><i class="fas fa-phone-alt"></i> +251 913 271706</a>
-                        <a href="mailto:yetenbiethiopiatours@gmail.com"><i class="fas fa-envelope"></i> yetenbiethiopiatours@gmail.com</a>
+                        <a href="mailto:info@yetenbiethiopiatours.com"><i class="fas fa-envelope"></i> info@yetenbiethiopiatours.com</a>
                     </div>
                 </div>
                 <div class="col-md-6 text-md-end">
@@ -263,7 +304,7 @@
     <nav class="navbar navbar-expand-lg main-navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo1.png" alt="Yetenbi Ethiopia Tours">
+                <img src="images/logo1.webp" alt="Yetenbi Ethiopia Tours">
                 Yetenbi
             </a>
             <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">
@@ -276,26 +317,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="ethiopiaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ethiopia</a>
-                        <ul class="dropdown-menu" aria-labelledby="ethiopiaDropdown">
-                            <li><a class="dropdown-item" href="about-us.html#the-country">The Country</a></li>
-                            <li><a class="dropdown-item" href="about-us.html#getting-there">Getting There</a></li>
-                            <li><a class="dropdown-item" href="about-us.html#visa-and-immigration">Visa and Immigration</a></li>
-                            <li><a class="dropdown-item" href="about-us.html#best-time-to-travel">Best Time to Travel</a></li>
-                            <li><a class="dropdown-item" href="about-us.html#health-and-safety">Health and Safety</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="about-us.html">About Us</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="toursDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tour Packages</a>
                         <ul class="dropdown-menu" aria-labelledby="toursDropdown">
                             <li><a class="dropdown-item" href="addis-ababa-city-tour.html">Addis Ababa City Tours</a></li>
-                            <li><a class="dropdown-item" href="index.html#tours">Day Trips &amp; Excursions</a></li>
-                            <li><a class="dropdown-item" href="index.html#tours">Group Tour</a></li>
+                            <li><a class="dropdown-item" href="day-trips-excursions.html">Day Trips &amp; Excursions</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="northern-ethiopia.html">Northern Ethiopia</a></li>
                             <li><a class="dropdown-item" href="southern-ethiopia.html">Southern Ethiopia</a></li>
-                            <li><a class="dropdown-item" href="index.html#tours">Eastern Ethiopia</a></li>
+                            <li><a class="dropdown-item" href="eastern-ethiopia.html">Eastern Ethiopia</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -359,28 +390,17 @@
         </div>
         <div class="sidebar-body">
             <a href="index.html#home">Home</a>
-            <button type="button" class="dropdown-btn active" aria-expanded="true">
-                <span>Ethiopia</span>
-                <span class="sidebar-chevron"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
-            </button>
-            <div class="dropdown-container">
-                <a href="about-us.html#the-country">The Country</a>
-                <a href="about-us.html#getting-there">Getting There</a>
-                <a href="about-us.html#visa-and-immigration">Visa and Immigration</a>
-                <a href="about-us.html#best-time-to-travel">Best Time to Travel</a>
-                <a href="about-us.html#health-and-safety">Health and Safety</a>
-            </div>
+            <a href="about-us.html" class="active">About Us</a>
             <button type="button" class="dropdown-btn" aria-expanded="false">
                 <span>Tour Packages</span>
                 <span class="sidebar-chevron"><i class="fas fa-chevron-down" aria-hidden="true"></i></span>
             </button>
             <div class="dropdown-container">
                 <a href="addis-ababa-city-tour.html">Addis Ababa City Tours</a>
-                <a href="index.html#tours">Day Trips &amp; Excursions</a>
-                <a href="index.html#tours">Group Tour</a>
+                <a href="day-trips-excursions.html">Day Trips &amp; Excursions</a>
                 <a href="northern-ethiopia.html">Northern Ethiopia</a>
                 <a href="southern-ethiopia.html">Southern Ethiopia</a>
-                <a href="index.html#tours">Eastern Ethiopia</a>
+                <a href="eastern-ethiopia.html">Eastern Ethiopia</a>
             </div>
             <button type="button" class="dropdown-btn" aria-expanded="false">
                 <span>Activities</span>
@@ -425,6 +445,15 @@
                     <h2 class="about-title" data-i18n="about_title">Local Ethiopia Tours With Yetenbi</h2>
                     <p class="about-text" data-i18n="about_text1">"Yetenbi" means "Welcome" in Gurage, and that's exactly how we greet every traveler to our beautiful country. We specialize in authentic Ethiopia tours that connect you with ancient history, vibrant cultures, coffee traditions, dramatic highlands, and local hospitality.</p>
                     <p class="about-text" data-i18n="about_text2">Founded in Addis Ababa, we're proud to be a 100% Ethiopian-owned travel agency offering insider access beyond the usual tourist trails. From Addis Ababa city tours and layover tours to Lalibela, the Omo Valley, Simien Mountains, Danakil Depression, and custom private Ethiopia tours, we bring Ethiopia's wonders to life.</p>
+                    <div class="about-promo-card">
+                        <p>Visit Ethiopia with Yetenbi Ethiopia Tours, one of the best Ethiopian tour operators for tailor-made trips that leave a lasting impression. We arrange budget tours, mid-range safaris, luxury tours, historical and tribal journeys, wildlife photography safaris, bird watching, city excursions, Addis Ababa city tours, layover tours, day trips, Danakil Depression tours, Omo Valley tribes tours, Lalibela tours, Tigray churches and Axum tours.</p>
+                        <div class="about-promo-tags" aria-label="Travel services">
+                            <span>Hotel booking</span>
+                            <span>Car rentals</span>
+                            <span>Flight booking</span>
+                            <span>Local tour guides</span>
+                        </div>
+                    </div>
                     <a href="index.html#tours" class="about-btn" data-i18n="about_btn">Discover Ethiopia</a>
                 </div>
 
@@ -432,21 +461,21 @@
                     <div class="features-card">
                         <h3 class="features-title" data-i18n="features_title">Why Tour With Us?</h3>
                         <div class="ethiopian-feature">
-                            <img src="images/tea-cup.png" alt="Coffee Ceremony" class="feature-icon">
+                            <img src="images/tea-cup.webp" alt="Coffee Ceremony" class="feature-icon">
                             <div>
                                 <h4 data-i18n="features_authentic">Authentic Experiences</h4>
                                 <p data-i18n="features_authentic_desc">Participate in traditional coffee ceremonies and share meals with local families</p>
                             </div>
                         </div>
                         <div class="ethiopian-feature">
-                            <img src="images/travel-guide.png" alt="Local Guides" class="feature-icon">
+                            <img src="images/travel-guide.webp" alt="Local Guides" class="feature-icon">
                             <div>
                                 <h4 data-i18n="features_local">Local Experts</h4>
                                 <p data-i18n="features_local_desc">Our guides speak Amharic and local languages for deeper connections</p>
                             </div>
                         </div>
                         <div class="ethiopian-feature">
-                            <img src="images/handcraft.png" alt="Handicraft Preservation" class="feature-icon">
+                            <img src="images/handcraft.webp" alt="Handicraft Preservation" class="feature-icon">
                             <div>
                                 <h4 data-i18n="features_cultural">Cultural Preservation</h4>
                                 <p data-i18n="features_cultural_desc">We support local artisans by promoting traditional Ethiopian crafts like Shemma weaving and pottery</p>
@@ -523,7 +552,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-about">
                             <div class="d-flex align-items-center mb-3">
-                                <img src="images/logo1.png" alt="Yetenbi Ethiopia Tours" class="footer-logo me-3">
+                                <img src="images/logo1.webp" alt="Yetenbi Ethiopia Tours" class="footer-logo me-3">
                                 <h3 class="text-uppercase fw-bold mb-0">Yetenbi Ethiopia Tours</h3>
                             </div>
                             <p class="mb-3">Your trusted travel partner for discovering the rich culture and breathtaking landscapes of Ethiopia.</p>
@@ -588,13 +617,20 @@
                     </div>
                     <div class="col-md-6">
                         <div class="footer-copyright">
-                            <p class="mb-0">&copy; <span id="current-year">2025</span> Yetenbi Ethiopia Tours. All Rights Reserved.</p>
+                            <p class="mb-0">&copy; <span id="current-year">2025</span> Yetenbi Ethiopia Tours. All Rights Reserved. Powered by <a href="https://www.linkedin.com/in/semira-abdurahman-4a2067392/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">Luna</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/251913271706?text=Hello%21%20Welcome%20to%20Yetenbi%20Ethiopia%20Tours.%20We%20offer%20city%20tours%2C%20cultural%20experiences%2C%20hiking%20adventures%2C%20and%20more%20across%20Ethiopia.%20How%20can%20we%20help%20you%20plan%20your%20trip%20today%3F" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="wa-badge blink">What can I help you with?</span>
+        <span class="wa-notification-dot">1</span>
+    </a>
 
     <div id="overlay" class="nav-backdrop" aria-hidden="true"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -603,5 +639,7 @@
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+    <script src="js/tour-schema.js"></script>
+
 </body>
 </html>

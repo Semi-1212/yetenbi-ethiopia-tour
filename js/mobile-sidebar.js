@@ -3,17 +3,65 @@
  * Opens/closes #sidebar + #overlay when present.
  */
 (function () {
+    var OPEN_CLASS = 'sidebar--open';
+    var VISIBLE_CLASS = 'is-visible';
+    var DESKTOP_QUERY = '(min-width: 992px)';
+    var WHATSAPP_BOOKING_URL = 'https://wa.me/251913271706?text=Hello%2C%20I%20would%20like%20to%20book%20a%20tour%20with%20Yetenbi%20Ethiopia%20Tours.';
+
+    function setAttributeIfPresent(element, name, value) {
+        if (element) {
+            element.setAttribute(name, value);
+        }
+    }
+
+    function setMobileMenuState(button, isOpen) {
+        if (!button) {
+            return;
+        }
+
+        button.classList.toggle('is-open', isOpen);
+        button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        button.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    }
+
+    function setSidebarState(sidebar, overlay, button, isOpen) {
+        if (sidebar) {
+            sidebar.classList.toggle(OPEN_CLASS, isOpen);
+            sidebar.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+        }
+
+        if (overlay) {
+            overlay.classList.toggle(VISIBLE_CLASS, isOpen);
+            overlay.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+        }
+
+        setMobileMenuState(button, isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+
+    function setBookLinksToWhatsapp(bookLinks) {
+        for (var i = 0; i < bookLinks.length; i++) {
+            bookLinks[i].href = WHATSAPP_BOOKING_URL;
+            bookLinks[i].target = '_blank';
+            bookLinks[i].rel = 'noopener noreferrer';
+            bookLinks[i].dataset.whatsappLink = 'true';
+        }
+    }
+
     function syncStackHeights() {
         var topBar = document.querySelector('.top-navbar');
         var mainNav = document.querySelector('.main-navbar');
         var root = document.documentElement;
+
         if (!topBar || !mainNav) {
             return;
         }
-        var th = Math.ceil(topBar.getBoundingClientRect().height);
-        var mh = Math.ceil(mainNav.getBoundingClientRect().height);
-        root.style.setProperty('--top-navbar-height', th + 'px');
-        root.style.setProperty('--header-stack-height', th + mh + 'px');
+
+        var topBarHeight = Math.ceil(topBar.getBoundingClientRect().height);
+        var mainNavHeight = Math.ceil(mainNav.getBoundingClientRect().height);
+
+        root.style.setProperty('--top-navbar-height', topBarHeight + 'px');
+        root.style.setProperty('--header-stack-height', topBarHeight + mainNavHeight + 'px');
     }
 
     function initSidebar() {
@@ -25,44 +73,21 @@
             return;
         }
 
-        function openSidebar() {
-            sidebar.classList.add('sidebar--open');
-            sidebar.setAttribute('aria-hidden', 'false');
-            overlay.classList.add('is-visible');
-            overlay.setAttribute('aria-hidden', 'false');
-            document.body.style.overflow = 'hidden';
-            if (mobileMenuBtn) {
-                mobileMenuBtn.classList.add('is-open');
-                mobileMenuBtn.setAttribute('aria-expanded', 'true');
-                mobileMenuBtn.setAttribute('aria-label', 'Close menu');
-            }
-        }
-
         function closeSidebarFn() {
-            sidebar.classList.remove('sidebar--open');
-            sidebar.setAttribute('aria-hidden', 'true');
-            overlay.classList.remove('is-visible');
-            overlay.setAttribute('aria-hidden', 'true');
-            document.body.style.overflow = '';
-            if (mobileMenuBtn) {
-                mobileMenuBtn.classList.remove('is-open');
-                mobileMenuBtn.setAttribute('aria-expanded', 'false');
-                mobileMenuBtn.setAttribute('aria-label', 'Open menu');
-            }
+            setSidebarState(sidebar, overlay, mobileMenuBtn, false);
         }
 
         if (mobileMenuBtn) {
             mobileMenuBtn.addEventListener('click', function () {
-                if (sidebar.classList.contains('sidebar--open')) {
-                    closeSidebarFn();
-                } else {
-                    openSidebar();
-                }
+                var isOpen = sidebar.classList.contains(OPEN_CLASS);
+                setSidebarState(sidebar, overlay, mobileMenuBtn, !isOpen);
             });
         }
+
         if (closeSidebar) {
             closeSidebar.addEventListener('click', closeSidebarFn);
         }
+
         overlay.addEventListener('click', closeSidebarFn);
 
         var dropdownBtns = document.getElementsByClassName('dropdown-btn');
@@ -80,7 +105,7 @@
     }
 
     function initDesktopDropdowns() {
-        var desktopQuery = window.matchMedia('(min-width: 992px)');
+        var desktopQuery = window.matchMedia(DESKTOP_QUERY);
         var dropdowns = document.querySelectorAll('.main-navbar .navbar-nav > .nav-item.dropdown');
 
         function closeDropdown(dropdown) {
@@ -95,10 +120,13 @@
             }
 
             dropdown.classList.remove('show');
+
             if (toggle) {
                 toggle.classList.remove('show');
-                toggle.setAttribute('aria-expanded', 'false');
             }
+
+            setAttributeIfPresent(toggle, 'aria-expanded', 'false');
+
             if (menu) {
                 menu.classList.remove('show');
                 menu.removeAttribute('data-bs-popper');
@@ -153,10 +181,77 @@
         });
     }
 
+    function initBookingModalLinks() {
+        var navBookLinks = document.querySelectorAll('.btn-book');
+        var bookingModal = document.getElementById('bookingModal');
+        var bookingForm = document.getElementById('bookingForm');
+        var confirmationMessage = document.getElementById('confirmationMessage');
+        var tourDate = document.getElementById('tourDate');
+        var firstNameInput = document.getElementById('fullName');
+        var defaultCategory = document.getElementById('category');
+        var tourType = document.getElementById('tourType');
+        var sidebar = document.getElementById('sidebar');
+        var overlay = document.getElementById('overlay');
+        var mobileMenuBtn = document.getElementById('mobileMenuBtn');
+
+        setBookLinksToWhatsapp(navBookLinks);
+
+        if (!bookingModal || !bookingForm) {
+            return;
+        }
+
+        function closeSidebarIfOpen() {
+            setSidebarState(sidebar, overlay, mobileMenuBtn, false);
+        }
+
+        function openBookingModal() {
+            closeSidebarIfOpen();
+
+            bookingModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            bookingForm.style.display = 'flex';
+
+            if (confirmationMessage) {
+                confirmationMessage.style.display = 'none';
+            }
+
+            bookingForm.reset();
+
+            if (tourDate) {
+                tourDate.min = new Date().toISOString().split('T')[0];
+            }
+
+            if (defaultCategory) {
+                tourType = tourType || document.getElementById('tourType');
+                if (tourType && !tourType.value) {
+                    tourType.value = defaultCategory.value || '';
+                }
+            }
+
+            if (firstNameInput) {
+                firstNameInput.focus();
+            }
+        }
+
+        for (var i = 0; i < navBookLinks.length; i++) {
+            navBookLinks[i].addEventListener('click', function (event) {
+                if (this.dataset.whatsappLink === 'true') {
+                    return;
+                }
+
+                event.preventDefault();
+                openBookingModal();
+            });
+        }
+
+        window.openBookingModal = openBookingModal;
+    }
+
     function init() {
         syncStackHeights();
         initSidebar();
         initDesktopDropdowns();
+        initBookingModalLinks();
     }
 
     if (document.readyState === 'loading') {
