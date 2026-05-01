@@ -113,8 +113,21 @@
 
           gtag('config', 'G-BXFTWNTCDR');
         </script>
-    </head>
+    
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N7DBCXLV');</script>
+<!-- End Google Tag Manager -->
+</head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7DBCXLV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <!-- Top Navbar -->
     <div class="top-navbar">
         <div class="container">
@@ -1471,7 +1484,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             <div class="form-group checkbox-group">
                 <input type="checkbox" id="termsAgree" name="termsAgree" required>
-                <label for="termsAgree" data-i18n="booking_terms">I agree to the <a href="/terms" class="terms-link">terms and conditions</a></label>
+                <label for="termsAgree" data-i18n="booking_terms">I agree to the <a href="/terms.html" class="terms-link">terms and conditions</a></label>
             </div>
             
             <button type="submit" class="submit-btn" id="submitBtn">
@@ -1833,7 +1846,7 @@ $.get('https://api.rss2json.com/v1/api.json?rss_url=https://yetenbiethiopiatours
           ${author ? `<div class='post-author'>By ${author}</div>` : ''}
           <span class="post-date">${item.pubDate.split(' ')[0]}</span>
           <p class="post-excerpt">${item.description.replace(/<[^>]+>/g, '').slice(0, 150)}...</p>
-          <a href="${item.link}" target="_blank" class="read-more-btn" data-post-id="${item.guid || item.link}">Read More</a>
+          <a href="${item.link}.html" target="_blank" class="read-more-btn" data-post-id="${item.guid || item.link}">Read More</a>
         </div>
       </article>
     `;
@@ -1924,7 +1937,7 @@ $.get('https://api.rss2json.com/v1/api.json?rss_url=https://yetenbiethiopiatours
                     <div class="footer-links">
                         <h5 class="text-uppercase fw-bold mb-4">Explore</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="index.html" class="text-decoration-none d-block py-1">Home</a></li>
+                            <li class="mb-2"><a href="/" class="text-decoration-none d-block py-1">Home</a></li>
                             <li class="mb-2"><a href="about-us.html" class="text-decoration-none d-block py-1">About Us</a></li>
                             <li class="mb-2"><a href="contact-us.html" class="text-decoration-none d-block py-1">Contact Us</a></li>
                             <li class="mb-2"><a href="blog.html" class="text-decoration-none d-block py-1">Blog</a></li>

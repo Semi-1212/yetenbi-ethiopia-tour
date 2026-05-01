@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '@context': 'https://schema.org',
         '@graph': [
             {
-                '@type': 'TourOperator',
+                '@type': 'TravelAgency',
                 name: 'Yetenbi Ethiopia Tours',
                 url: baseUrl,
                 telephone: '+251913271706'
