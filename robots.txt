@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yetenbiethiopiatours.com/sitemap.xml
+Sitemap: https://www.yetenbiethiopiatours.com/sitemap.xml
