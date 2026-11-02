@@ -356,6 +356,63 @@ body {
     }
 }
 
+/* Keep desktop nav on one line at mid-size widths */
+@media (min-width: 992px) {
+    .main-navbar .navbar-nav .nav-link,
+    .main-navbar .navbar-nav select {
+        white-space: nowrap;
+    }
+    .main-navbar .navbar-nav .nav-item > .nav-link.btn-book {
+        min-width: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1399.98px) {
+    .main-navbar .navbar-brand span,
+    .main-navbar .navbar-brand .brand-text {
+        font-size: 1.1rem;
+    }
+    .main-navbar .navbar-nav .nav-link {
+        font-size: 0.74rem;
+        padding-right: 0.3rem;
+        padding-left: 0.3rem;
+    }
+    .main-navbar .navbar-nav .nav-item > .nav-link.btn-book {
+        height: 34px;
+        padding: 0 10px;
+    }
+    .main-navbar .navbar-nav select {
+        font-size: 0.72rem;
+        max-width: 105px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1139.98px) {
+    .main-navbar .navbar-brand span,
+    .main-navbar .navbar-brand .brand-text {
+        display: none;
+    }
+    .main-navbar .navbar-nav .nav-link {
+        font-size: 0.7rem;
+        padding-right: 0.2rem;
+        padding-left: 0.2rem;
+    }
+    .main-navbar .navbar-nav select {
+        max-width: 78px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1049.98px) {
+    .main-navbar .navbar-nav .nav-link {
+        font-size: 0.66rem;
+        padding-right: 0.15rem;
+        padding-left: 0.15rem;
+    }
+    .main-navbar .navbar-nav select {
+        max-width: 62px;
+    }
+}
+
 /* Hero Section */
 .hero {
     position: relative;
