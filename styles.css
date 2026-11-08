@@ -304,6 +304,126 @@ body {
     vertical-align: 0.15em;
 }
 
+.language-switcher {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    min-height: 40px;
+    padding: 0 0.75rem;
+    border: 1px solid rgba(106, 64, 41, 0.18);
+    border-radius: 999px;
+    background: linear-gradient(135deg, #fff 0%, #fffaf0 100%);
+    box-shadow: 0 3px 12px rgba(26, 26, 26, 0.07);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.language-switcher:focus-within,
+.language-switcher:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 5px 16px rgba(26, 26, 26, 0.12);
+}
+
+.language-switcher__icon {
+    flex: 0 0 auto;
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+}
+
+.language-switcher--desktop::after {
+    content: '';
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-left: 0.05rem;
+    border-right: 1.5px solid var(--secondary-color);
+    border-bottom: 1.5px solid var(--secondary-color);
+    transform: translateY(-2px) rotate(45deg);
+    pointer-events: none;
+}
+
+.main-navbar .navbar-nav .language-switcher__select {
+    width: auto !important;
+    max-width: 132px;
+    padding: 0.3rem 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--dark-color);
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.language-switcher__select:focus {
+    box-shadow: none !important;
+}
+
+.sidebar .language-switcher--sidebar {
+    min-height: 42px;
+    gap: 0.55rem;
+    padding: 0 0.75rem;
+    border-color: rgba(106, 64, 41, 0.16);
+    border-radius: 12px;
+}
+
+.sidebar .language-switcher--sidebar .sidebar-lang-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+}
+
+.sidebar .sidebar-lang-select.language-switcher__select {
+    width: auto !important;
+    max-width: 150px;
+    padding: 0.3rem 0;
+    border: 0;
+    background: transparent;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+@media (min-width: 992px) and (max-width: 1139.98px) {
+    .main-navbar .navbar-nav .language-switcher__select {
+        max-width: 88px;
+        font-size: 0.72rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1049.98px) {
+    .main-navbar .navbar-nav .language-switcher__select {
+        max-width: 68px;
+    }
+}
+
+/* Keep Google's injected widget, banner, and translation popups out of the site UI. */
+#google_translate_element,
+#google_translate_element *,
+.goog-te-gadget,
+.goog-te-banner-frame,
+iframe.goog-te-banner-frame,
+body > .skiptranslate,
+.goog-te-menu-frame,
+.goog-te-balloon-frame,
+#goog-gt-tt,
+.goog-tooltip {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+}
+
+html,
+body,
+body.skiptranslate {
+    top: 0 !important;
+    margin-top: 0 !important;
+}
+
 /* Ensure dropdown works on desktop */
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
